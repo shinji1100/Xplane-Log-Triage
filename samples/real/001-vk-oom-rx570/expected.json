@@ -1,0 +1,8 @@
+{
+  "description": "Ryzen 3 2200G + RX 570: VK_ERROR_OUT_OF_DEVICE_MEMORY crash, no crash marker written, abrupt termination",
+  "must_detect": [
+    { "kind": "vulkan_result_error", "min_occurrences": 1 },
+    { "kind": "abrupt_termination", "min_occurrences": 1 }
+  ],
+  "must_not_detect": ["application_crash"]
+}

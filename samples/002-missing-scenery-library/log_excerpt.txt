@@ -1,0 +1,3 @@
+0:00:13.929 E/SCN: The art asset 'PP146-lib/GroundTextures/CarTireTracks.lin' could not be found.
+0:00:13.929 E/SYS: MACIBM_alert: It requires an additional library scenery package that is not installed, or it is missing some of its files.
+

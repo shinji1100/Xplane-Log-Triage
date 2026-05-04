@@ -1,0 +1,6 @@
+类型：plugin_load_failed
+严重程度：严重
+置信度：高
+解释：插件或依赖库加载失败。
+建议：检查插件是否支持当前 X-Plane 和系统平台；Windows 下检查 Visual C++ Runtime；临时禁用该插件复测。
+

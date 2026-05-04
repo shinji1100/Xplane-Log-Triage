@@ -1,0 +1,1648 @@
+Log.txt for X-Plane 12.4.0-r2-9b69b91a (build 124009 Intel 64-bit, Vulkan e0d7f10aef70fd7c5a579994fcf1df219059f06a)
+Compiled on Feb 12 2026 17:20:42
+X-Plane Started on Sun Mar  1 12:41:55 2026
+
+This log file is generated automatically by Laminar Research applications and contains diagnostics about your graphics hardware, installation, and any error conditions.
+If you need to contact tech support or file a bug, please send us this file. NOTE: this file is rewritten every time you start ANY of your X-System applications.
+
+Windows 10.0 (build 26100/2)
+This is a 64-bit version of Windows.
+CPU type: Intel Core i7-10700K CPU - Speed: 3.6-4.0 GHz - Cores: 16
+          Microcode 0x100
+Physical Memory (total for computer): 25608499200
+Maximum Virtual Memory (for X-Plane only): 140737488224256
+
+X-System folder:'C:\X-Plane 12/', case sensitive=0
+
+0:00:00.000 D/TRN: Unable to determine default language. May need to prompt the user to select.
+0:00:00.000 I/GFX/VK: Vulkan Layers: VK_LAYER_AMD_switchable_graphics (1)
+0:00:00.000 I/GFX/VK: 
+Vulkan Device       : AMD Radeon Pro 5500 XT (fcbd000000)
+Vulkan Version      : 1.3.264
+Vulkan Driver       : 2.0.283
+Vulkan Extensions   : VK_KHR_16bit_storage VK_KHR_8bit_storage VK_KHR_bind_memory2 VK_KHR_buffer_device_address VK_KHR_copy_commands2 VK_KHR_create_renderpass2 VK_KHR_dedicated_allocation VK_KHR_depth_stencil_resolve VK_KHR_descriptor_update_template VK_KHR_device_group VK_KHR_draw_indirect_count VK_KHR_driver_properties VK_KHR_dynamic_rendering VK_KHR_external_fence VK_KHR_external_fence_win32 VK_KHR_external_memory VK_KHR_external_memory_win32 VK_KHR_external_semaphore VK_KHR_external_semaphore_win32 VK_KHR_format_feature_flags2 VK_KHR_fragment_shader_barycentric VK_KHR_get_memory_requirements2 VK_KHR_global_priority VK_KHR_imageless_framebuffer VK_KHR_image_format_list VK_KHR_maintenance1 VK_KHR_maintenance2 VK_KHR_maintenance3 VK_KHR_maintenance4 VK_KHR_maintenance5 VK_KHR_map_memory2 VK_KHR_multiview VK_KHR_pipeline_executable_properties VK_KHR_pipeline_library VK_KHR_push_descriptor VK_KHR_relaxed_block_layout VK_KHR_sampler_mirror_clamp_to_edge VK_KHR_sampler_ycbcr_conversion VK_KHR_separate_depth_stencil_layouts VK_KHR_shader_atomic_int64 VK_KHR_shader_clock VK_KHR_shader_draw_parameters VK_KHR_shader_float16_int8 VK_KHR_shader_float_controls VK_KHR_shader_integer_dot_product VK_KHR_shader_non_semantic_info VK_KHR_shader_subgroup_extended_types VK_KHR_shader_subgroup_uniform_control_flow VK_KHR_shader_terminate_invocation VK_KHR_spirv_1_4 VK_KHR_storage_buffer_storage_class VK_KHR_swapchain VK_KHR_swapchain_mutable_format VK_KHR_synchronization2 VK_KHR_timeline_semaphore VK_KHR_uniform_buffer_standard_layout VK_KHR_variable_pointers VK_KHR_video_decode_h264 VK_KHR_video_decode_h265 VK_KHR_video_decode_queue VK_KHR_video_queue VK_KHR_vulkan_memory_model VK_KHR_win32_keyed_mutex VK_KHR_workgroup_memory_explicit_layout VK_KHR_zero_initialize_workgroup_memory VK_EXT_4444_formats VK_EXT_attachment_feedback_loop_layout VK_EXT_border_color_swizzle VK_EXT_calibrated_timestamps VK_EXT_color_write_enable VK_EXT_conditional_rendering VK_EXT_conservative_rasterization VK_EXT_custom_border_color VK_EXT_depth_clamp_zero_one VK_EXT_depth_clip_control VK_EXT_depth_clip_enable VK_EXT_depth_range_unrestricted VK_EXT_descriptor_buffer VK_EXT_descriptor_indexing VK_EXT_device_address_binding_report VK_EXT_device_fault VK_EXT_dynamic_rendering_unused_attachments VK_EXT_extended_dynamic_state VK_EXT_extended_dynamic_state2 VK_EXT_extended_dynamic_state3 VK_EXT_external_memory_host VK_EXT_frame_boundary VK_EXT_full_screen_exclusive VK_EXT_global_priority VK_EXT_global_priority_query VK_EXT_hdr_metadata VK_EXT_host_query_reset VK_EXT_image_robustness VK_EXT_image_sliced_view_of_3d VK_EXT_image_view_min_lod VK_EXT_index_type_uint8 VK_EXT_inline_uniform_block VK_EXT_line_rasterization VK_EXT_load_store_op_none VK_EXT_memory_budget VK_EXT_memory_priority VK_EXT_mutable_descriptor_type VK_EXT_nested_command_buffer VK_EXT_non_seamless_cube_map VK_EXT_pageable_device_local_memory VK_EXT_pipeline_creation_cache_control VK_EXT_pipeline_creation_feedback VK_EXT_post_depth_coverage VK_EXT_primitive_topology_list_restart VK_EXT_private_data VK_EXT_provoking_vertex VK_EXT_queue_family_foreign VK_EXT_robustness2 VK_EXT_sampler_filter_minmax VK_EXT_sample_locations VK_EXT_scalar_block_layout VK_EXT_separate_stencil_usage VK_EXT_shader_atomic_float VK_EXT_shader_atomic_float2 VK_EXT_shader_demote_to_helper_invocation VK_EXT_shader_image_atomic_int64 VK_EXT_shader_module_identifier VK_EXT_shader_stencil_export VK_EXT_shader_subgroup_ballot VK_EXT_shader_subgroup_vote VK_EXT_shader_viewport_index_layer VK_EXT_subgroup_size_control VK_EXT_texel_buffer_alignment VK_EXT_tooling_info VK_EXT_transform_feedback VK_EXT_vertex_attribute_divisor VK_EXT_vertex_input_dynamic_state VK_EXT_ycbcr_image_arrays VK_AMD_buffer_marker VK_AMD_calibrated_timestamps VK_AMD_device_coherent_memory VK_AMD_display_native_hdr VK_AMD_draw_indirect_count VK_AMD_gcn_shader VK_AMD_gpa_interface VK_AMD_gpu_shader_half_float VK_AMD_gpu_shader_int16 VK_AMD_memory_overallocation_behavior VK_AMD_mixed_attachment_samples VK_AMD_shader_ballot VK_AMD_shader_core_properties VK_AMD_shader_core_properties2 VK_AMD_shader_early_and_late_fragment_tests VK_AMD_shader_explicit_vertex_parameter VK_AMD_shader_fragment_mask VK_AMD_shader_image_load_store_lod VK_AMD_shader_info VK_AMD_shader_trinary_minmax VK_AMD_texture_gather_bias_lod VK_GOOGLE_decorate_string VK_GOOGLE_hlsl_functionality1 VK_GOOGLE_user_type VK_VALVE_mutable_descriptor_type 
+Vulkan Instance Extensions: VK_KHR_device_group_creation VK_KHR_external_fence_capabilities VK_KHR_external_memory_capabilities VK_KHR_external_semaphore_capabilities VK_KHR_get_physical_device_properties2 VK_KHR_get_surface_capabilities2 VK_KHR_surface VK_KHR_win32_surface VK_EXT_debug_report VK_EXT_debug_utils VK_EXT_swapchain_colorspace VK_KHR_portability_enumeration VK_LUNARG_direct_driver_loading 
+checkpoints         : 1	aftermath           : 0	descriptor buffers  : 0	
+0:00:00.000 I/GFX: 
+anisotropic_avail   : 1	coarse_timer_avail  : 1	precise_timer_avail : 1	tess_avail          : 1	geom_avail          : 1	
+viewport_arr        : 1	layer_arr           : 1	native_reverse_z    : 1	has_reverse_z       : 1	
+persistent map      : 1	msaa shader write   : 1	shader float16      : 0	shader int16        : 1	
+rebar_avail         : 0	alpha_to_one_avail  : 0	msaa_storage_image_avail: 1	
+sparse bindings     : 0	sparse page size    : 0	
+max iso filtering   : 16
+max samples         : 3
+max texture size    : 16384 (hardware limit)
+max tex units       : 4294967295
+
+This video card is bucketed as: Vulkan with async compute
+0:00:00.000 I/GFX/VK: Device Queues:
+Queue 0: Generic, Presentation, (VK_QUEUE_GRAPHICS_BIT|VK_QUEUE_COMPUTE_BIT|VK_QUEUE_TRANSFER_BIT|VK_QUEUE_SPARSE_BINDING_BIT)
+Queue 1: Async Compute, (VK_QUEUE_COMPUTE_BIT|VK_QUEUE_TRANSFER_BIT|VK_QUEUE_SPARSE_BINDING_BIT)
+Queue 2: Transfer, (VK_QUEUE_TRANSFER_BIT|VK_QUEUE_SPARSE_BINDING_BIT)
+0:00:00.000 I/GFX/VK: Heap info (3 heaps)
+	Heap 0 - Flags: VK_MEMORY_HEAP_DEVICE_LOCAL_BIT|VK_MEMORY_HEAP_MULTI_INSTANCE_BIT, size: 7.73 gb
+	Heap 1 - Flags: VkMemoryHeapFlags(0), size: 11.67 gb
+	Heap 2 - Flags: VK_MEMORY_HEAP_DEVICE_LOCAL_BIT|VK_MEMORY_HEAP_MULTI_INSTANCE_BIT, size: 256.00 mb
+Memory type info (16 types)
+	Heap: 0, flags: VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT
+	Heap: 1, flags: VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT|VK_MEMORY_PROPERTY_HOST_COHERENT_BIT
+	Heap: 2, flags: VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT|VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT|VK_MEMORY_PROPERTY_HOST_COHERENT_BIT
+	Heap: 1, flags: VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT|VK_MEMORY_PROPERTY_HOST_COHERENT_BIT|VK_MEMORY_PROPERTY_HOST_CACHED_BIT
+	Heap: 0, flags: VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT|VK_MEMORY_PROPERTY_DEVICE_COHERENT_BIT_AMD|VK_MEMORY_PROPERTY_DEVICE_UNCACHED_BIT_AMD
+	Heap: 1, flags: VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT|VK_MEMORY_PROPERTY_HOST_COHERENT_BIT|VK_MEMORY_PROPERTY_DEVICE_COHERENT_BIT_AMD|VK_MEMORY_PROPERTY_DEVICE_UNCACHED_BIT_AMD
+	Heap: 2, flags: VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT|VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT|VK_MEMORY_PROPERTY_HOST_COHERENT_BIT|VK_MEMORY_PROPERTY_DEVICE_COHERENT_BIT_AMD|VK_MEMORY_PROPERTY_DEVICE_UNCACHED_BIT_AMD
+	Heap: 1, flags: VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT|VK_MEMORY_PROPERTY_HOST_COHERENT_BIT|VK_MEMORY_PROPERTY_HOST_CACHED_BIT|VK_MEMORY_PROPERTY_DEVICE_COHERENT_BIT_AMD|VK_MEMORY_PROPERTY_DEVICE_UNCACHED_BIT_AMD
+	Heap: 0, flags: VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT
+	Heap: 1, flags: VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT|VK_MEMORY_PROPERTY_HOST_COHERENT_BIT
+	Heap: 2, flags: VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT|VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT|VK_MEMORY_PROPERTY_HOST_COHERENT_BIT
+	Heap: 1, flags: VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT|VK_MEMORY_PROPERTY_HOST_COHERENT_BIT|VK_MEMORY_PROPERTY_HOST_CACHED_BIT
+	Heap: 0, flags: VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT|VK_MEMORY_PROPERTY_DEVICE_COHERENT_BIT_AMD|VK_MEMORY_PROPERTY_DEVICE_UNCACHED_BIT_AMD
+	Heap: 1, flags: VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT|VK_MEMORY_PROPERTY_HOST_COHERENT_BIT|VK_MEMORY_PROPERTY_DEVICE_COHERENT_BIT_AMD|VK_MEMORY_PROPERTY_DEVICE_UNCACHED_BIT_AMD
+	Heap: 2, flags: VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT|VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT|VK_MEMORY_PROPERTY_HOST_COHERENT_BIT|VK_MEMORY_PROPERTY_DEVICE_COHERENT_BIT_AMD|VK_MEMORY_PROPERTY_DEVICE_UNCACHED_BIT_AMD
+	Heap: 1, flags: VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT|VK_MEMORY_PROPERTY_HOST_COHERENT_BIT|VK_MEMORY_PROPERTY_HOST_CACHED_BIT|VK_MEMORY_PROPERTY_DEVICE_COHERENT_BIT_AMD|VK_MEMORY_PROPERTY_DEVICE_UNCACHED_BIT_AMD
+0:00:00.000 I/GFX/VK: 
+Discovered Vulkan devices, in order of preference:
+	 (0) AMD Radeon Pro 5500 XT
+		Vulkan: 1.3.264, driver: 2.0.283
+		LUID: fcbd000000
+		Bridge distance: 0
+		Zink profile: VP_ZINK_gl46_baseline
+		This device is usable
+
+0:00:00.000 I/GFX/Bridge: OpenGL bridge device:
+	 zink Vulkan 1.3(AMD Radeon Pro 5500 XT (AMD_PROPRIETARY))
+		OpenGL: 4.6 (Compatibility Profile) Mesa 23.2.1 (git-ea714de013)
+		LUID: fcbd000000
+
+0:00:00.000 I/GFX: Diagnostics         : memory	
+Device memory       : 7741706208
+Host memory         : 11998943232
+
+
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/depth_resolve_mapping.xsv with hash: 30f06cb0b145b0503d4bd18822dce21
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/depth_resolve.xsa with hash: 8835a0884947aa94186288cb80f9777e
+0:00:00.000 I/GFX/bridge: 
+OpenGL bridge device:
+OpenGL Vendor       : Mesa
+OpenGL Render       : zink Vulkan 1.3(AMD Radeon Pro 5500 XT (AMD_PROPRIETARY)) (fcbd000000)
+OpenGL Version      : 4.6 (Compatibility Profile) Mesa 23.2.1 (git-ea714de013) (460/0)
+OpenGL Extensions   : GL_ARB_multisample GL_EXT_abgr GL_EXT_bgra GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_copy_texture GL_EXT_subtexture GL_EXT_texture_object GL_EXT_vertex_array GL_EXT_compiled_vertex_array GL_EXT_texture GL_EXT_texture3D GL_IBM_rasterpos_clip GL_ARB_point_parameters GL_EXT_draw_range_elements GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_separate_specular_color GL_EXT_texture_edge_clamp GL_SGIS_generate_mipmap GL_SGIS_texture_border_clamp GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_ARB_framebuffer_sRGB GL_ARB_multitexture GL_EXT_framebuffer_sRGB GL_IBM_multimode_draw_arrays GL_IBM_texture_mirrored_repeat GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_transpose_matrix GL_EXT_blend_func_separate GL_EXT_fog_coord GL_EXT_multi_draw_arrays GL_EXT_secondary_color GL_EXT_texture_env_add GL_EXT_texture_filter_anisotropic GL_EXT_texture_lod_bias GL_INGR_blend_func_separate GL_NV_blend_square GL_NV_light_max_exponent GL_NV_texgen_reflection GL_NV_texture_env_combine4 GL_S3_s3tc GL_SUN_multi_draw_arrays GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_EXT_framebuffer_object GL_EXT_texture_compression_s3tc GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_MESA_window_pos GL_NV_packed_depth_stencil GL_NV_texture_rectangle GL_ARB_depth_texture GL_ARB_occlusion_query GL_ARB_shadow GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_mirrored_repeat GL_ARB_window_pos GL_ATI_fragment_shader GL_EXT_stencil_two_side GL_EXT_texture_cube_map GL_NV_copy_depth_to_color GL_NV_depth_clamp GL_NV_fog_distance GL_NV_half_float GL_APPLE_packed_pixels GL_ARB_draw_buffers GL_ARB_fragment_program GL_ARB_fragment_shader GL_ARB_shader_objects GL_ARB_vertex_program GL_ARB_vertex_shader GL_ATI_draw_buffers GL_ATI_texture_env_combine3 GL_ATI_texture_float GL_EXT_shadow_funcs GL_EXT_stencil_wrap GL_MESA_pack_invert GL_NV_primitive_restart GL_ARB_depth_clamp GL_ARB_fragment_program_shadow GL_ARB_half_float_pixel GL_ARB_occlusion_query2 GL_ARB_point_sprite GL_ARB_shading_language_100 GL_ARB_sync GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ATI_blend_equation_separate GL_EXT_blend_equation_separate GL_OES_read_format GL_ARB_color_buffer_float GL_ARB_pixel_buffer_object GL_ARB_texture_compression_rgtc GL_ARB_texture_float GL_ARB_texture_rectangle GL_ATI_texture_compression_3dc GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_rectangle GL_EXT_texture_sRGB GL_EXT_texture_shared_exponent GL_ARB_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_packed_depth_stencil GL_ARB_vertex_array_object GL_ATI_separate_stencil GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_texture_array GL_EXT_texture_compression_latc GL_EXT_texture_integer GL_EXT_texture_sRGB_decode GL_EXT_timer_query GL_OES_EGL_image GL_EXT_texture_buffer_object GL_AMD_texture_texture4 GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_draw_instanced GL_ARB_half_float_vertex GL_ARB_instanced_arrays GL_ARB_map_buffer_range GL_ARB_texture_buffer_object GL_ARB_texture_rg GL_ARB_texture_swizzle GL_ARB_vertex_array_bgra GL_EXT_texture_swizzle GL_EXT_vertex_array_bgra GL_NV_conditional_render GL_AMD_conservative_depth GL_AMD_draw_buffers_blend GL_AMD_seamless_cubemap_per_texture GL_ARB_ES2_compatibility GL_ARB_blend_func_extended GL_ARB_compatibility GL_ARB_debug_output GL_ARB_draw_buffers_blend GL_ARB_draw_elements_base_vertex GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_provoking_vertex GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_shader_texture_lod GL_ARB_tessellation_shader GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_cube_map_array GL_ARB_texture_gather GL_ARB_texture_multisample GL_ARB_texture_query_lod GL_ARB_texture_rgb10_a2ui GL_ARB_uniform_buffer_object GL_ARB_vertex_type_2_10_10_10_rev GL_ATI_meminfo GL_EXT_provoking_vertex GL_EXT_texture_snorm GL_MESA_texture_signed_rgba GL_NV_copy_image GL_NV_texture_barrier GL_ARB_draw_indirect GL_ARB_get_program_binary GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_robustness GL_ARB_separate_shader_objects GL_ARB_shader_bit_encoding GL_ARB_shader_precision GL_ARB_shader_subroutine GL_ARB_texture_compression_bptc GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_vertex_attrib_64bit GL_ARB_viewport_array GL_EXT_direct_state_access GL_EXT_vertex_attrib_64bit GL_AMD_multi_draw_indirect GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_ARB_base_instance GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_internalformat_query GL_ARB_map_buffer_alignment GL_ARB_shader_atomic_counters GL_ARB_shader_image_load_store GL_ARB_shading_language_420pack GL_ARB_shading_language_packing GL_ARB_texture_storage GL_ARB_transform_feedback_instanced GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_transform_feedback GL_AMD_query_buffer_object GL_AMD_shader_trinary_minmax GL_AMD_vertex_shader_layer GL_AMD_vertex_shader_viewport_index GL_ARB_ES3_compatibility GL_ARB_arrays_of_arrays GL_ARB_clear_buffer_object GL_ARB_compute_shader GL_ARB_copy_image GL_ARB_explicit_uniform_location GL_ARB_fragment_layer_viewport GL_ARB_framebuffer_no_attachments GL_ARB_invalidate_subdata GL_ARB_multi_draw_indirect GL_ARB_program_interface_query GL_ARB_robust_buffer_access_behavior GL_ARB_shader_image_size GL_ARB_shader_storage_buffer_object GL_ARB_stencil_texturing GL_ARB_texture_buffer_range GL_ARB_texture_query_levels GL_ARB_texture_storage_multisample GL_ARB_texture_view GL_ARB_vertex_attrib_binding GL_KHR_debug GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_ARB_buffer_storage GL_ARB_clear_texture GL_ARB_compute_variable_group_size GL_ARB_enhanced_layouts GL_ARB_indirect_parameters GL_ARB_internalformat_query2 GL_ARB_multi_bind GL_ARB_query_buffer_object GL_ARB_seamless_cubemap_per_texture GL_ARB_shader_draw_parameters GL_ARB_shader_group_vote GL_ARB_shading_language_include GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_stencil8 GL_ARB_vertex_type_10f_11f_11f_rev GL_EXT_debug_label GL_EXT_shader_integer_mix GL_NVX_gpu_memory_info GL_ARB_ES3_1_compatibility GL_ARB_clip_control GL_ARB_conditional_render_inverted GL_ARB_cull_distance GL_ARB_derivative_control GL_ARB_direct_state_access GL_ARB_get_texture_sub_image GL_ARB_shader_texture_image_samples GL_ARB_texture_barrier GL_ARB_transform_feedback_overflow_query GL_EXT_polygon_offset_clamp GL_KHR_blend_equation_advanced GL_KHR_context_flush_control GL_KHR_robust_buffer_access_behavior GL_ARB_ES3_2_compatibility GL_ARB_gpu_shader_int64 GL_ARB_parallel_shader_compile GL_ARB_shader_atomic_counter_ops GL_ARB_shader_ballot GL_ARB_shader_viewport_layer_array GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_RG8 GL_KHR_no_error GL_KHR_texture_compression_astc_sliced_3d GL_ARB_gl_spirv GL_ARB_spirv_extensions GL_MESA_shader_integer_functions GL_ARB_polygon_offset_clamp GL_ARB_texture_filter_anisotropic GL_EXT_memory_object GL_EXT_memory_object_win32 GL_EXT_semaphore GL_EXT_semaphore_win32 GL_KHR_parallel_shader_compile GL_EXT_EGL_image_storage GL_MESA_framebuffer_flip_y GL_EXT_EGL_sync GL_EXT_demote_to_helper_invocation GL_NV_ES1_1_compatibility 
+
+CPU count        : 16
+0:00:00.000 I/GFX/VK: Surface formats for surface:
+0:00:00.000 I/GFX/VK: 	VK_FORMAT_R8G8B8A8_UNORM
+0:00:00.000 I/GFX/VK: 	VK_FORMAT_B8G8R8A8_UNORM
+0:00:00.000 I/GFX/VK: 	VK_FORMAT_R8G8B8A8_SRGB
+0:00:00.000 I/GFX/VK: 	VK_FORMAT_B8G8R8A8_SRGB
+0:00:00.000 I/GFX/VK: Picked VK_FORMAT_B8G8R8A8_SRGB as the common window surface format
+0:00:00.000 I/GFX/VK: Surface 0000019F8B75DC40:
+0:00:00.000 I/GFX/VK: 	minImageCount 2:
+0:00:00.000 I/GFX/VK: 	maxImageCount 16:
+0:00:00.000 I/GFX/VK: 	supportedUsageFlags 9f:
+0:00:00.000 I/GFX/VK: 	supportedTransforms: VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR
+0:00:00.000 I/GFX/VK: 	currentTransform: VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR
+0:00:00.000 I/GFX/VK: 	supported modes:
+0:00:00.000 I/GFX/VK: 		VK_PRESENT_MODE_IMMEDIATE_KHR:
+0:00:00.000 I/GFX/VK: 		VK_PRESENT_MODE_FIFO_KHR:
+0:00:00.000 I/GFX/VK: 		VK_PRESENT_MODE_FIFO_RELAXED_KHR:
+0:00:00.000 I/GFX/VK: Created swapchain for 0000019F8B9456B0 with size { 3193x1681x2 }. Mode: VK_PRESENT_MODE_IMMEDIATE_KHR
+0:00:00.000 I/WMG: Monitor 0: { 0, 0, 3200, 1800 }
+0:00:00.000 I/WMG: Re-building fbos for window 0000019F9DD13010 using pool 6
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/legacy_flat_mapping.xsv with hash: 956d32276e6bab36ab0165f1e3edca6
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/legacy_flat.xsa with hash: d1463477a6fd76fe0f5c7cc5efac4
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/legacy_depth_mapping.xsv with hash: 49a43b5e6fd837bc6a0a77867362971
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/legacy_depth.xsa with hash: 29f950494ceb1f34e6d1b4839b3e1d7
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/blit_mapping.xsv with hash: 3b5ac09abb7ccf81caa01091d550ee8d
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/blit.xsa with hash: 9deae64ac4a9f16c31ab7407bfe8931
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/font_mapping.xsv with hash: 49deaf6c535cb779f56893f266839eb7
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/font.xsa with hash: ba871d64971e30ca5d33828a296765f5
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/minify_mapping.xsv with hash: ef4ae62a21eada2f31385addd83419aa
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/minify.xsa with hash: 5a875a783c9192b0fde4afff8225449d
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/gstack_mapping.xsv with hash: 6ef3519592c2e8350352c638445ae1
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/gstack.xsa with hash: b3a66ae656122cb8e3b845997d65c7c9
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/in_place_blur_mapping.xsv with hash: 3527ceffb5fc1a452a65abc72cf397
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/in_place_blur.xsa with hash: 36989187a59fbfe99742be882b695896
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/single_pass_blur_mapping.xsv with hash: da32411bda78213a33e686a2b73715f
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/single_pass_blur.xsa with hash: 8f2ceb93864029da4148e682cc627528
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/background_blur_mapping.xsv with hash: f7eaadaf6bf8a5daa71ba877f9d766ea
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/background_blur.xsa with hash: 3597d3a75a7bf4c0341cbbe13c442150
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/resolve_mapping.xsv with hash: da9fec286b74d0eda7664e9e23d5f945
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/resolve.xsa with hash: 7b855a46a3938b5ce04329166022d3
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/fake_terrain_mapping.xsv with hash: 20492eaa90af88df93f208895b1690
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/fake_terrain.xsa with hash: 223e10d34c9bbd15e58730236d12e98a
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/line3d_mapping.xsv with hash: 619735abf927a6fd94528cd47c6cf51
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/line3d.xsa with hash: fc30fd4bd4a37b31f489118f67aad9a
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/terrain_mapping.xsv with hash: 90e1d12e371ce98b569187da9490a4
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/terrain.xsa with hash: 4e82af67769587b3308bb66e2bb9420
+0:00:00.000 I/FMOD: Initial Sample rate: 48000 speaker mode: 3 (2 speakers)
+0:00:00.000 I/FMOD: Using driver 0: Luidsprekers (2- USB PnP Sound Device)
+Fetching plugins for C:\X-Plane 12/Resources/plugins
+
+Loaded: C:\X-Plane 12/Resources/plugins/PluginAdmin/64/win.xpl (xpsdk.examples.pluginadmin).
+
+[NavigraphSimlink_64.xpl]: Dataref 'sim/weather/barometer_sealevel_inhg' has been replaced. Please use the new name.
+Loaded: C:\X-Plane 12/Resources/plugins/NavigraphSimlink_64.xpl (Navigraph Simlink for X-Plane).
+
+Loaded: C:\X-Plane 12/Resources/plugins/Air Plugin/64/win.xpl (com.siminnovations.AirPlugin).
+
+12:42:01 Say Intentions.AI: Initialization complete for version 1.0.0.6
+Loaded: C:\X-Plane 12/Resources/plugins/SayIntentionsAI/64/win.xpl (siai.main_XPlugin).
+
+[X-Plane]: Dataref sim/private/controls/mouse_yoke/thickness is already registered by X-Plane
+0:00:00.000 D/HID: HID Bridge Running
+0:00:00.000 I/INS: Global scenery version: 122103
+0:00:00.000 D/DRM: User has no DRM - will prompt for DVD or product key.
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/tchotchke_mapping.xsv with hash: 7387ed9eef369f5e31c99985e301240
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/tchotchke.xsa with hash: 553fb6f6e0ddb77fd6aec15f656bf9ed
+I found the following scenery packages (prioritized in this order):
+  0 Custom Scenery/Aerosoft - LFMN Nice Cote d Azur X/
+  1 Custom Scenery/Aerosoft - LPFR Faro/
+  2 Custom Scenery/X-Plane Airports - EGPR Barra/
+  3 Custom Scenery/X-Plane Airports - KBTV Burlington/
+  4 Custom Scenery/X-Plane Airports - KJRB Downtown Manhattan Heliport/
+  5 Custom Scenery/X-Plane Airports - LSEZ Zermatt Heliport/
+  6 Custom Scenery/X-Plane Airports - TFFJ St Barthelemy/
+  7 Custom Scenery/X-Plane Airports - TNCS Juancho E Yrausquin/
+  8 Custom Scenery/X-Plane Landmarks - Dubai/
+  9 Custom Scenery/X-Plane Landmarks - Saint Louis/
+ 10 Global Scenery/Global Airports/
+ 11 Custom Scenery/X-Plane Landmarks - Berlin and Frankfurt/
+ 12 Custom Scenery/X-Plane Landmarks - Budapest/
+ 13 Custom Scenery/X-Plane Landmarks - Chicago/
+ 14 Custom Scenery/X-Plane Landmarks - Las Vegas/
+ 15 Custom Scenery/X-Plane Landmarks - London/
+ 16 Custom Scenery/X-Plane Landmarks - Los Angeles/
+ 17 Custom Scenery/X-Plane Landmarks - New York/
+ 18 Custom Scenery/X-Plane Landmarks - Paris/
+ 19 Custom Scenery/X-Plane Landmarks - Portland/
+ 20 Custom Scenery/X-Plane Landmarks - Rio De Janeiro/
+ 21 Custom Scenery/X-Plane Landmarks - Salzburg/
+ 22 Custom Scenery/X-Plane Landmarks - San Francisco/
+ 23 Custom Scenery/X-Plane Landmarks - Sydney/
+ 24 Custom Scenery/X-Plane Landmarks - Washington DC/
+ 25 Global Scenery/X-Plane 12 Demo Areas/
+ 26 Global Scenery/X-Plane 12 Global Scenery/
+ 27 Resources/default scenery/1000 autogen/
+ 28 Resources/default scenery/1000 decals/
+ 29 Resources/default scenery/1000 roads/
+ 30 Resources/default scenery/1000 world terrain/
+ 31 Resources/default scenery/1200 atc data/
+ 32 Resources/default scenery/1200 beaches/
+ 33 Resources/default scenery/1200 forests/
+ 34 Resources/default scenery/700 roads/
+ 35 Resources/default scenery/900 beaches/
+ 36 Resources/default scenery/900 europe objects/
+ 37 Resources/default scenery/900 forests/
+ 38 Resources/default scenery/900 roads/
+ 39 Resources/default scenery/900 us objects/
+ 40 Resources/default scenery/900 world object placeholders/
+ 41 Resources/default scenery/airport scenery/
+ 42 Resources/default scenery/sim objects/
+ 43 Resources/tutorials/tutorials_Alaska/
+ 44 Resources/tutorials/tutorials_Hawaii/
+ 45 Resources/tutorials/tutorials_Portland/
+ 46 Resources/tutorials/tutorials_Seattle/
+
+0:00:00.000 I/NAVT: 342032 Obstacles are done loading async...
+0:00:00.000 W/APT: Unknown key 'altimeter_setting' for '[H] Uniklinik Frankfurt a.M.' in Global Scenery/Global Airports/Earth nav data/apt.dat on line 432734.
+0:00:00.000 E/APT: The airport ETOU (Wiesbaden Erbenheim AAF) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:00.000 E/APT: The airport ETHB (Bueckeburg AB) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:00.000 E/APT: The airport EEEI (Ämari AB) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:00.000 E/APT: The airport EBCV (Chievres Air Base) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:00.000 E/APT: The airport EHLW (Leeuwarden) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:00.000 I/NAVT: Airspaces are done loading async...
+0:00:00.000 E/APT: The airport KPSM (PORTSMOUTH INTL AT PEASE) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:00.000 E/APT: The airport KAGC (Allegheny Co) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:00.000 E/APT: The airport KTRI (Tri Cities Rgnl Tn Va) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:00.000 E/APT: The airport LIED (Decimomannu) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:00.000 E/APT: The airport LERT (Cadiz Rota) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:00.000 E/APT: The airport XLT0003 (Cukurova) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:00.000 E/APT: The airport KAFW (Fort Worth Alliance) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:00.000 E/APT: The airport LCPH (Pafos Intl) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:00.000 E/APT: The airport RJOP ([H] Komatsushima AB) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:00.000 E/APT: The airport RCKH (Kaohsiung Intl) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:00.000 E/APT: The airport RCFN (Taitung Fongnian) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:00.000 E/APT: The airport OEMA (Prince Mohammad bin Abdulaziz) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:00.000 E/APT: The airport OEDF (King Fahd Intl) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:00.000 W/APT: WARNING: airport Hubbard (ID TA49) overrides code 25TX but it has already been overridden by Chennault Airfield (ID XK00BR)
+0:00:00.000 W/APT: WARNING: airport Standard Field (ID 1M6) overrides code 5KY4 but it has already been overridden by Muhlenberg Co (ID M21)
+0:00:00.000 W/APT: WARNING: airport Stony Creek (ID XY000M) overrides code AU999 but it has already been overridden by Bunurong Field (ID XY000G)
+0:00:00.000 W/APT: WARNING: airport Washington Island (ID XK2P2) overrides code WI47 but it has already been overridden by Timberline (ID XKWI47)
+0:00:00.000 W/APT: WARNING: airport [H] Cape Decision C. G. (ID PACE) overrides code CDE but it has already been overridden by Caledonia (ID XMP0008)
+0:00:00.000 W/APT: WARNING: airport [H] Grace Hospital Emergency Medical (ID 5NC3) overrides code BQ1 but it has already been overridden by Gilliam-McConnell (ID XK002J)
+0:00:00.000 W/APT: WARNING: airport [H] Mays (ID OH71) overrides code 6CM but it has already been overridden by Chapman Memorial Field (ID 00I)
+0:00:00.000 W/APT: WARNING: airport [X] Stockton Muni (ID SN07) overrides code 07S but it has already been overridden by Beaumont Hotel (ID 7K9)
+0:00:00.000 I/APT: Airport '[H] Mendota Community Hospital' (ID 74IL, code 14IL) overrides '[H] Kewanee Hospital' (ID 14IL).
+0:00:00.000 I/APT: Airport 'Outlaw Flyers' (ID XK009M, code 16XS) overrides 'Propwash' (ID 16XS).
+0:00:00.000 I/APT: Airport 'Slack' (ID 9N6, code 18PA) overrides 'Echo' (ID 18PA).
+0:00:00.000 I/APT: Airport 'Nest of Eagles' (ID 9WI7, code 1H9) overrides 'Ribble' (ID 1H9).
+0:00:00.000 I/APT: Airport 'Ickes' (ID XK006G, code 1PS0) overrides '[H] Southern Adams County' (ID 1PS0).
+0:00:00.000 I/APT: Airport 'Pela 15' (ID XK007J, code 1TN1) overrides '[H] Clayton' (ID 1TN1).
+0:00:00.000 I/APT: Airport 'Etna' (ID XK004V, code 2AR1) overrides 'Ozark Aerodrome' (ID 2AR1).
+0:00:00.000 I/APT: Airport 'Flying Hare Field' (ID XK009C, code 34XS) overrides 'Kenley Ranch' (ID 34XS).
+0:00:00.000 I/APT: Airport 'Clark' (ID 3TX6, code 3T6) overrides 'Gum Island' (ID 3T6).
+0:00:00.000 I/APT: Airport 'Middle Bass Island' (ID XK0033, code 3T7) overrides 'Pavlat' (ID 3T7).
+0:00:00.000 I/APT: Airport 'Gerald Weidner' (ID H33, code 4IS9) overrides '[H] Doctors Hospital' (ID 4IS9).
+0:00:00.000 I/APT: Airport 'Catoctin Crosswind' (ID XK005S, code 4MD7) overrides 'Wood' (ID 4MD7).
+0:00:00.000 I/APT: Airport 'Kapaun-Wilson Field' (ID 00Y, code 4MN5) overrides '[H] Chisago Health Services' (ID 4MN5).
+0:00:00.000 I/APT: Airport '[H] Meritus Hospital' (ID XK005Q, code 5MD3) overrides '[H] Sinai Hospital' (ID 5MD3).
+0:00:00.000 I/APT: Airport 'Old Hoppe Place' (ID 67TX, code 67T) overrides 'Fisher Ranch' (ID 67T).
+0:00:00.000 I/APT: Airport 'American Creek' (ID AK80, code 80A) overrides 'McLean Brothers' (ID 80A).
+0:00:00.000 I/APT: Airport 'Maxson Airfield' (ID 89N, code 89NY) overrides 'Sheldon Airstrip' (ID 89NY).
+0:00:00.000 I/APT: Airport 'Barnesville Muni' (ID 8M3, code 9MN3) overrides '[S] Fountain Lake' (ID 9MN3).
+0:00:00.000 I/APT: Airport 'CD-3 Airstrip' (ID XPA000D, code AK20) overrides 'Quail Creek' (ID AK20).
+0:00:00.000 I/APT: Airport 'Big Creek' (ID XPA000J, code AK51) overrides '[S] Tazlina Smokey Lake' (ID AK51).
+0:00:00.000 I/APT: Airport 'Snowy Range' (ID XY000K, code AU53) overrides 'Mundrabilla Road' (ID AU53).
+0:00:00.000 I/APT: Airport 'Dingo' (ID XY0034, code AU90) overrides 'Cranbrook' (ID AU90).
+0:00:00.000 I/APT: Airport 'Hidden Valley' (ID XK0011, code AZ43) overrides 'Solair Estates' (ID AZ43).
+0:00:00.000 I/APT: Airport 'Lower Loon Creek' (ID ID67, code C53) overrides 'John Deere Dubuque Works' (ID C53).
+0:00:00.000 I/APT: Airport 'Cayuse Creek USFS' (ID S74, code C64) overrides 'Wawasee' (ID C64).
+0:00:00.000 I/APT: Airport 'Ullswater' (ID XC008L, code CLW2) overrides 'Lewvan (Farr Air)' (ID CLW2).
+0:00:00.000 I/APT: Airport 'Colorado Springs East' (ID A50, code CO49) overrides 'Flying Lazy D Ranch' (ID CO49).
+0:00:00.000 I/APT: Airport 'Pakuba Airfield' (ID HUKF, code HUPA) overrides 'Bugungu Airstrip' (ID HUPA).
+0:00:00.000 I/APT: Airport 'Hell Roaring Ranch' (ID XK00CE, code ID39) overrides 'Owen Ranches Inc' (ID ID39).
+0:00:00.000 I/APT: Airport 'Fairfield Ranch (pvt)' (ID XK00CD, code ID70) overrides '[H] Adams Gulch' (ID ID70).
+0:00:00.000 I/APT: Airport 'Foster Field' (ID 7A4, code IL28) overrides 'Werries' (ID IL28).
+0:00:00.000 I/APT: Airport 'Harrold' (ID 2IN6, code IN16) overrides 'Wilkins Strip' (ID IN16).
+0:00:00.000 I/APT: Airport 'Wolfe Field' (ID 3C9, code IN65) overrides 'Culp Farms' (ID IN65).
+0:00:00.000 I/APT: Airport '[H] Kantonsspital St.Gallen' (ID XLS0010, code LSHG) overrides '[H] Gampel' (ID LSHG).
+0:00:00.000 I/APT: Airport 'Mountainair Muni' (ID Q04, code M10) overrides 'Hunter' (ID M10).
+0:00:00.000 I/APT: Airport 'Bel-Voir Acres' (ID MO61, code MO04) overrides 'Lyell' (ID MO04).
+0:00:00.000 I/APT: Airport 'Sassuolo' (ID XLI001U, code MO07) overrides '[S] Bagnell' (ID MO07).
+0:00:00.000 I/APT: Airport 'Table Rock' (ID 36M, code MO32) overrides 'Princeton-Kauffman Meml' (ID MO32).
+0:00:00.000 I/APT: Airport '[H] Red River Heliport' (ID XK006N, code N02) overrides '[H] Keystone' (ID N02).
+0:00:00.000 I/APT: Airport 'Blue Heron' (ID NK93, code N25) overrides 'Westport' (ID N25).
+0:00:00.000 I/APT: Airport 'Harvey Point Defense Test Act' (ID XK008A, code NC01) overrides 'May' (ID NC01).
+0:00:00.000 I/APT: Airport 'Deck Airpark' (ID 02W, code NC11) overrides 'Bear Creek' (ID NC11).
+0:00:00.000 I/APT: Airport 'Old Forge NY' (ID XK00CM, code NK26) overrides 'Coles Landing' (ID NK26).
+0:00:00.000 I/APT: Airport 'Cielo Dorado Estates' (ID TA50, code NM05) overrides 'Williams' (ID NM05).
+0:00:00.000 I/APT: Airport 'Porter' (ID 2I6, code OH92) overrides 'Camstra' (ID OH92).
+0:00:00.000 I/APT: Airport 'JJ & PK Airstrip' (ID 73W, code PA08) overrides 'Moorhead Airpark' (ID PA08).
+0:00:00.000 I/APT: Airport 'Kingsdale Air Park' (ID 76W, code PA23) overrides 'Mifflintown' (ID PA23).
+0:00:00.000 I/APT: Airport 'Cloudbound' (ID XK006F, code PA47) overrides 'Jim Shearer' (ID PA47).
+0:00:00.000 I/APT: Airport 'Port Alsworth' (ID XPA000G, code PALJ) overrides 'Wilder Runway' (ID PALJ).
+0:00:00.000 I/APT: Airport 'Adjuntas' (ID XTJ0003, code PR20) overrides '[H] Old San Juan' (ID PR20).
+0:00:00.000 I/APT: Airport 'Flying R.N.' (ID KS10, code S10) overrides 'Lake Chelan' (ID S10).
+0:00:00.000 I/APT: Airport 'Weaver Field' (ID XK00DM, code SC94) overrides 'Free Fall Farms' (ID SC94).
+0:00:00.000 I/APT: Airport 'Fazenda Sao Miguel' (ID SJOY, code SDTV) overrides '[H] Tivoli Center' (ID SDTV).
+0:00:00.000 I/APT: Airport 'Agropastoril Bom Pastor' (ID SDRO, code SDWC) overrides 'Aldeia Bau' (ID SDWC).
+0:00:00.000 I/APT: Airport 'Clube CEU' (ID XSB000R, code SIAN) overrides '[H] Hospital Dom Vicente Scherer' (ID SIAN).
+0:00:00.000 I/APT: Airport 'Irmãos Gonçalves' (ID XSB0008, code SIDG) overrides 'Fazenda Jotabasso' (ID SIDG).
+0:00:00.000 I/APT: Airport 'Rio Negrinho' (ID SSRN, code SILN) overrides 'Fazenda Rio Capim' (ID SILN).
+0:00:00.000 I/APT: Airport 'Manoel Urbano' (ID SSPX, code SIMB) overrides '[H] Monumental Business' (ID SIMB).
+0:00:00.000 I/APT: Airport 'Grupo Scheffer' (ID SJIE, code SJIF) overrides 'Fazenda Nova Era' (ID SJIF).
+0:00:00.000 I/APT: Airport 'Jorge Luiz Stocco' (ID XSB000C, code SJOY) overrides 'Fazenda Sao Miguel' (ID SJOY).
+0:00:00.000 I/APT: Airport 'Cond. Aeron. Santos Dumont' (ID XSB000I, code SNDD) overrides 'Fazenda Eldorado' (ID SNDD).
+0:00:00.000 I/APT: Airport 'Tancredo Thomas de Faria' (ID SBGU, code SSGG) overrides 'Fazenda Jacare de Chifre' (ID SSGG).
+0:00:00.000 I/APT: Airport 'Forquilhinha' (ID SBCM, code SSIM) overrides 'Boqueirao Alegre' (ID SSIM).
+0:00:00.000 I/APT: Airport 'Fazenda Serra Dourada' (ID SNIF, code SSUD) overrides '[H] Bom Dia Cafe' (ID SSUD).
+0:00:00.000 I/APT: Airport 'Telemaco Borba' (ID SBTL, code SSVL) overrides 'Fazenda Santa Claudina' (ID SSVL).
+0:00:00.000 I/APT: Airport 'Sao Joao dos Patos' (ID XSB0003, code SSYR) overrides 'Fazenda Santa Maria' (ID SSYR).
+0:00:00.000 I/APT: Airport 'Zirondi' (ID XSB0009, code SSZD) overrides '[H] Aficel' (ID SSZD).
+0:00:00.000 I/APT: Airport 'Playa Pintada' (ID XSVPQ, code SVPQ) overrides 'El Pardillero' (ID SVPQ).
+0:00:00.000 I/APT: Airport 'Luis Eduardo Magalhaes' (ID XSB000G, code SWNB) overrides 'Nobres' (ID SWNB).
+0:00:00.000 I/APT: Airport 'Aero Estates' (ID TS96, code T25) overrides 'Jennings Ranch' (ID T25).
+0:00:00.000 I/APT: Airport 'Goldthwaite Muni' (ID XK007O, code T37) overrides 'Locker Brothers' (ID T37).
+0:00:00.000 I/APT: Airport 'Southwest Lubbock' (ID XK00DD, code T96) overrides 'El Campo Airpark' (ID T96).
+0:00:00.000 I/APT: Airport 'Flying B Ranch' (ID XK009L, code TA12) overrides '[H] Petroleum Helicopters Inc' (ID TA12).
+0:00:00.000 I/APT: Airport 'West Liberty' (ID XK009G, code TS35) overrides '[H] Marriott Astrodome' (ID TS35).
+0:00:00.000 I/APT: Airport 'Hammer Airfield' (ID XK009K, code TS75) overrides 'Mitchell Nr One' (ID TS75).
+0:00:00.000 I/APT: Airport 'El Campo Airpark' (ID T96, code TS96) overrides 'Aero Estates' (ID TS96).
+0:00:00.000 I/APT: Airport 'Fair Weather Field' (ID XK009I, code TX42) overrides 'Bransom Farm' (ID TX42).
+0:00:00.000 I/APT: Airport 'Eberly Ranch' (ID XK008Z, code TX70) overrides 'Hess' (ID TX70).
+0:00:00.000 I/APT: Airport 'Bolaang Mongondow' (ID XWI000P, code WAMI) overrides 'Toli-Toli/Lalos (DGAC)' (ID WAMI).
+0:00:00.000 I/APT: Airport 'Morowali Industrial Park' (ID XWI000L, code WAMP) overrides 'Kasiguncu' (ID WAMP).
+0:00:00.000 I/APT: Airport 'Mukah Lapangan Terbang' (ID XWB0005, code WBGK) overrides 'Mukah' (ID WBGK).
+0:00:00.000 I/APT: Airport 'Rainelle' (ID 9W4, code WV30) overrides 'Leon' (ID WV30).
+0:00:00.000 I/APT: Airport 'Mundaring Weir' (ID YMWR, code YMDW) overrides 'MAITLAND DOWNS' (ID YMDW).
+0:00:00.000 I/APT: Airport 'Mandemar' (ID XY004M, code YMMR) overrides 'MUNMARLARY' (ID YMMR).
+0:00:00.000 I/APT: Airport 'Port Hedland/Wodgina' (ID XY001Z, code YWGA) overrides 'Wonga Beach' (ID YWGA).
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/cube_filter_compute_mapping.xsv with hash: 582e391cc41e7769e8cbf58d8bc13ff
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/cube_filter_compute.xsa with hash: 26e74f659f9dabd3fa181a4bef472d
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/cube_filter_raster_mapping.xsv with hash: dc18eb216c2bc747e577d41d4958
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/cube_filter_raster.xsa with hash: aebaf16c545de293a29152a337c4c95
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/ssr_deferred_mapping.xsv with hash: 6e974a24a6891af8c5ec7ba6a210ed
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/ssr_deferred.xsa with hash: 8e1343d053146ae491080c1bf175b8e
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/ssr_mesh_mapping.xsv with hash: c82d2abe3d8ab948dae9f324765be8c
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/ssr_mesh.xsa with hash: df1c1239252677ce7360c5c993c93ac
+0:00:00.000 I/IDENT: Getting keystore from disk...
+0:00:00.000 I/IDENT: Accepting user
+0:00:00.000 I/IDENT: Getting certificate from disk...
+0:00:00.000 I/IDENT: Accepting receipt
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/ground_lights_mapping.xsv with hash: 38fa3a197cb8fed5d146c1c1a239ed6
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/ground_lights.xsa with hash: 7dde8270ecba739063f7e5c018d37e4f
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/light_mapping.xsv with hash: 7487ade43bb0d5665f1b75b91a7c783e
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/light.xsa with hash: c0327a9b6121654eb11f47cb9c484d0
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/light_tile_mapping.xsv with hash: cda7dbd7aa25bb26763205255463d
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/light_tile.xsa with hash: ebc0dc88ccc464bf36b6897a85b6a90
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/light_transform_mapping.xsv with hash: 6ab75134dae1cc2c515485128bb2a76
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/light_transform.xsa with hash: d8f784f5269bb5f39b2b03d40e8cfa0
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/light_vis_mapping.xsv with hash: 1ed38def86b88b5b4412e2e99ab70d5
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/light_vis.xsa with hash: 269a295c77b1ce1a6e1818dba8b6ea10
+0:00:00.000 I/REN: Setting texture resolution read from prefs as 3
+0:00:00.000 I/REN: Settings for profile 'default':
+0:00:00.000 I/REN: Setting |dim under high G-load or hypoxia read from prefs as 1.
+0:00:00.000 I/REN: Setting |3-d drawing detail read from prefs as 4.
+0:00:00.000 I/REN: Setting |drawing range read from prefs as 2.
+0:00:00.000 I/REN: Setting |draw parked aircraft at airports read from prefs as 1.
+0:00:00.000 I/REN: Setting |draw boats in the water  read from prefs as 1.
+0:00:00.000 I/REN: Setting |Cloud quality read from prefs as 2.
+0:00:00.000 I/REN: Setting |FSR quality level read from prefs as 4.
+0:00:00.000 I/REN: Setting |SSAO quality level read from prefs as 2.
+0:00:00.000 I/REN: Setting |Enable 3D trees read from prefs as 1.
+0:00:00.000 I/REN: Setting |3-d shadows read from prefs as 2.
+0:00:00.000 I/REN: Setting |Tree quality level read from prefs as 2.
+0:00:00.000 I/REN: Setting |HDR anti-aliasing read from prefs as 1.
+0:00:00.000 I/REN: Setting |Enable FXAA read from prefs as 1.
+0:00:00.000 I/REN: Setting |Texture Resolution read from prefs as 2.
+0:00:00.000 I/REN: Setting |Anisotropic Filtering read from prefs as 16.
+0:00:00.000 I/REN: Settings for profile 'VR':
+0:00:00.000 I/REN: Setting |dim under high G-load or hypoxia read from prefs as 1.
+0:00:00.000 I/REN: Setting |3-d drawing detail read from prefs as 4.
+0:00:00.000 I/REN: Setting |drawing range read from prefs as 3.
+0:00:00.000 I/REN: Setting |draw parked aircraft at airports read from prefs as 1.
+0:00:00.000 I/REN: Setting |draw boats in the water  read from prefs as 1.
+0:00:00.000 I/REN: Setting |Cloud quality read from prefs as 2.
+0:00:00.000 I/REN: Setting |FSR quality level read from prefs as 0.
+0:00:00.000 I/REN: Setting |SSAO quality level read from prefs as 2.
+0:00:00.000 I/REN: Setting |Enable 3D trees read from prefs as 1.
+0:00:00.000 I/REN: Setting |3-d shadows read from prefs as 2.
+0:00:00.000 I/REN: Setting |Tree quality level read from prefs as 4.
+0:00:00.000 I/REN: Setting |HDR anti-aliasing read from prefs as 0.
+0:00:00.000 I/REN: Setting |Enable FXAA read from prefs as 1.
+0:00:00.000 I/REN: Setting |Texture Resolution read from prefs as 4.
+0:00:00.000 I/REN: Setting |Anisotropic Filtering read from prefs as 16.
+0:00:00.000 D/KTX2: [Resources/bitmaps/world/moon_NML.ktx2] 1024x1024x0 0 layers 11 levels 1 faces none
+0:00:00.000 I/WEBSRV: Port 8086 bound
+0:00:00.000 I/WEBSRV: Port 60184 bound
+0:00:00.000 I/gfx: Max budget for managed buffers changed to 536870912
+0:00:00.000 I/NET: OS has RFC 4941 Privacy Extensions for IPv6 *enabled*, using TEMPORARY IPv6 addresses
+0:00:00.000 I/NET: Wi-Fi (Broadcom 802.11ac Network Adapter) 192.168.2.9
+0:00:00.000 I/NET: Wi-Fi (Broadcom 802.11ac Network Adapter) 2a02:a463:9b5d:0:256b:daa1:3ef9:7525
+0:00:00.000 I/NET: Wi-Fi (Broadcom 802.11ac Network Adapter) fd5a:5445:4547:0:256b:daa1:3ef9:7525
+0:00:00.000 I/NET: (RakNet) Init: Successful!
+0:00:00.000 I/NET: Networking initialized successfully
+0:00:00.000 D/HID: Hardware ADDED(044f, b10a) - T.16000M at path \\?\hid#vid_044f&pid_b10a#6&3502b26&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+0:00:00.000 I/JOY: REGISTER Joystick device: T.16000M - VID:1103PID:45322, this is a familiar device.
+0:00:00.000 D/HID: 	BUTTON Added Index: 0 (HID_Page_Button/01) for handle: 000001A004F66A90
+0:00:00.000 D/HID: 	BUTTON Added Index: 1 (HID_Page_Button/02) for handle: 000001A004F66A90
+0:00:00.000 D/HID: 	BUTTON Added Index: 2 (HID_Page_Button/03) for handle: 000001A004F66A90
+0:00:00.000 D/HID: 	BUTTON Added Index: 3 (HID_Page_Button/04) for handle: 000001A004F66A90
+0:00:00.000 D/HID: 	BUTTON Added Index: 4 (HID_Page_Button/05) for handle: 000001A004F66A90
+0:00:00.000 D/HID: 	BUTTON Added Index: 5 (HID_Page_Button/06) for handle: 000001A004F66A90
+0:00:00.000 D/HID: 	BUTTON Added Index: 6 (HID_Page_Button/07) for handle: 000001A004F66A90
+0:00:00.000 D/HID: 	BUTTON Added Index: 7 (HID_Page_Button/08) for handle: 000001A004F66A90
+0:00:00.000 D/HID: 	BUTTON Added Index: 8 (HID_Page_Button/09) for handle: 000001A004F66A90
+0:00:00.000 D/HID: 	BUTTON Added Index: 9 (HID_Page_Button/0a) for handle: 000001A004F66A90
+0:00:00.000 D/HID: 	BUTTON Added Index: 10 (HID_Page_Button/0b) for handle: 000001A004F66A90
+0:00:00.000 D/HID: 	BUTTON Added Index: 11 (HID_Page_Button/0c) for handle: 000001A004F66A90
+0:00:00.000 D/HID: 	BUTTON Added Index: 12 (HID_Page_Button/0d) for handle: 000001A004F66A90
+0:00:00.000 D/HID: 	BUTTON Added Index: 13 (HID_Page_Button/0e) for handle: 000001A004F66A90
+0:00:00.000 D/HID: 	BUTTON Added Index: 14 (HID_Page_Button/0f) for handle: 000001A004F66A90
+0:00:00.000 D/HID: 	BUTTON Added Index: 15 (HID_Page_Button/10) for handle: 000001A004F66A90
+0:00:00.000 D/HID: 	HATSWITCH Added Index: 0 (HID_Page_GenericDesktop/HID_Usage_GD_Hatswitch) for handle: 000001A004F66A90. It has 8 positions.
+0:00:00.000 D/HID: 	AXIS Added Index: 0 (HID_Page_GenericDesktop/HID_Usage_GD_X) for handle: 000001A004F66A90. Min/Max 0 - 16383
+0:00:00.000 D/HID: 	AXIS Added Index: 1 (HID_Page_GenericDesktop/HID_Usage_GD_Y) for handle: 000001A004F66A90. Min/Max 0 - 16383
+0:00:00.000 D/HID: 	AXIS Added Index: 2 (HID_Page_GenericDesktop/HID_Usage_GD_Slider) for handle: 000001A004F66A90. Min/Max 0 - 255
+0:00:00.000 D/HID: 	AXIS Added Index: 3 (HID_Page_GenericDesktop/HID_Usage_GD_Rz) for handle: 000001A004F66A90. Min/Max 0 - 255
+0:00:00.000 D/HID: END HARDWARE
+0:00:00.000 D/HID: Hardware ADDED(044f, b687) - TWCS Throttle at path \\?\hid#vid_044f&pid_b687#6&8634610&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+0:00:00.000 I/JOY: REGISTER Joystick device: TWCS Throttle - VID:1103PID:46727, this is a familiar device.
+0:00:00.000 D/HID: 	BUTTON Added Index: 0 (HID_Page_Button/01) for handle: 000001A004F66E50
+0:00:00.000 D/HID: 	BUTTON Added Index: 1 (HID_Page_Button/02) for handle: 000001A004F66E50
+0:00:00.000 D/HID: 	BUTTON Added Index: 2 (HID_Page_Button/03) for handle: 000001A004F66E50
+0:00:00.000 D/HID: 	BUTTON Added Index: 3 (HID_Page_Button/04) for handle: 000001A004F66E50
+0:00:00.000 D/HID: 	BUTTON Added Index: 4 (HID_Page_Button/05) for handle: 000001A004F66E50
+0:00:00.000 D/HID: 	BUTTON Added Index: 5 (HID_Page_Button/06) for handle: 000001A004F66E50
+0:00:00.000 D/HID: 	BUTTON Added Index: 6 (HID_Page_Button/07) for handle: 000001A004F66E50
+0:00:00.000 D/HID: 	BUTTON Added Index: 7 (HID_Page_Button/08) for handle: 000001A004F66E50
+0:00:00.000 D/HID: 	BUTTON Added Index: 8 (HID_Page_Button/09) for handle: 000001A004F66E50
+0:00:00.000 D/HID: 	BUTTON Added Index: 9 (HID_Page_Button/0a) for handle: 000001A004F66E50
+0:00:00.000 D/HID: 	BUTTON Added Index: 10 (HID_Page_Button/0b) for handle: 000001A004F66E50
+0:00:00.000 D/HID: 	BUTTON Added Index: 11 (HID_Page_Button/0c) for handle: 000001A004F66E50
+0:00:00.000 D/HID: 	BUTTON Added Index: 12 (HID_Page_Button/0d) for handle: 000001A004F66E50
+0:00:00.000 D/HID: 	BUTTON Added Index: 13 (HID_Page_Button/0e) for handle: 000001A004F66E50
+0:00:00.000 D/HID: 	AXIS Added Index: 0 (HID_Page_GenericDesktop/HID_Usage_GD_Dial) for handle: 000001A004F66E50. Min/Max 0 - 1023
+0:00:00.000 D/HID: 	AXIS Added Index: 1 (HID_Page_GenericDesktop/HID_Usage_GD_Slider) for handle: 000001A004F66E50. Min/Max 0 - 1023
+0:00:00.000 D/HID: 	AXIS Added Index: 2 (HID_Page_GenericDesktop/HID_Usage_GD_Ry) for handle: 000001A004F66E50. Min/Max 0 - 1023
+0:00:00.000 D/HID: 	AXIS Added Index: 3 (HID_Page_GenericDesktop/HID_Usage_GD_Rx) for handle: 000001A004F66E50. Min/Max 0 - 1023
+0:00:00.000 D/HID: 	AXIS Added Index: 4 (HID_Page_GenericDesktop/HID_Usage_GD_Rz) for handle: 000001A004F66E50. Min/Max 0 - 1023
+0:00:00.000 D/HID: 	AXIS Added Index: 5 (HID_Page_GenericDesktop/HID_Usage_GD_Y) for handle: 000001A004F66E50. Min/Max 0 - 1023
+0:00:00.000 D/HID: 	AXIS Added Index: 6 (HID_Page_GenericDesktop/HID_Usage_GD_X) for handle: 000001A004F66E50. Min/Max 0 - 1023
+0:00:00.000 D/HID: 	AXIS Added Index: 7 (HID_Page_GenericDesktop/HID_Usage_GD_Z) for handle: 000001A004F66E50. Min/Max 0 - 65535
+0:00:00.000 D/HID: 	HATSWITCH Added Index: 0 (HID_Page_GenericDesktop/HID_Usage_GD_Hatswitch) for handle: 000001A004F66E50. It has 8 positions.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: 	SKIPPED (ff00/21) for handle: 000001A004F66E50 because of usage page.
+0:00:00.000 D/HID: END HARDWARE
+0:00:00.000 E/JOY: UNCALIBRATED AXIS DETECTED: TWCS Throttle (VID:1103PID:46727) Axis #1, assigned to joy_use_none, has an expected min/max range of [0.000000, 1023.000000], but is calibrated for [0.500489, 0.500489]. You should recalibrate the device in the Settings menu.
+0:00:00.000 E/JOY: CALIBRATION OVERRIDE: TWCS Throttle (VID:1103PID:46727) Axis #1 forced to be treated as calibrated due to a user pref.
+0:00:00.000 E/JOY: UNCALIBRATED AXIS DETECTED: TWCS Throttle (VID:1103PID:46727) Axis #2, assigned to joy_use_none, has an expected min/max range of [0.000000, 1023.000000], but is calibrated for [1.000000, 1.000000]. You should recalibrate the device in the Settings menu.
+0:00:00.000 E/JOY: CALIBRATION OVERRIDE: TWCS Throttle (VID:1103PID:46727) Axis #2 forced to be treated as calibrated due to a user pref.
+0:00:00.000 E/JOY: UNCALIBRATED AXIS DETECTED: TWCS Throttle (VID:1103PID:46727) Axis #3, assigned to joy_use_none, has an expected min/max range of [0.000000, 1023.000000], but is calibrated for [1.000000, 1.000000]. You should recalibrate the device in the Settings menu.
+0:00:00.000 E/JOY: CALIBRATION OVERRIDE: TWCS Throttle (VID:1103PID:46727) Axis #3 forced to be treated as calibrated due to a user pref.
+0:00:00.000 D/STM: Transitioning from state state_InitialLoading to state_QuickFlightWizard
+0:00:00.000 I/ACF: Loading airplane number 20 with Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/phenom300.acf
+0:00:00.000 I/WIN: Showing subscreen Main Menu
+0:00:00.000 I/OVR: User is entering the holodeck.
+0:00:00.000 I/WIN: Opened window Primary V11 UI
+0:00:00.000 I/WXR: wxr cache: (window 0000019F9DD13010) 798 x 420
+0:00:00.000 I/REN: Updating REN_context (window 0000019F9DD13010) to 3193x1681x1
+0:00:02.886 I/NAVT: NavData is done loading async...
+0:00:03.008 I/NAVT: Navaids are done loading async...
+0:00:03.230 I/NAVT: Fixes are done loading async...
+0:00:03.760 I/NAVT: Airways are done loading async...
+0:00:03.760 I/NAVT: All navt data is done loading async...
+0:00:06.410 I/IDENT: Getting keystore from disk...
+0:00:06.424 I/IDENT: Accepting user
+0:00:07.134 I/IDENT: Getting certificate from disk...
+0:00:07.137 I/IDENT: Accepting receipt
+0:02:18.965 I/WIN: Showing subscreen Freeflight
+0:02:23.139 I/FCG: Applying changes from Flight Configuration screen
+0:02:23.139 I/FCG: Starting new flight in Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/phenom300.acf at Runway 09R
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/rain_mapping.xsv with hash: c1abb4bdf8bb6f5864e21acd9839cd24
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/rain.xsa with hash: dd44d1db1c65e9b7319ee0e9192afe71
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/shadow_rect_mapping.xsv with hash: 2e8b3bcdceac188d619fe6f4e77a82b6
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/shadow_rect.xsa with hash: a3a3edaa6fe7f1056fe3169230471e
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/debug_mapping.xsv with hash: c58d6dd692ca5b67f77bcf20376c4362
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/debug.xsa with hash: d244f2fbb25136ce13fdd30548a352
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/z_minmax_mapping.xsv with hash: 8dc3763c3cb35372a6f84020c1bb7f9
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/z_minmax.xsa with hash: 9db1418cdb286717fb90d19f792bffc
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/lumi_histo_mapping.xsv with hash: 1f9069ca96b2e1ef8d5d8a516f2449b3
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/lumi_histo.xsa with hash: fc7ea05430ed6ab829522dceec5260fb
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/histo_debug_mapping.xsv with hash: 2a8346ef8367259b87e3e47dc0765bd0
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/histo_debug.xsa with hash: 12181f93eda844a112c3aafecbf2596
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/vegetation_data_mapping.xsv with hash: 50505d29e1eff5727b662661d94a018
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/vegetation_data.xsa with hash: 4f618718d0ac6e2af13f613c96c386
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/vegetation_cull_mapping.xsv with hash: 5a344dcb1361a68685519eed34567920
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/vegetation_cull.xsa with hash: b06bf0a677d7ab071fa2c5ca0a528d
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/weather_apply_compute_mapping.xsv with hash: cfb752985eca761ba128a01121ca7991
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/weather_apply_compute.xsa with hash: 13fc141f534cc43ca11801061d2e8
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/weather_apply_raster_mapping.xsv with hash: a29fdd41c9b470c1613191a7526d6787
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/weather_apply_raster.xsa with hash: 59ec1ead7cb9290db7d2280e553a8
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/cloud_upscale_mapping.xsv with hash: 25dbeead95ddfd9d8c37e97666d4629
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/cloud_upscale.xsa with hash: c265a3d3f7817323acefdc128c2738a0
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/volumetric_apply_mapping.xsv with hash: c5c07180c0d3e477b497cbfdf2a2fa99
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/volumetric_apply.xsa with hash: 7eda25c4ee5e76e734733fb320d86b
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/volumetric_fog_mapping.xsv with hash: 938f6da49ccfc4f3ef5bcfe58e7637
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/volumetric_fog.xsa with hash: 519ee4cf3d7ed88cd67f36cf86bd225
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/cloud_render_raster_mapping.xsv with hash: 6a2a2bac5f8b73da5759451d34533f7c
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/cloud_render_raster.xsa with hash: bd5d6e2ce78db67368ba4b5aa98a5fa
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/cloud_render_compute_mapping.xsv with hash: 77a1c69a0ca65f6594bf27f7f7d4bf
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/cloud_render_compute.xsa with hash: 5c595bd841cce7786aade42fab24ab6
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/cloud_update_mapping.xsv with hash: 124dde29fece4a966c647bd6e4376e1
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/cloud_update.xsa with hash: f710be2064aa49742de2975241de3135
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/cloud_minify_mapping.xsv with hash: fd3d81bb23ba38dcf31fde674b7bd028
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/cloud_minify.xsa with hash: c8363a2376313666d8d9bf8118edb729
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/cloud_map_mapping.xsv with hash: 341d37f977e4272c2f81e39daf8df43
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/cloud_map.xsa with hash: 1ad0a3e5ae6a2c881cf6f15bf8d06b99
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/cloud_shadows_mapping.xsv with hash: c58e91546d89fb41812243e78222589
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/cloud_shadows.xsa with hash: f46a2fd657eb853e1113983ca4111fd5
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/cloud_precipitation_mapping.xsv with hash: d6d2b6a6b24eda74ac495cb2d97afea
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/cloud_precipitation.xsa with hash: d6a0a86d2f978d42eb855afd38d2157
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/cloud_categorize_mapping.xsv with hash: ac148f80b52d3101f248174bf934f8d
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/cloud_categorize.xsa with hash: 8d21799a8be1c1e275a0df4ce3489fe0
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/ripple_mapping.xsv with hash: 91dbe757fd3f3891e3b42682e974e2a
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/ripple.xsa with hash: 93f7b7f3bf50789f1075a4778b543f
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/rain_surface_mapping.xsv with hash: 244b64f6a66a65b4c5b83cf2a1d1e58f
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/rain_surface.xsa with hash: 88c33216bd576b43749425fb99546583
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/rain_visualize_mapping.xsv with hash: 2c6bea9a2c8f397594f9335e5a753167
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/rain_visualize.xsa with hash: e3b39d428c9b8b8db991bb9333a0e0f9
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/rain_forces_visualize_mapping.xsv with hash: dae8329c115bef508935de0473ee5b0
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/rain_forces_visualize.xsa with hash: 6fc293397590484443f1e0e9f02e3eea
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/rain_ice_accumulation_mapping.xsv with hash: 50516ce5bb968afa55ea125145c5526
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/rain_ice_accumulation.xsa with hash: aedc71f54666dd4ddbe7645f095e15a
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/rain_droplets_compute_mapping.xsv with hash: e9c8ac71e990eb64e2fb8811a53bea5
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/rain_droplets_compute.xsa with hash: 945521d25885036881f7db25f12ffb0
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/rain_droplets_wipers_mapping.xsv with hash: 8e291734f42358833f9be08f6b872d57
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/rain_droplets_wipers.xsa with hash: 8a77f6cc170b4e15a8af024bffbf78
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/rain_forces_mapping.xsv with hash: 46d3a7146aaff1d5c61cb43fda24607b
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/rain_forces.xsa with hash: 888b794642d46b2e3256abaeffabcc9
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/rain_normals_mapping.xsv with hash: 8d8870135fbc87e8abc84472a6f6b882
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/rain_normals.xsa with hash: 681c4f65711b8153a7d62469477f4e6
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/rain_draw_mapping.xsv with hash: 20a33dba7fdf9898ae7f332b3c9664a
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/rain_draw.xsa with hash: 6ee1b7b0da9b214cab28d0f6c8ace9e
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/compute_fft_mapping.xsv with hash: 756a53928522af7535378b12a6964ac1
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/compute_fft.xsa with hash: 315137f97662249e10fb1111535d9084
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/cacao_mapping.xsv with hash: 6c3aa87a9173932383e4f3f94c3928b
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/cacao.xsa with hash: 38c357e45f7224fe559128997dfb48c
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/depth_of_field_mapping.xsv with hash: 1dfe9f61a2aabe3e126923c493d66cf5
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/depth_of_field.xsa with hash: 727af91f2eabc6f4273182e5650e845
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/fsr_mapping.xsv with hash: ea4684a1f5ec5565a49115135ada967
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/fsr.xsa with hash: a46e4c52dca0c88d41f44262ffb5dcdf
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/sectional2_mapping.xsv with hash: d276dfa3ea636dc42253bdfcea569789
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/sectional2.xsa with hash: c8e6abf7a3fe37f2a572423bb3718
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/svt_mapping.xsv with hash: 9374414dc18299ef2098d4c96eaac48e
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/svt.xsa with hash: 6e7c78366ee525c1d2dffcf5ea6473a
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/profile_view_mapping.xsv with hash: b48038e9e7679cdbccc572116647cf9
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/profile_view.xsa with hash: 1a2eb38953273afb993abc3df3554c5
+Initializing off screen memory.
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/scatter_compute_t_mapping.xsv with hash: 269c71311bb57feb3e7649bbb1a81
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/scatter_compute_t.xsa with hash: f7cdaae7682276bd5c80d8481e176a
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/scatter_compute_multi_mapping.xsv with hash: f7d5814dcf491dbc863ac5b1abf54036
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/scatter_compute_multi.xsa with hash: 31429df7c41892316b15cd774568b
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/scatter_compute_skydome_mapping.xsv with hash: adbef5f111882a4263c24aac9df9a72
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/scatter_compute_skydome.xsa with hash: 7981f7ad09918ce39fe91b2472189f
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/scatter_compute_scattering_mapping.xsv with hash: 29ffcb7f067e458567f8ab42ef09ab
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/scatter_compute_scattering.xsa with hash: 6e9b2ac0dc7be2af4cefd647d377ca6
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/scatter_render_atmosphere_mapping.xsv with hash: 1b3670fbc2f739f7ed6232711a211fd5
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/scatter_render_atmosphere.xsa with hash: bd92ae724a911b52e9352b2f343f52bf
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/deferred_gbuf_mapping.xsv with hash: e09425b0231a2218874c1b84aaa29a9
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/deferred_gbuf.xsa with hash: 33f3d272f1abd2b2111f856f324eeac9
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/msaa_categorize_mapping.xsv with hash: 3162875f5e95124bdf2283829f13cab
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/msaa_categorize.xsa with hash: f6f1d3d3e827d4a5c3e7428f8c2e7d
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/csm_resolve_mapping.xsv with hash: b7235386f6e25919a9b817574854cb5
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/csm_resolve.xsa with hash: be31302ffba0e3504aeedbbe5a7ec72
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/hdr_mapping.xsv with hash: 7232514acb5539efb2e9339e5ea68254
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/hdr.xsa with hash: 2f733b3b07fe8225a768797325aeb
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/bloom_mapping.xsv with hash: 5690f153c7b3943f77b4b28f01fbdb6
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/bloom.xsa with hash: f81d2c973f99d74720f8adbb4b95f55
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/exposure_fusion_mapping.xsv with hash: 2c2e21897ddd56a6bcce7d4ce4824e2
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/exposure_fusion.xsa with hash: 6b2e92f563d93a7be1c44dfd9d7edf7
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/airport_raster_mapping.xsv with hash: 4f29fe149428b26fc1c689b26310a79a
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/airport_raster.xsa with hash: e9c5bc587d171eb6526011f8b17c7
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/acf_map_icon_mapping.xsv with hash: d2b9e6d2e5af9791db82211685b22c4
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/acf_map_icon.xsa with hash: f694ff323fc1a4f3983d319e8a05e4
+Initializing off screen memory complete.
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/ocean_spectrum_mapping.xsv with hash: ceee8c7542f4b19b2e17bdca4282772f
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/ocean_spectrum.xsa with hash: 7329a5cadc6b62bd46dc312296c0289c
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/ocean_bake_textures_mapping.xsv with hash: 632828ea54fed8bedd47a73fd773fa
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/ocean_bake_textures.xsa with hash: 71db9c7889b11e373ac41d23e6faa
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/ocean_variance_mapping.xsv with hash: 79fb294648ac223f773cbf3e58ea4b
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/ocean_variance.xsa with hash: efbbcc0de1b81276aac8347bcfe61d3
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/ocean_mesh_data_mapping.xsv with hash: 18cd973c42e63938ab6f34204756fa1c
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/ocean_mesh_data.xsa with hash: c645a85ec1521ff9931d8d23f2e7b90
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/ocean_mesh_bake_mapping.xsv with hash: 819f102f359a24c6a351129d989c78
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/ocean_mesh_bake.xsa with hash: dd69ba25f5449fea31fdd980db5ab4
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/ocean_shading_mapping.xsv with hash: 85505a535ba72e84deaf08316c771ba
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/ocean_shading.xsa with hash: c6e56e80c47cd0edea4f995da67ec575
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/ocean_meta_data_mapping.xsv with hash: 76e77e50fce34f972a818461d98f6f4
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/ocean_meta_data.xsa with hash: e03545f8cc6d8878b6285a21381ca4
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/ocean_readback_mapping.xsv with hash: 93884afb867a05aaf1128844b3e3192
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/ocean_readback.xsa with hash: 6db0da7d24e799e14bcc9f6ae10f441
+0:02:23.139 I/REN: Updating REN_context (environment_probes) to 256x256x1
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/planet_mapping.xsv with hash: e6f54b2838b6dce49882f4e89bbb53
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/planet.xsa with hash: 969c864bca7b29125ee9f787b23e45
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/dome_mapping.xsv with hash: 9326218494b8ab28cedf73832f1973c
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/dome.xsa with hash: 3eea194cb5f775f486c5b11c15db92
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/astronomical_mapping.xsv with hash: d2ca4670eda31c7481adc2c56e218c26
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/astronomical.xsa with hash: 22b1d931a6d0b0cbe256c5b01378062
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/particle_mapping.xsv with hash: fb14ccc7d73f95d0531aa2eb37a7336
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/particle.xsa with hash: 886e76c4e2d9efabab4c689939e7842a
+0:02:23.139 I/GFX: Loaded mapping Resources/shaders/bin/manip3d_mapping.xsv with hash: cf488718f290e7e35915553a1fb975be
+0:02:23.139 I/GFX: Loaded archive Resources/shaders/bin/spv/manip3d.xsa with hash: 154ba72fa51cab379349ff17a5d3f7b9
+0:02:34.500 D/STM: Transitioning from state state_QuickFlightWizard to state_NormalLoading
+Aircraft plugin unload complete.
+0:02:34.500 I/ACF: Loading airplane number 0 with Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/phenom300.acf
+Fetching plugins for C:\X-Plane 12/Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/plugins
+
+[PHENOM_300 INFO]: Starting X-Plane SASL plugin v3.17.0+a6e5c61 [Commercial Edition]
+[PHENOM_300 INFO]: Phenom_300 | Aircraft | Start Full
+[PHENOM_300 INFO]: Loading cursors...
+Loaded: C:\X-Plane 12/Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/plugins/SASL/64/win.xpl (1-sim Phenom_300).
+
+[PHENOM_300 INFO]: Enabling...
+[PHENOM_300 INFO]: Sound output device: OpenAL Soft
+[PHENOM_300 INFO]: Initializing...
+[PHENOM_300 INFO]: [DISPLAY] Main Screen Bounds: 0, 0, 3193, 1681
+[PHENOM_300 INFO]: Path to module: C:\X-Plane 12/Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/plugins/SASL/data/modules/main.key
+[PHENOM_300 INFO]: Loading module...
+[PHENOM_300 INFO]: [LUA]: loading	module
+[PHENOM_300 INFO]: [LUA]: including	helpers/bootstrap.lua
+[PHENOM_300 INFO]: [LUA]: "module"	Language:	English
+[PHENOM_300 INFO]: [LUA]: including	helpers/config.lua
+[PHENOM_300 INFO]: [LUA]: requesting	helpers/json.lua
+[PHENOM_300 INFO]: [LUA]: including	class.lua
+[PHENOM_300 INFO]: [LUA]: including	lib_math.lua
+[PHENOM_300 INFO]: [LUA]: including	lib_strings.lua
+[PHENOM_300 INFO]: [LUA]: including	lib_tables.lua
+[PHENOM_300 INFO]: [LUA]: including	lib_lists.lua
+[PHENOM_300 INFO]: [LUA]: including	lib_properties.lua
+[PHENOM_300 INFO]: [LUA]: including	lib_scheduler
+[PHENOM_300 INFO]: [LUA]: including	lib_textures
+[PHENOM_300 INFO]: [LUA]: including	lib_tooltips
+[PHENOM_300 INFO]: [LUA]: including	lib_fonts
+[PHENOM_300 INFO]: [LUA]: requesting	helpers/skunkcrafts.lua
+[PHENOM_300 INFO]: [LUA]: SkunkCrafts Updater utility
+[PHENOM_300 INFO]: [LUA]: Loading configuration from C:\X-Plane 12/Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/skunkcrafts_updater.cfg
+[PHENOM_300 INFO]: [LUA]: Using normal config
+[PHENOM_300 INFO]: [LUA]: including	helpers.lua
+[PHENOM_300 INFO]: [LUA]: including	colors.lua
+[PHENOM_300 INFO]: [LUA]: including	constants.lua
+[PHENOM_300 INFO]: [LUA]: including	preferences.lua
+[PHENOM_300 INFO]: [LUA]: including	various.lua
+[PHENOM_300 INFO]: [LUA]: including	geography.lua
+[PHENOM_300 INFO]: [LUA]: including	class_time.lua
+[PHENOM_300 INFO]: [LUA]: including	class_pid.lua
+[PHENOM_300 INFO]: [LUA]: including	class_image.lua
+[PHENOM_300 INFO]: [LUA]: including	class_command.lua
+[PHENOM_300 INFO]: [LUA]: including	class_font.lua
+[PHENOM_300 INFO]: [LUA]: including	class_spy.lua
+[PHENOM_300 INFO]: [LUA]: including	class_sound.lua
+[PHENOM_300 INFO]: [LUA]: including	class_fmod.lua
+[PHENOM_300 INFO]: [LUA]: including	class_scenery.lua
+[PHENOM_300 INFO]: [LUA]: including	class_avionics.lua
+[PHENOM_300 INFO]: [LUA]: including	lib_windows.lua
+[PHENOM_300 INFO]: [LUA]: including	lib_xpui.lua
+[PHENOM_300 INFO]: [LUA]: including	aircraft.lua
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/lights/generic_auto[]
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/aircraft_pin_on  : [DEBUG] Pin aircraft ON
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/aircraft_pin_off : [DEBUG] Pin aircraft OFF
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/aircraft_pin_tog : [DEBUG] Pin aircraft TOGGLE
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/aircraft_activated
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/parkbrake_set : Set parkbrake
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/parkbrake_rel : Release parkbrake
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/parkbrake_tog : Toggle parkbrake
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/parkbrake_hold : Hold parkbrake
+[PHENOM_300 INFO]: [LUA]: "module"	No custom.json file
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/level : Autopilot Straight and level
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/fd_toggle : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/pb_fd
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/ap_toggle : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/pb_ap
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/km_toggle : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/pb_km
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/ap_bank : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/pb_bank
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/ap_lvl : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/pb_lvl
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/ap_hdg : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/pb_hdg
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/ap_trk : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/pb_trk
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/ap_alt_hold : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/pb_alt
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/ap_vvi : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/pb_vvi
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/ap_nav : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/pb_nav
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/ap_vnav : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/pb_vnav
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/ap_app : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/pb_app
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/ap_ias : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/pb_ias
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/ap_flc : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/pb_flc
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/ap_dn : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/pb_dn
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/ap_up : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/pb_up
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/ap_level : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/pb_level
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/hdg_dn : 
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/hdg_up : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/knob_hdg
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/baro_dn : 
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/baro_up : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/knob_baro
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/alt_dn : 
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/alt_up : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/knob_alt
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/crs1_dn : 
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/crs1_up : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/knob_crs1
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/crs2_dn : 
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/otto/crs2_up : 
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/otto/knob_crs2
+[PHENOM_300 INFO]: [LUA]: including	airac.lua
+[PHENOM_300 INFO]: [LUA]: "module"	AIRAC, from, to	2602	19/02/26	19/03/26
+[PHENOM_300 INFO]: [LUA]: "module"	AIRAC / Valid	2602	19Feb26-19Mar26
+[PHENOM_300 INFO]: [LUA]: "module"	Looking for C:\X-Plane 12/Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/phenom300_icon11.png
+[PHENOM_300 INFO]: [LUA]: "module"	Tail number set to N66M
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/audio_volume[]
+[PHENOM_300 INFO]: [LUA]: including	lib_debug.lua
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/debug/dump_fms_to_log : Dump fms to Log.txt
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/debug/dump_fms_to_widget : Dump fms to Widget
+[PHENOM_300 INFO]: [LUA]: "module"	Initializing scripts for Phenom 300 by Aerobask 12.2r1 by Aerobask and SkunkCrafts
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/show_reflections_instruments
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/show_reflections_windows
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/show_static_elements
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/kill_cabin
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/options/toggle_inst_reflections : Toggle instrument reflections
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/options/hide_inst_reflections : Hide instrument reflections
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/options/show_inst_reflections : Show instrument reflections
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/options/toggle_wind_reflections : Toggle windows reflections
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/options/hide_wind_reflections : Hide windows reflections
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/options/show_wind_reflections : Show windows reflections
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/options/toggle_static_elements : Toggle static elements
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/options/hide_static_elements : Hide static elements
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/options/show_static_elements : Show static elements
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/options/toggle_cabin : Toggle cabin
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/options/hide_cabin : Hide cabin
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/options/show_cabin : Show cabin
+[PHENOM_300 INFO]: [LUA]: loading	libXPSV
+[PHENOM_300 INFO]: [LUA]: "module"	Loading config/libXPSV.json
+[PHENOM_300 INFO]: [LUA]: loading	cas
+[PHENOM_300 INFO]: [LUA]: "module"	Loading config/cas.json
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/cas/info_chime
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/cas/info_unrest
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/cas/info_ack : CAS Acknowledge info events and lower
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/cas/pb_info_ack
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/cas/caution_chime
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/cas/caution_unrest
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/cas/caution_ack : CAS Acknowledge caution events and lower
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/cas/pb_caution_ack
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/cas/warning_chime
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/cas/warning_unrest
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/cas/warning_ack : CAS Acknowledge warning events and lower
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/cas/pb_warning_ack
+[PHENOM_300 INFO]: [LUA]: loading	cas_extra
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/test/ann
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/test/smk_det
+[Phenom_300 (SASL)]: Dataref 'sim/cockpit2/controls/parking_brake_ratio' has been replaced. Please use the new name.
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/trims/aural_warning
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/test/test_lt : TEST turn knob left
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/test/test_rt : TEST turn knob right
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/test/test_fir : TEST knob on FIRE
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/test/test_smk : TEST knob on SMK DET
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/test/test_ann : TEST knob on ANN
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/test/test_off : TEST knob on OFF
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/test/test_sta : TEST knob on STALL PROT
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/test/test_ice : TEST knob on ICE PROT
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/test/knob_test
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/test/start : TEST START pushbutton
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/test/pb_start
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/cas/chime_triple
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/cas/chime_simple
+[PHENOM_300 INFO]: [LUA]: loading	phenom300
+[PHENOM_300 INFO]: [LUA]: "module"	Loading config/phenom300.json
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/headset_connected
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/blinders[]
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/reload_phenom300_json : Reload config/phenom300.json
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/blinders_close : Close all blinders
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/blinders_open : Open all blinders
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/view_is_internal
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/doors/kill_door_opened
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/doors/kill_door_closed
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/hide_static
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/hide_gpu
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/csc_as_thr
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/g1000/toggle_narrow_eis : Toggle Narrow EIS
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/g1000/toggle_narrow_auto : Toggle Narrow EIS on FPL
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/g1000/toggle_narrow_auto : Toggle Narrow EIS on AUTO
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/hide_copilot
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/door_unlock
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/vspeed/v1
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/vspeed/vr
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/vspeed/v2
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/vspeed/vfst
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/vspeed/vac
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/vspeed/vfsl
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/vspeed/vref
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/sound/g_nrml_delta
+[PHENOM_300 INFO]: [LUA]: loading	gpws
+[PHENOM_300 INFO]: [LUA]: "module"	Loading config/gpws.json
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/radio_altimeter_dh_lit_pilot
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/radio_altimeter_dh_lit_copilot
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/baro_altimeter_da_lit_pilot
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/baro_altimeter_da_lit_copilot
+[PHENOM_300 INFO]: [LUA]: "gpws"	[GPWS] Warning: event terrain_pull_up has no handler and will be ignored
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gpws/whoop_pull_up
+[PHENOM_300 INFO]: [LUA]: "gpws"	[GPWS] Warning: event caution_terrain has no handler and will be ignored
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gpws/minimums
+[PHENOM_300 INFO]: [LUA]: "gpws"	[GPWS] Warning: event too_low_terrain1 has no handler and will be ignored
+[PHENOM_300 INFO]: [LUA]: "gpws"	[GPWS] Warning: event sinkrate has no handler and will be ignored
+[PHENOM_300 INFO]: [LUA]: "gpws"	[GPWS] Warning: event terrain_terrain has no handler and will be ignored
+[PHENOM_300 INFO]: [LUA]: "gpws"	[GPWS] Warning: event dont_sink has no handler and will be ignored
+[PHENOM_300 INFO]: [LUA]: "gpws"	[GPWS] Warning: event too_low_terrain2 has no handler and will be ignored
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gpws/too_low_gear
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gpws/too_low_flap
+[PHENOM_300 INFO]: [LUA]: "gpws"	[GPWS] Warning: event too_low_terrain3 has no handler and will be ignored
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gpws/glideslope
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gpws/glidepath
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gpws/altitude
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gpws/ft100
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gpws/ft200
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gpws/ft300
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gpws/ft400
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gpws/ft500
+[PHENOM_300 INFO]: [LUA]: "gpws"	[GPWS] Supported events:
+[PHENOM_300 INFO]: [LUA]: "gpws"	- too_low_flap
+[PHENOM_300 INFO]: [LUA]: "gpws"	- minimums
+[PHENOM_300 INFO]: [LUA]: "gpws"	- whoop_pull_up
+[PHENOM_300 INFO]: [LUA]: "gpws"	- too_low_gear
+[PHENOM_300 INFO]: [LUA]: "gpws"	- windshear
+[PHENOM_300 INFO]: [LUA]: "gpws"	- altitude
+[PHENOM_300 INFO]: [LUA]: "gpws"	- glideslope
+[PHENOM_300 INFO]: [LUA]: "gpws"	- glidepath
+[PHENOM_300 INFO]: [LUA]: "gpws"	[GPWS] Registered events:
+[PHENOM_300 INFO]: [LUA]: "gpws"	- whoop_pull_up
+[PHENOM_300 INFO]: [LUA]: "gpws"	- minimums
+[PHENOM_300 INFO]: [LUA]: "gpws"	- too_low_gear
+[PHENOM_300 INFO]: [LUA]: "gpws"	- too_low_flap
+[PHENOM_300 INFO]: [LUA]: "gpws"	- glideslope
+[PHENOM_300 INFO]: [LUA]: "gpws"	- glidepath
+[PHENOM_300 INFO]: [LUA]: "gpws"	- altitude
+[PHENOM_300 INFO]: [LUA]: loading	electrical
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/electrical/gen1_auto : ELECTRICAL GEN 1 switch to AUTO
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/electrical/gen1_off : ELECTRICAL GEN 1 switch to OFF
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/electrical/gen2_auto : ELECTRICAL GEN 2 switch to AUTO
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/electrical/gen2_off : ELECTRICAL GEN 2 switch to OFF
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/electrical/sw_gen1
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/electrical/sw_gen2
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/sim/cockpit/electrical/gpu_amps
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/electrical/gpu_avail
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/electrical/gpu_inuse
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/electrical/gpu : ELECTRICAL GPU pushbutton
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/electrical/pb_gpu
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/electrical/bus_tie_lt : ELECTRICAL turn BUS TIE knob left
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/electrical/bus_tie_rt : ELECTRICAL turn BUS TIE knob right
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/electrical/knob_bus_tie
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/electrical/sw_batt1
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/electrical/sw_batt2
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/electrical/elec_emer_cover
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/electrical/elec_emer_cover : Flip ELEC EMER cover
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/electrical/elec_emer : ELECTRICAL ELEC EMER pushbutton
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/electrical/pb_elec_emer
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/electrical/gpu_connect_disconnect : Connect or disconnect ther GPU
+[PHENOM_300 INFO]: [LUA]: loading	lights
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/lights/ldg_taxi_ratio
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/ldg_taxi_up : LIGHTS LDG TAXI switch up
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/ldg_taxi_dn : LIGHTS LDG TAXI switch dn
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/ldg_taxi_ldg : LIGHTS LDG TAXI switch ldg
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/ldg_taxi_taxi : LIGHTS LDG TAXI switch taxi
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/ldg_taxi_off : LIGHTS LDG TAXI switch off
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/lights/sw_ldg_taxi
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/lights/sw_nav
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/lights/sw_strobe
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/lights/knob_panel
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/effect_up : LIGHTS CABIN EFFECT switch up
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/effect_dn : LIGHTS CABIN EFFECT switch dn
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/effect_brt : LIGHTS CABIN EFFECT switch brt
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/effect_dim : LIGHTS CABIN EFFECT switch arm
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/effect_off : LIGHTS CABIN EFFECT switch off
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/lights/sw_effect
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/lights/knob_upwash
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/emer_lt_up : LIGHTS EMER LT switch up
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/emer_lt_dn : LIGHTS EMER LT switch dn
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/emer_lt_on : LIGHTS EMER LT switch on
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/emer_lt_arm : LIGHTS EMER LT switch arm
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/emer_lt_off : LIGHTS EMER LT switch off
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/lights/sw_emer_lt
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/lights/belts_on
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/lights/lights_on
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/lights/park_brake
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/switch_up : SIGNS switch up
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/switch_dn : SIGNS switch dn
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/switch_on : SIGNS switch on
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/switch_auto : SIGNS switch auto
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/lights/switch_off : SIGNS switch off
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/lights/sw_signs
+[PHENOM_300 INFO]: [LUA]: loading	fuel
+[PHENOM_300 INFO]: [LUA]: "module"	Loading config/refuel.json
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/fuel/refuel/cover_power
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/fuel/refuel/cover_refuel
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/fuel/refuel/lt_fail
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/fuel/refuel/lt_lh_tank
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/fuel/refuel/lt_rh_tank
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/pump1_up : Fuel PUMP 1 switch up
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/pump1_dn : Fuel PUMP 1 switch dn
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/pump1_on : Fuel PUMP 1 switch on
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/pump1_auto : Fuel PUMP 1 switch auto
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/pump1_off : Fuel PUMP 1 switch off
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/pump2_up : Fuel PUMP 2 switch up
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/pump2_dn : Fuel PUMP 2 switch dn
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/pump2_on : Fuel PUMP 2 switch on
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/pump2_auto : Fuel PUMP 2 switch auto
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/pump2_off : Fuel PUMP 2 switch off
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/fuel/sw_pump1
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/fuel/sw_pump2
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/xfeed_rt : Fuel turn XFEED knob right
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/xfeed_lt : Fuel turn XFEED knob left
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/fuel/knob_xfeed
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/fuel/refuel/nozzle_on
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/refuel/toggle_cover_power : Toggle power switch cover
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/refuel/toggle_cover_refuel : Toggle refuel switch cover
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/refuel/power_norm : Refuel POWER switch to left pos  (NORM)
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/refuel/power_batt : Refuel POWER switch to right pos (BATT)
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/fuel/refuel/sw_power
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/refuel/refuel_close : Refuel REFUEL switch to left pos  (CLOSED)
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/refuel/refuel_open : Refuel REFUEL switch to right pos (OPENED)
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/fuel/refuel/sw_refuel
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/refuel/lamp_test : Refuel LAMP TEST switch
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/fuel/refuel/sw_lamp_test
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/refuel/shutoff_test : Refuel SHUTOFF TEST switch
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/fuel/refuel/sw_shutoff_test
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/refuel/presel_inc : Refuel PRESELECT switch to INC
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/refuel/presel_dec : Refuel PRESELECT switch to DEC
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/fuel/refuel/sw_inc_dec
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/fuel/refuel/tank_sel : Refuel TANK SELECT switch
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/fuel/refuel/sw_tank_sel
+[PHENOM_300 INFO]: [LUA]: loading	engines
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/ignition_1_up : Engine 1: Ignition switch up
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/ignition_1_dn : Engine 1: Ignition switch dn
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/ignition_1_on : Engine 1: Ignition switch on
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/ignition_1_auto : Engine 1: Ignition switch auto
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/ignition_1_off : Engine 1: Ignition switch off
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/engines/sw_ignition_1
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/knob_1_rt : Engine 1: Turn knob right
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/knob_1_lt : Engine 1: Turn knob left
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/engines/knob_start_stop_1
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/engines/shutoff_cover_1
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/shutoff_cover_1 : Engine 1: Toggle cover
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/shutoff_1 : Engine 1: SHUTOFF
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/ignition_2_up : Engine 2: Ignition switch up
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/ignition_2_dn : Engine 2: Ignition switch dn
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/ignition_2_on : Engine 2: Ignition switch on
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/ignition_2_auto : Engine 2: Ignition switch auto
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/ignition_2_off : Engine 2: Ignition switch off
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/engines/sw_ignition_2
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/knob_2_rt : Engine 2: Turn knob right
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/knob_2_lt : Engine 2: Turn knob left
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/engines/knob_start_stop_2
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/engines/shutoff_cover_2
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/shutoff_cover_2 : Engine 2: Toggle cover
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/shutoff_2 : Engine 2: SHUTOFF
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/bottle_disch : BOTTLE switch DISCH
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/engines/bottle_off : BOTTLE switch OFF
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/engines/sw_bottle
+[PHENOM_300 INFO]: [LUA]: loading	surfaces
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/spoilers_deg_left
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/spoilers_deg_right
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/spoilers_deg[]
+[Phenom_300 (SASL)]: Dataref 'sim/aircraft2/engine/flap_extension_time_sec' has been replaced. Please use the new name.
+[Phenom_300 (SASL)]: Dataref 'sim/aircraft2/engine/flap_retraction_time_sec' has been replaced. Please use the new name.
+[PHENOM_300 INFO]: [LUA]: "module"	Loading config/surfaces.json
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/reload_surfaces_json : Reload surfaces json config - debug only
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/speedbrakes_open : Deploy speedbrakes
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/speedbrakes_close : Retract speedbrakes
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/speedbrakes_toggle : Toggle speedbrakes
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/anim/sw_speedbrake
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/anim/sw_flap
+[PHENOM_300 INFO]: [LUA]: loading	bleed
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/bleed/bleed1_auto : BLEED1 switch to AUTO
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/bleed/bleed1_off : BLEED1 switch to OFF
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/bleed/bleed2_auto : BLEED2 switch to AUTO
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/bleed/bleed2_off : BLEED2 switch to OFF
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/bleed/xbleed_auto : XBLEED switch to AUTO
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/bleed/xbleed_off : XBLEED switch to OFF
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/bleed/sw_bleed1
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/bleed/sw_bleed2
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/bleed/sw_xbleed
+[PHENOM_300 INFO]: [LUA]: loading	airco
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/airco/ckpt_fan_up : Airco CKPT FAN switch up
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/airco/ckpt_fan_dn : Airco CKPT FAN switch dn
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/airco/ckpt_fan_lo : Airco CKPT FAN switch LO
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/airco/ckpt_fan_med : Airco CKPT FAN switch MED
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/airco/ckpt_fan_hi : Airco CKPT FAN switch HI
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/airco/sw_ckpt_fan
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/airco/cabin_fan_up : Airco CABIN FAN switch up
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/airco/cabin_fan_dn : Airco CABIN FAN switch dn
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/airco/cabin_fan_lo : Airco CABIN FAN switch LO
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/airco/cabin_fan_med : Airco CABIN FAN switch MED
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/airco/cabin_fan_hi : Airco CABIN FAN switch HI
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/airco/sw_cabin_fan
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/airco/mode_up : Airco MODE switch up
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/airco/mode_dn : Airco MODE switch dn
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/airco/mode_off : Airco MODE switch OFF
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/airco/mode_auto : Airco MODE switch AUTO
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/airco/mode_man : Airco MODE switch MAN
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/airco/sw_mode
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/airco/temp_up : Airco TEMP switch H
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/airco/temp_dn : Airco TEMP switch C
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/airco/sw_temp
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/airco/knob_ckpt_temp
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/airco/knob_cabin_temp
+[PHENOM_300 INFO]: [LUA]: loading	press
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/press/mode_up : Pressurization MODE switch up
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/press/mode_dn : Pressurization MODE switch dn
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/press/sw_mode
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/press/ecs_rt : Pressurization turn ECS knob right
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/press/ecs_lt : Pressurization turn ECS knob left
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/press/knob_ecs
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/press/sw_cabin_alt
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/press/dump_cover : Dump cover flip
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/press/dump_cover
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/press/dump : Pressurization DUMP button
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/press/pb_dump
+[PHENOM_300 INFO]: [LUA]: loading	hyd
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/hyd/pump1_up : HYD PUMP 1 switch up
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/hyd/pump1_dn : HYD PUMP 1 switch dn
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/hyd/pump2_up : HYD PUMP 2 switch up
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/hyd/pump2_dn : HYD PUMP 2 switch dn
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/hyd/sw_pump1
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/hyd/sw_pump2
+[PHENOM_300 INFO]: [LUA]: loading	iceprot
+[PHENOM_300 INFO]: [LUA]: "module"	New breaker [ice_prot_eng1]
+[PHENOM_300 INFO]: [LUA]: "module"	New breaker [ice_prot_eng2]
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/eng1_on : ICE PROTECTION ENG 1 switch ON
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/eng1_off : ICE PROTECTION ENG 1 switch OFF
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/eng2_on : ICE PROTECTION ENG 2 switch ON
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/eng2_off : ICE PROTECTION ENG 2 switch OFF
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/iceprot/sw_eng1
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/iceprot/sw_eng2
+[PHENOM_300 INFO]: [LUA]: "module"	New breaker [insp_light]
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/insp_light_on : ICE PROTECTION INSP LIGHT switch ON
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/insp_light_off : ICE PROTECTION INSP LIGHT switch OFF
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/iceprot/sw_insp_light
+[PHENOM_300 INFO]: [LUA]: "module"	New breaker [ice_wingstab]
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/wingstab_up : ICE PROTECTION WINGSTAB switch up
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/wingstab_dn : ICE PROTECTION WINGSTAB switch dn
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/wingstab_on : ICE PROTECTION WINGSTAB switch ON
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/wingstab_off : ICE PROTECTION WINGSTAB switch OFF
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/wingstab_reset : ICE PROTECTION WINGSTAB switch RESET
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/iceprot/sw_wingstab
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/wshld1_on : HEATING WSHID1 switch ON
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/wshld1_off : HEATING WSHID1 switch OFF
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/wshld2_on : HEATING WSHID2 switch ON
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/wshld2_off : HEATING WSHID2 switch OFF
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/iceprot/sw_wshld1
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/iceprot/sw_wshld2
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/ads_probes_rt : HEATING turn ADS PROBES knob right
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/ads_probes_lt : HEATING turn ADS PROBES knob left
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/ads_probes_off : HEATING turn ADS PROBES knob OFF
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/ads_probes_auto : HEATING turn ADS PROBES knob AUTO
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iceprot/ads_probes_on : HEATING turn ADS PROBES knob ON
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/iceprot/knob_ads_probes
+[PHENOM_300 INFO]: [LUA]: loading	oxygen
+[PHENOM_300 INFO]: [LUA]: "module"	Loading config/oxygen.json
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/oxygen/cut_out : OXYGEN Master button toggle
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/oxygen/cut_out_up : OXYGEN Master button close
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/oxygen/cut_out_dn : OXYGEN Master button open
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/oxygen/sw_cut_out
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/oxygen/supply_lt : OXYGEN turn SUPPLY knob left
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/oxygen/supply_rt : OXYGEN turn SUPPLY knob right
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/oxygen/knob_oxy_mode
+[PHENOM_300 INFO]: [LUA]: loading	various
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/elt/elt_on
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/elt/elt_up : ELT switch up
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/elt/elt_dn : ELT switch dn
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/elt/sw_elt
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/pusher/cutout_cover
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/pusher/cutout : Pusher CUTOUT button
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/pusher/pb_cutout
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/twas/gs_inhb : G/S INHB pushbutton
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/twas/pb_gs_inhb
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/taws/flap_ovrd_cover : TAWS: flip FLAP PVRD cover
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/taws/flap_ovrd_cover
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/twas/flap_ovrd : FLAP OVRD pushbutton
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/twas/pb_flap_ovrd
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/twas/terr_inhb : TERR INHB pushbutton
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/twas/pb_terr_inhb
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/no_takeoff/trim
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/no_takeoff/flaps
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/no_takeoff/parking_brake
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/no_takeoff/spoilers
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/no_takeoff/chime
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/no_takeoff/ok
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/no_takeoff/any
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/test/no_takeoff_trim
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/to_config : T/O CONFIG pushbutton
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/pb_to_config
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/anim/sw_parking_brake
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/anim/sw_gear_handle
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/trims/backup_on : PITCH TRIM BACKUP ON
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/trims/backup_off : PITCH TRIM BACKUP OFF
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/trims/pitch_trim_up : Backup pitch trim up
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/trims/pitch_trim_dn : Backup pitch trim down
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/trims/sw_trim_ail
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/trims/sw_trim_ele
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/trims/sw_trim_rud
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/trims/sw_trim_bkp
+[PHENOM_300 INFO]: [LUA]: loading	breakers
+[PHENOM_300 INFO]: [LUA]: loading	tailnum
+[PHENOM_300 INFO]: [LUA]: "module"	Loading config/tailnum.json
+[PHENOM_300 INFO]: [LUA]: "module"	Could not find command sim/none/none
+[PHENOM_300 INFO]: [LUA]: "module"	Could not find command sim/none/none
+[PHENOM_300 INFO]: [LUA]: "module"	Could not find command sim/none/none
+[PHENOM_300 INFO]: [LUA]: loading	image
+[PHENOM_300 INFO]: [LUA]: loading	g1000_lib
+[PHENOM_300 INFO]: [LUA]: "module"	Loading config/g1000.json
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gcu_owns_keyboard
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gcu_1com2 : GCU 1COM2 button
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gcu_1nav2 : GCU 1NAV2 button
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gcu_ff : GCU <--> button
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gcu_toogle_kbd_ownership : GCU take/release physical keyboard
+[PHENOM_300 INFO]: [LUA]: including	g1000_assets
+[PHENOM_300 INFO]: [LUA]: including	g1000_draw
+[PHENOM_300 INFO]: [LUA]: including	g1000_spy
+[PHENOM_300 INFO]: [LUA]: including	g1000_custom
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700_csc : GFC700 CSC button
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/overspeed_aural
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/g1000/show_syn_status
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/g1000/show_syn_fuel
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/g1000/show_syn_electrical
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/g1000/show_syn_antiice
+[PHENOM_300 INFO]: [LUA]: including	g1000_perfs
+[PHENOM_300 INFO]: [LUA]: including	g1000_ems
+[PHENOM_300 INFO]: [LUA]: including	g1000_system
+[PHENOM_300 INFO]: [LUA]: loading	g1000_fuel
+[PHENOM_300 INFO]: [LUA]: loading	g1000_ice
+[PHENOM_300 INFO]: [LUA]: loading	g1000_sta
+[PHENOM_300 INFO]: [LUA]: loading	g1000_elec
+[PHENOM_300 INFO]: [LUA]: loading	clicker
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/g1000n1/kn_crs
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/g1000n2/kn_crs
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/g1000n3/kn_crs
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/g1000n1/kn_hdg
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/g1000n2/kn_hdg
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/g1000n3/kn_hdg
+[PHENOM_300 INFO]: [LUA]: including	gcu477
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/g1000n3_key_ssfk : GCU select SFK
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/g1000n3_key_lsfk : GCU left   SFK
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/g1000n3_key_rsfk : GCU right  SFK
+[PHENOM_300 INFO]: [LUA]: loading	s_texture
+[PHENOM_300 INFO]: [LUA]: loading	wheeler
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gcu477/popup_toggle : GCU477 popup toggle
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gcu477/popup_show : GCU477 popup show
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gcu477/popup_hide : GCU477 popup hide
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gcu477/popup_reset : GCU477 popup reset
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gcu477/popup_out : GCU477 popup out
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gcu477/popup_up : GCU477 popup in
+[PHENOM_300 INFO]: [LUA]: including	gfc700
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700/popup_toggle : GFC700 popup toggle
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700/popup_show : GFC700 popup show
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700/popup_hide : GFC700 popup hide
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700/popup_reset : GFC700 popup reset
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700/popup_out : GFC700 popup out
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700/popup_up : GFC700 popup in
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700_vvi_dec : GFC700 VVI decrease
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700_vvi_inc : GFC700 VVI increase
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gfc700_knob_vvi
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700_hdg_dec : GFC700 HDG decrease
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700_hdg_inc : GFC700 HDG increase
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gfc700_knob_hdg
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700_spd_dec : GFC700 SPD decrease
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700_spd_inc : GFC700 SPD increase
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gfc700_knob_spd
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700_alto_dec : GFC700 ALT outer decrease
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700_alto_inc : GFC700 ALT outer increase
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gfc700_knob_alto
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700_alti_dec : GFC700 ALT inner decrease
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700_alti_inc : GFC700 ALT inner increase
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gfc700_knob_alti
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700_crs1_dec : GFC700 CRS1 decrease
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700_crs1_inc : GFC700 CRS1 increase
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gfc700_knob_crs1
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700_crs2_dec : GFC700 CRS2 decrease
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/gfc700_crs2_inc : GFC700 CRS2 increase
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/gfc700_knob_crs2
+[PHENOM_300 INFO]: [LUA]: loading	g1000_pfd
+[PHENOM_300 INFO]: [LUA]: "module"	New breaker [pfd]
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/taws_test
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/tcas_test
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/sync_crs_with_hdg : Synch pilot HSI course with actual HDG
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/baro_2992_pilot : Set pilot barometer to 29.92 inhg
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/g1000n1_mins_up : G1000n1 minimums up
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/g1000n1_mins_dn : G1000n1 minimums down
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/g1000n1_mins_toggle : G1000n1 toggleminimums
+[PHENOM_300 INFO]: [LUA]: loading	g1000_cas
+[PHENOM_300 INFO]: [LUA]: loading	g1000_dial
+[PHENOM_300 INFO]: [LUA]: loading	dummy
+[PHENOM_300 INFO]: [LUA]: loading	empty
+[PHENOM_300 INFO]: [LUA]: loading	g1000_mfd
+[PHENOM_300 INFO]: [LUA]: "module"	New breaker [mfd]
+[PHENOM_300 INFO]: [LUA]: loading	g1000_pfd_options
+[PHENOM_300 INFO]: [LUA]: loading	ui_checkbox
+[PHENOM_300 INFO]: [LUA]: loading	ui_radiobox
+[PHENOM_300 INFO]: [LUA]: loading	g1000_mfd_options
+[PHENOM_300 INFO]: [LUA]: loading	iesi
+[PHENOM_300 INFO]: [LUA]: "module"	Loading config/iesi.json
+[PHENOM_300 INFO]: [LUA]: "module"	New breaker [eisi]
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iesi/ils : Short: Toggle IESI ILS source, Long: Toggle AHARS source
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iesi/std : Short: set IESI baro to STD, Long: Toggle inHg/hpa
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iesi/cage : Cage IESI
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iesi/bri_up : Increase IESI brightness
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/iesi/bri_dn : Decrease IESI brightness
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/iesi/pb_ils
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/iesi/pb_std
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/iesi/pb_cage
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/iesi/pb_bri_up
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/iesi/pb_bri_dn
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/iesi/knob_baro
+[PHENOM_300 INFO]: [LUA]: loading	iesi_options
+[PHENOM_300 INFO]: [LUA]: loading	ui_label
+[PHENOM_300 INFO]: [LUA]: loading	cabin
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/flush_toilet
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/flush_toilet : Flush toilet
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/wash_hands
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/wash_hands : Wash your hands
+[PHENOM_300 INFO]: [LUA]: loading	menus
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/tablet/deployed
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/tablet/anim_x
+[PHENOM_300 INFO]: [LUA]: "module"	New custom dataref aerobask/tablet/anim_y
+[PHENOM_300 INFO]: [LUA]: loading	tab_ground
+[PHENOM_300 INFO]: [LUA]: loading	ui_button
+[PHENOM_300 INFO]: [LUA]: loading	ui_slider
+[PHENOM_300 INFO]: [LUA]: loading	d_texture
+[PHENOM_300 INFO]: [LUA]: loading	tab_vspeeds
+[PHENOM_300 INFO]: [LUA]: loading	tab_options
+[PHENOM_300 INFO]: [LUA]: loading	opt_general
+[PHENOM_300 INFO]: [LUA]: loading	ui_tabs
+[PHENOM_300 INFO]: [LUA]: loading	ui_tab
+[PHENOM_300 INFO]: [LUA]: loading	tab_sounds
+[PHENOM_300 INFO]: [LUA]: loading	tab_about
+[PHENOM_300 INFO]: [LUA]: loading	rectangle
+[PHENOM_300 INFO]: [LUA]: loading	tab_avitab
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/tablet/deploy_toggle : Show/Stow tablet
+[PHENOM_300 INFO]: [LUA]: "module"	Registered command aerobask/show_options : Show/hide options panel
+[PHENOM_300 INFO]: [LUA]: "module"	Plugin loaded
+[PHENOM_300 INFO]: Scripts loading time: 24.5645
+[PHENOM_300 INFO]: Module loaded
+0:02:34.500 D/OBJ: CPU Geometry: 12298 (100.00%) 22536 (100.00%) "Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/objects/phenom_cockpit.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 12298 (100.00%) 22536 (100.00%) "Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/objects/phenom_cockpit.obj"
+0:02:34.500 I/FMOD: Master bank Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/fmod/ Sample rate: 48000 speaker mode: 3 (2 speakers)
+0:02:34.500 I/SND: This aircraft is using FMOD in FULL mode.
+0:02:34.500 E/SOUN: snd error in file: Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/fmod/phenom300.snd line 1640
+0:02:34.500 E/SOUN: The sound event event:/phenom300/equipment/switches/g1000/pushbutton_hold has an invalid command trigger aerobask/g1000/toggle_syn_electrical
+0:02:34.500 E/SOUN: snd error in file: Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/fmod/phenom300.snd line 1647
+0:02:34.500 E/SOUN: The sound event event:/phenom300/equipment/switches/g1000/pushbutton_hold has an invalid command trigger aerobask/g1000/toggle_syn_fuel
+0:02:34.500 E/SOUN: snd error in file: Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/fmod/phenom300.snd line 1654
+0:02:34.500 E/SOUN: The sound event event:/phenom300/equipment/switches/g1000/pushbutton_hold has an invalid command trigger aerobask/g1000/toggle_syn_antiice
+0:02:34.500 E/SOUN: snd error in file: Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/fmod/phenom300.snd line 1661
+0:02:34.500 E/SOUN: The sound event event:/phenom300/equipment/switches/g1000/pushbutton_hold has an invalid command trigger aerobask/g1000/toggle_syn_status
+0:02:34.500 I/FLT: Init dat_p0 type:'runway_start' apt:LFPG rwy:09R final_distance:0.000000nm tow_type:none tow_plane: 
+0:02:34.500 I/SVT: SVT tile (+50+3 for 000001A13A8A4F98) requested at 194567ms
+0:02:34.500 I/SVT: tile (+50+3 for 000001A13A8A4F98) scheduled 194567ms, 0ms after request.
+0:02:34.500 I/SVT: SVT tile (+50+3 for 000001A12C3B6E08) requested at 194572ms
+0:02:34.500 I/SVT: tile (+50+3 for 000001A12C3B6E08) scheduled 194572ms, 0ms after request.
+0:02:34.500 I/SCN: DSF load time: 57505 for file Global Scenery/Global Airports/Earth nav data/+40+000/+48+003.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:02:34.500 I/SCN: DSF load time: 91116 for file Global Scenery/Global Airports/Earth nav data/+50+000/+50+001.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:02:34.500 I/SVT: tile (+50+3 for 000001A12C3B6E08) done loading 194685ms, async work took 113ms.
+0:02:34.500 I/SVT: tile (+50+3 for 000001A12C3B6E08) swapped in 194685ms, 0ms after async work was done.
+0:02:34.500 I/SVT: tile (+50+3 for 000001A13A8A4F98) done loading 194702ms, async work took 134ms.
+0:02:34.500 I/SCN: DSF load time: 122961 for file Global Scenery/Global Airports/Earth nav data/+50+000/+50+003.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:02:34.500 I/SVT: tile (+50+3 for 000001A13A8A4F98) swapped in 194728ms, 26ms after async work was done.
+0:02:34.500 I/SCN: DSF load time: 4156163 for file Global Scenery/Global Airports/Earth nav data/+40+000/+48+001.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:02:34.500 I/SCN: DSF load time: 4746307 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+50+001.dsf (152520 tris, 4 skipped for -10.7 m^2)
+0:02:34.500 D/OBJ: CPU Geometry: 27 (0.93%) 39 (0.67%) "Resources/default scenery/1000 autogen/US/industrial/obstacles/objects/mast200m.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 30 (1.00%) 42 (0.63%) "Resources/default scenery/1000 autogen/US/industrial/obstacles/objects/mast200m2.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 30 (1.23%) 42 (0.74%) "Resources/default scenery/1000 autogen/US/industrial/obstacles/objects/mast200m3.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 27 (0.86%) 39 (0.55%) "Resources/default scenery/1000 autogen/US/industrial/obstacles/objects/mast200m4.obj"
+0:02:34.500 I/SCN: DSF load time: 5077949 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+40+000/+48+003.dsf (259482 tris, 16 skipped for -14.7 m^2)
+0:02:34.500 I/SCN: DSF load time: 1364313 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+40+000/+48+001.dsf (202650 tris, 20 skipped for -20.7 m^2)
+0:02:34.500 I/SCN: DSF load time: 5877761 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+50+003.dsf (306859 tris, 26 skipped for -40.0 m^2)
+0:02:34.500 I/SCN: DSF load time: 44220 for file Global Scenery/Global Airports/Earth nav data/+50+000/+50+002.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:02:34.500 I/SCN: DSF load time: 51000 for file Global Scenery/Global Airports/Earth nav data/+40+000/+48+004.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:02:34.500 I/SCN: DSF load time: 156903 for file Global Scenery/Global Airports/Earth nav data/+50+000/+50+004.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:02:34.500 I/SCN: DSF load time: 180357 for file Global Scenery/Global Airports/Earth nav data/+40+000/+48+002.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:02:34.500 I/SCN: DSF load time: 18869 for file Custom Scenery/X-Plane Landmarks - Paris/Earth nav data/+40+000/+48+002.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:02:34.500 D/OBJ: CPU Geometry: 12 (0.18%) 30 (0.16%) "Resources/default scenery/1000 autogen/global_objects/objects/RooftopHelipad5.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 28 (1.60%) 42 (0.61%) "Resources/default scenery/1000 autogen/US/industrial/power/objects/WindTbn2m5_100.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 28 (1.60%) 42 (0.61%) "Resources/default scenery/1000 autogen/US/industrial/power/objects/WindTbn2m5_100c.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 28 (1.60%) 42 (0.61%) "Resources/default scenery/1000 autogen/US/industrial/power/objects/WindTbn2m5_100b.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 8 (2.44%) 12 (2.06%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower20-1.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (1.24%) 6 (1.15%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower18-1.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (1.96%) 6 (1.89%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower21-1.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (2.67%) 6 (2.63%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower22-1.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (0.35%) 6 (0.30%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower23-4.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 67 (2.55%) 117 (1.44%) "Resources/default scenery/1000 autogen/US/urban_high/objects/HR40x55x210.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 46 (0.55%) 84 (0.34%) "Resources/default scenery/1000 autogen/global_objects/objects/RooftopHelipad1.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 8 (0.98%) 12 (0.92%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sign_digi_clock3.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 88 (4.42%) 132 (3.11%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower12_2.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 35 (0.26%) 78 (0.24%) "Resources/default scenery/1000 autogen/global_objects/objects/RooftopHelipad2A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (2.63%) 6 (1.72%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower18-2.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (3.64%) 6 (3.45%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower20-2.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 11 (6.21%) 15 (4.81%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower3_0.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 8 (4.88%) 12 (4.44%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower8_5.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 9 (8.57%) 15 (9.09%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower5_0.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 24 (6.15%) 78 (9.15%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower7_0.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 114 (25.00%) 213 (28.74%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower9_1.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (2.13%) 6 (2.13%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower21-2.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (2.78%) 6 (2.44%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower22-2.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (0.94%) 6 (0.81%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower23-1.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 31 (13.90%) 48 (11.94%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower12_0.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 11 (2.67%) 15 (2.10%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower1-1.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 8 (2.20%) 12 (1.92%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower20.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 8 (4.88%) 12 (4.44%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower8_4.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (0.65%) 6 (0.42%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower19-1.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (1.96%) 6 (1.92%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower3_1.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 24 (5.02%) 78 (9.15%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower7_1.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 50 (10.96%) 93 (12.55%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower9_2.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 16 (10.81%) 36 (15.38%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower8_1.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (5.56%) 6 (5.26%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower5_1.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 16 (5.26%) 24 (5.13%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower12_1.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 8 (2.41%) 12 (2.08%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower1-2.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (0.75%) 6 (0.74%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower20-3.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (2.65%) 6 (2.67%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower22-3.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (2.45%) 6 (2.47%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower21-3.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (0.67%) 6 (0.62%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower23-2.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 16 (9.09%) 24 (8.33%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower13_1.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 44 (0.43%) 66 (0.26%) "Resources/default scenery/1000 autogen/global_objects/objects/RooftopHelipad4.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 8 (3.70%) 12 (2.99%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower3_2.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 24 (13.95%) 54 (19.57%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower8_3.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 84 (24.78%) 174 (31.35%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower9_3.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (1.96%) 6 (1.85%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower13_2.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 24 (14.63%) 54 (19.57%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower3_3.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 15 (3.74%) 21 (2.95%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower1-3.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 72 (0.49%) 108 (0.29%) "Resources/default scenery/1000 autogen/global_objects/objects/RooftopHelipad3.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (7.14%) 6 (7.14%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower5_2.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 24 (16.90%) 42 (17.07%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower8_2.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (0.72%) 6 (0.70%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower23-3.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (0.48%) 6 (0.39%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower22-4.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 24 (16.67%) 54 (21.95%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower3_4.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 7 (2.46%) 9 (1.90%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower13_3.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 36 (33.33%) 54 (33.33%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower5_3.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (7.69%) 6 (7.69%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower8_6.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 24 (16.67%) 54 (21.95%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower3_5.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (1.49%) 6 (1.37%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower17-1.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (1.52%) 6 (1.37%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower17-2.obj"
+0:02:34.500 I/SCN: DSF load time: 3913197 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+40+000/+48+004.dsf (266234 tris, 23 skipped for -40.8 m^2)
+0:02:34.500 I/SCN: DSF load time: 4106996 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+50+002.dsf (260203 tris, 14 skipped for -19.2 m^2)
+0:02:34.500 I/SCN: DSF load time: 42025 for file Global Scenery/Global Airports/Earth nav data/+40+000/+49+004.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:02:34.500 I/SCN: DSF load time: 4783736 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+50+004.dsf (333501 tris, 18 skipped for -15.7 m^2)
+0:02:34.500 D/OBJ: CPU Geometry: 20 (22.99%) 48 (25.40%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0415J0297R120A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 8 (4.65%) 18 (5.13%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0570J0382R085A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 8 (3.70%) 12 (2.99%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0300A0300R048D.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 5 (5.00%) 9 (4.69%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0295J0191A075A.obj"
+0:02:34.500 I/SCN: DSF load time: 5596326 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+40+000/+48+002.dsf (411566 tris, 51 skipped for -987.0 m^2)
+0:02:34.500 D/OBJ: CPU Geometry: 6 (2.69%) 12 (3.48%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0300A0450S055A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 11 (3.82%) 15 (3.12%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0298A0235R081A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 40 (22.22%) 66 (23.91%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0285A0285R120A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (1.82%) 6 (1.85%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0300A0300S055B.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 16 (5.06%) 36 (6.98%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0358A0358R077A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 28 (36.84%) 42 (36.84%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0130A0500A018A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 8 (2.72%) 12 (2.70%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0174A0129A120A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 6 (11.11%) 12 (14.29%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0130A0500A022B.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 6 (4.92%) 12 (6.25%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0225A0300A042C.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 6 (4.48%) 12 (5.88%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0225A0300A059A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 6 (11.11%) 12 (14.29%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0225A0300A062B.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 24 (16.67%) 54 (21.95%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0140A0257A040A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (3.03%) 6 (3.03%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0338A0161O060A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 24 (6.09%) 78 (9.15%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0594J0324A122A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 24 (14.63%) 54 (19.57%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0298A0170R040C.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 8 (2.94%) 12 (2.94%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0597A0375A052A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 40 (33.90%) 72 (37.50%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0600A0358A038A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 6 (12.00%) 12 (15.38%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0130A0500A036A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 6 (12.00%) 12 (15.38%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0130A0500A036B.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 103 (65.61%) 165 (66.27%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0482C1147T045A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 4 (2.22%) 6 (2.17%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0225A0365A047A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 10 (11.36%) 24 (16.67%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0600A0358A042A.obj"
+0:02:34.500 I/SCN: DSF load time: 38313 for file Global Scenery/Global Airports/Earth nav data/+40+000/+49+001.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:02:34.500 D/OBJ: CPU Geometry: 8 (2.94%) 12 (2.94%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0600A0225A052A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 26 (9.70%) 42 (10.29%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0174A0129A079A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 24 (14.63%) 54 (19.57%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0298A0170A080A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 24 (11.11%) 54 (15.00%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0298A0170A120B.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 8 (11.76%) 12 (10.53%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0300A0150A087A.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 27 (2.14%) 39 (1.72%) "Resources/default scenery/1000 autogen/US/industrial/obstacles/objects/mast400m.obj"
+0:02:34.500 I/SCN: DSF load time: 4305970 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+40+000/+49+004.dsf (235698 tris, 19 skipped for -30.9 m^2)
+0:02:34.500 I/SCN: DSF load time: 23363 for file Global Scenery/Global Airports/Earth nav data/+40+000/+49+003.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:02:34.500 I/SCN: DSF load time: 2953430 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+40+000/+49+001.dsf (247623 tris, 14 skipped for -15130.4 m^2)
+0:02:34.500 I/SCN: DSF load time: 1497616 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+40+000/+49+003.dsf (279434 tris, 20 skipped for -1740.0 m^2)
+0:02:34.500 I/SCN: DSF load time: 84572 for file Global Scenery/Global Airports/Earth nav data/+40+000/+49+002.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:02:34.500 I/SCN: DSF load time: 2658367 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+40+000/+49+002.dsf (324619 tris, 31 skipped for -7477.8 m^2)
+0:02:34.500 I/SCN: Preload time: 8284402
+0:02:34.500 I/REPLAY: Starting replay recording
+0:02:34.500 I/SCN: Preload time: 7080
+0:02:34.500 D/OBJ: CPU Geometry: 584 (100.00%) 1464 (100.00%) "Resources/default scenery/sim objects/dynamic/ford_carrier_parts/Gerald_R_Ford_Deck.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 57 (100.00%) 57 (100.00%) "Resources/default scenery/sim objects/dynamic/ford_carrier_parts/Gerald_R_Ford_HangarPavement.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 320 (0.37%) 480 (0.21%) "Resources/default scenery/sim objects/ships/parts/BulkCarrier_155A_BaseModel.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 122 (0.08%) 216 (0.08%) "Resources/default scenery/sim objects/dynamic/Perry.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 320 (0.40%) 480 (0.23%) "Resources/default scenery/sim objects/ships/parts/BulkCarrier_155B_BaseModel.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 327 (0.30%) 822 (0.31%) "Resources/default scenery/sim objects/ships/parts/BulkCarrier_190A_BaseModel.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 327 (0.30%) 822 (0.31%) "Resources/default scenery/sim objects/ships/parts/BulkCarrier_190C_BaseModel.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 480 (0.46%) 1146 (0.47%) "Resources/default scenery/sim objects/ships/parts/BulkCarrier_342B_BaseModel.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 28 (0.03%) 42 (0.02%) "Resources/default scenery/sim objects/ships/parts/ContainerCarrier_155A_BaseModel.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 408 (0.22%) 612 (0.12%) "Resources/default scenery/sim objects/ships/parts/ContainerCarrier_399A_BaseModel.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 408 (0.22%) 612 (0.12%) "Resources/default scenery/sim objects/ships/parts/ContainerCarrier_399B_BaseModel.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 225 (0.12%) 636 (0.13%) "Resources/default scenery/sim objects/ships/parts/LNGCarrier_190A_BaseModel.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 300 (0.15%) 756 (0.15%) "Resources/default scenery/sim objects/ships/parts/LNGCarrier_190B_BaseModel.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 225 (0.12%) 636 (0.13%) "Resources/default scenery/sim objects/ships/parts/LNGCarrier_190C_BaseModel.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 320 (0.16%) 816 (0.17%) "Resources/default scenery/sim objects/ships/parts/LNGCarrier_190D_BaseModel.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 230 (0.13%) 666 (0.15%) "Resources/default scenery/sim objects/ships/parts/OilTanker_183A_BaseModel.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 230 (0.13%) 666 (0.15%) "Resources/default scenery/sim objects/ships/parts/OilTanker_183B_BaseModel.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 308 (0.17%) 798 (0.18%) "Resources/default scenery/sim objects/ships/parts/OilTanker_190A_BaseModel.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 220 (0.11%) 708 (0.14%) "Resources/default scenery/sim objects/ships/parts/OilTanker_250A_BaseModel.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 208 (0.10%) 666 (0.13%) "Resources/default scenery/sim objects/ships/parts/OilTanker_250B_BaseModel.obj"
+0:02:34.500 D/OBJ: CPU Geometry: 190 (0.32%) 348 (0.17%) "Resources/default scenery/sim objects/ships/parts/Luxury_Yacht_6500_01_BaseModel.obj"
+0:02:34.500 I/REPLAY: Registered birth event for flt 0, entity id: 2
+0:02:34.500 I/REPLAY: Creating flt entity with entity id 2 and p_index 0
+0:02:34.500 I/SCN: Loading sim objects for airport LFPG
+0:02:34.500 I/SCN: Loading sim objects for airport LFPB
+0:02:34.500 I/SCN: Preload time: 2190444
+[PHENOM_300 INFO]: [LUA]: "phenom300"	New flight
+[PHENOM_300 INFO]: [LUA]: "phenom300"	TOGA is TO until proven wrong
+[PHENOM_300 INFO]: [LUA]: "gpws"	[GPWS] Initialized
+0:02:34.500 I/OVR: Reading VR conf file: Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/phenom300_vrconfig.txt
+0:02:34.500 D/STM: Transitioning from state state_NormalLoading to state_Normal
+0:02:34.500 I/OVR: User is leaving the holodeck.
+0:04:01.496 I/WIN: Opened window menu bar
+[PHENOM_300 INFO]: Initializing modules...
+[PHENOM_300 INFO]: [LUA]: "module"	Post-loading initializations
+0:04:01.496 W/ART: 
+********************************************************** WARNING *******************************************************
+**                                                                                                                      **
+** Art controls are being modified. These are development tools which may cause unpredictable or unstable behaviour and **
+** SHOULD NOT be used in normal operation. Please avoid touching art controls if you need to file a bug report.         **
+**                                                                                                                      **
+**************************************************************************************************************************
+0:04:01.496 W/ART: Art control 'panel/always_render' was modified by Phenom_300 (SASL).
+[PHENOM_300 INFO]: [LUA]: "module"	Loading preferences from C:\X-Plane 12//Output/preferences/phenom_300_by_aerobask.prf
+[PHENOM_300 INFO]: [LUA]: "module"	Set G1000:flc_no_synch to false as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set G1000:touchscreen to true as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set G1000_1:cross_ptr to false as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set G1000_1:fuel_lbs to false as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set G1000_1:keep_onscreen to false as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set G1000_1:no_bezel to false as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set G1000_1:proportional to true as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set G1000_1:show_fpv to true as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set G1000_1:show_gs to true as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set G1000_1:show_ra to true as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set G1000_1:sky_ptr to true as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set G1000_1:syn_terrain to 2 as number
+[PHENOM_300 INFO]: [LUA]: "module"	Set G1000_1:syn_vis to true as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set G1000_1:tas_in_kts to true as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set G1000_MFD:keep_onscreen to false as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set G1000_MFD:no_bezel to false as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set G1000_MFD:proportional to true as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set aircraft:num_pax to 0 as number
+[PHENOM_300 INFO]: [LUA]: "module"	Set brk:reliability to 0 as number
+[PHENOM_300 INFO]: [LUA]: "module"	Set cabin:time_is_zulu to true as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set fuel:L to 686.37316894531 as number
+[PHENOM_300 INFO]: [LUA]: "module"	Set fuel:R to 686.35974121094 as number
+[PHENOM_300 INFO]: [LUA]: "module"	Set global:instr_no_popup to false as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set global:instr_no_reset to true as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set global:jit_on to true as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set global:kill_cabin to false as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set global:show_reflet_inst to true as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set global:show_reflet_wind to true as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set global:show_static to false as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set iesi:baro_in_hpa to false as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set iesi:keep_onscreen to false as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set iesi:no_bezels to false as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set iesi:proportional to true as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set options:csc_as_thr to false as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set options:doors_closed to 0 as number
+[PHENOM_300 INFO]: [LUA]: "module"	Set options:g1000_bug_views to true as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set options:g1000_flc_no_synch to false as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set options:g1000_fuel_lbs to false as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set options:g1000_narrow_auto to false as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set options:g1000_narrow_eis to true as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set options:g1000_narrow_fpl to false as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set options:iesi_no_bezel to false as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set options:iesi_proportional to true as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Set options:show_copilot to 0 as number
+[PHENOM_300 INFO]: [LUA]: "module"	Set options:steep_approaches to true as boolean
+[PHENOM_300 INFO]: [LUA]: "module"	Saving preferences to C:\X-Plane 12//Output/preferences/phenom_300_by_aerobask.prf
+[PHENOM_300 INFO]: [LUA]: "libXPSV"	Reading C declarations from C:\X-Plane 12/Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/plugins/SASL/data/modules/Custom Module/libXPSV/include/Synthetic_Vision_Module.h
+[PHENOM_300 INFO]: [LUA]: "libXPSV"	Loading library C:\X-Plane 12/Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/plugins/SASL/data/modules/Custom Module/libXPSV/win_x64/libXPSV.dll
+[PHENOM_300 INFO]: [LUA]: "libXPSV"	_NOSV is false
+[PHENOM_300 INFO]: [LUA]: "libXPSV"	Success
+[PHENOM_300 INFO]: [LUA]: "libXPSV"	Setting log file to C:\X-Plane 12/libXPSV.log
+[PHENOM_300 INFO]: [LUA]: "g1000_pfd"	new_terrain_map_3d	1024	768	68	0	0	0	3	1	topographic_cmap.png
+[PHENOM_300 INFO]: [LUA]: "g1000_pfd"	new_screen        	0	0	1024	768
+[PHENOM_300 INFO]: [LUA]: "libXPSV"	Using custom colormap topographic_cmap.png
+[PHENOM_300 INFO]: [LUA]: "module"	Linking screen #0 to map #0
+[PHENOM_300 INFO]: [LUA]: "g1000_pfd"	new_terrain_map_3d	1024	768	68	0	0	214	3	1
+[PHENOM_300 INFO]: [LUA]: "g1000_pfd"	new_screen        	0	0	1024	768
+[PHENOM_300 INFO]: [LUA]: "module"	Linking screen #1 to map #1
+[PHENOM_300 INFO]: Modules initialization done
+[PHENOM_300 INFO]: [LUA]: "module"	Prerendering... 
+[PHENOM_300 INFO]: [LUA]: "module"	Done rendering 89 textures
+[PHENOM_300 INFO]: [LUA]: "module"	Prerendering... 
+[PHENOM_300 INFO]: [LUA]: "module"	Done rendering 15 textures
+[PHENOM_300 INFO]: [LUA]: "module"	Aircraft	Aerobask_Phenom_300_XP12	Phenom 300	liveries	N6A	
+[PHENOM_300 INFO]: [LUA]: "module"	livery_name	5	N6A
+[PHENOM_300 INFO]: [LUA]: "module"	Looking for C:\X-Plane 12/Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/liveries/N6A/phenom300_icon11.png
+[PHENOM_300 INFO]: [LUA]: "module"	Tail number set to N6A
+[PHENOM_300 INFO]: [LUA]: "g1000_pfd"	Turning PFD#1 on
+0:04:01.496 I/GFX: Rebuilding offscreens for window resize: x=3193 y=1681 hdrx=1596 hdry=840
+0:04:01.496 I/TEX: Pre-warming paging cache
+0:04:01.496 I/TEX: Target scale moved to 1.000000. Texture usage is 17.85 mb out of 2.99 gb available. Memory headroom is 3.05 gb
+0:04:01.496 D/KTX2: [Resources/bitmaps/world/moon_NML.ktx2] 1024x1024x0 0 layers 11 levels 1 faces none
+0:04:01.496 I/TEX: Finished pre-warming paging cache. Time taken: 3.533s
+0:04:01.496 W/RLP: Runloop is backed up. Current task count: 645, estimated runtime: 3740.807s
+0:04:10.727 W/ART: Art control 'perf/cockpit_kill_dist' was modified by Air Plugin.
+[PHENOM_300 INFO]: [LUA]: "module"	changelog: 	0	12.2r1
+[PHENOM_300 INFO]: [LUA]: "module"	local    : 	0	12.2r1
+[PHENOM_300 INFO]: [LUA]: "module"	remote   : 	0	12.2r1
+0:04:50.070 I/TEX: Target scale moved to 2.000000. Texture usage is 343.27 mb out of 2.46 gb available. Memory headroom is 2.18 gb
+0:05:19.086 W/RLP: Runloop is backed up. Current task count: 160, estimated runtime: 13.126s
+[PHENOM_300 INFO]: [LUA]: "cabin"	b01AE6qImct: departure change:	1	LFPG	16798798	392	49.009746551514	2.5478193759918
+[PHENOM_300 INFO]: [LUA]: "cabin"	1	49.025707244873	2.5432906150818	119.48159790039	0	0	LFPG	Paris - Charles De Gaulle	true
+0:05:27.170 I/TEX: Target scale moved to 4.000000. Texture usage is 379.72 mb out of 2.20 gb available. Memory headroom is 1.89 gb
+[PHENOM_300 INFO]: [LUA]: "cabin"	b01AE6qImct: arrival change:	1	EBBR	16780874	145	50.901393890381	4.4845695495605
+[PHENOM_300 INFO]: [LUA]: "cabin"	1	50.893993377686	4.5018582344055	44.195999145508	0	0	EBBR	Brussels National	true
+0:05:47.188 I/WIN: Showing subscreen Freeflight
+0:05:47.188 I/OVR: User is entering the holodeck.
+0:05:47.188 I/WIN: Opened window Primary V11 UI
+0:05:52.653 I/WIN: Showing subscreen FreeFlight Location Controller (Advanced)
+0:06:00.122 I/FCG: Applying changes from Flight Configuration screen
+0:06:00.122 I/FCG: Starting new flight in Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/phenom300.acf at Runway 27L
+0:06:00.180 I/FLT: Init dat_p0 type:'runway_start' apt:LFPG rwy:27L final_distance:0.000000nm tow_type:none tow_plane: 
+0:06:00.180 I/REPLAY: Starting replay recording
+0:06:00.180 I/SCN: Preload time: 505384
+0:06:00.180 I/REPLAY: Registered birth event for flt 0, entity id: 1506
+0:06:00.180 I/REPLAY: Creating flt entity with entity id 1506 and p_index 0
+0:06:00.180 I/SCN: Loading sim objects for airport LFPB
+0:06:00.180 I/SCN: Loading sim objects for airport LFPG
+0:06:00.180 I/SCN: Preload time: 1103545
+[PHENOM_300 INFO]: [LUA]: "phenom300"	New flight
+[PHENOM_300 INFO]: [LUA]: "phenom300"	TOGA is TO until proven wrong
+[PHENOM_300 INFO]: [LUA]: "gpws"	[GPWS] Initialized
+0:06:00.180 I/OVR: Reading VR conf file: Aircraft/Aerobask_Phenom_300_XP12/Phenom 300/phenom300_vrconfig.txt
+0:06:00.180 I/OVR: User is leaving the holodeck.
+0:06:01.952 I/GFX: Rebuilding offscreens for window resize: x=3193 y=1681 hdrx=1596 hdry=840
+0:06:01.952 I/TEX: Pre-warming paging cache
+0:06:01.952 I/TEX: Target scale moved to 1.000000. Texture usage is 28.03 mb out of 2.16 gb available. Memory headroom is 2.19 gb
+0:06:01.952 I/TEX: Finished pre-warming paging cache. Time taken: 0.301s
+0:06:01.952 W/RLP: Runloop is backed up. Current task count: 1382, estimated runtime: 163.020s
+0:06:04.270 W/RLP: Runloop is backed up. Current task count: 1371, estimated runtime: 210.925s
+0:06:10.368 I/TEX: Target scale moved to 2.000000. Texture usage is 344.23 mb out of 2.47 gb available. Memory headroom is 2.20 gb
+12:48:56 Say Intentions.AI: [DEBUG] 155 Taxi Path Points added
+0:06:48.909 I/TEX: Target scale moved to 4.000000. Texture usage is 376.87 mb out of 2.20 gb available. Memory headroom is 1.89 gb
+12:49:20 Say Intentions.AI: [DEBUG] 155 Taxi Path Points were replaced with 77 new Path Points
+0:07:26.834 I/TEX: Target scale moved to 8.000000. Texture usage is 501.28 mb out of 1.69 gb available. Memory headroom is 1.24 gb
+0:07:27.075 I/TEX: Target scale moved to 16.000000. Texture usage is 501.28 mb out of 1.70 gb available. Memory headroom is 1.25 gb
+0:10:00.093 I/IDENT: Getting certificate from disk...
+0:10:00.093 I/IDENT: Accepting receipt
+12:54:54 Say Intentions.AI: [DEBUG] 77 Taxi Path Points removed
+[PHENOM_300 INFO]: [LUA]: "g1000_lib"	Set XPNDR to ALT mode
+[PHENOM_300 INFO]: [LUA]: "phenom300"	TOGA is now GA
+0:14:12.465 I/SCN: Loading sim objects for airport LFPB
+0:14:43.527 I/SCN: Loading sim objects for airport LFFE
+0:16:06.986 I/SCN: Loading sim objects for airport LFPA
+0:16:08.645 I/SVT: SVT tile (+50+2 for 000001A13A8A4F98) requested at 975096ms
+0:16:08.645 I/SVT: tile (+50+2 for 000001A13A8A4F98) scheduled 975096ms, 0ms after request.
+0:16:08.645 I/SVT: tile (+50+2 for 000001A13A8A4F98) done loading 975096ms, async work took 0ms.
+0:16:08.645 I/SVT: SVT tile (+50+2 for 000001A12C3B6E08) requested at 975104ms
+0:16:08.645 I/SVT: tile (+50+2 for 000001A12C3B6E08) scheduled 975104ms, 0ms after request.
+0:16:08.645 I/SVT: tile (+50+2 for 000001A12C3B6E08) done loading 975104ms, async work took 0ms.
+0:16:08.740 I/SVT: tile (+50+2 for 000001A13A8A4F98) swapped in 975188ms, 92ms after async work was done.
+0:16:08.740 I/SVT: tile (+50+2 for 000001A12C3B6E08) swapped in 975188ms, 84ms after async work was done.
+0:16:08.967 I/SCN: DSF load time: 29149 for file Global Scenery/Global Airports/Earth nav data/+40+000/+48+000.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:16:09.235 I/SCN: DSF load time: 31038 for file Global Scenery/Global Airports/Earth nav data/+50+000/+50+000.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:16:10.187 I/SCN: DSF load time: 922943 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+50+000.dsf (68826 tris, 5 skipped for -10.1 m^2)
+0:16:11.123 I/SCN: DSF load time: 2132425 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+40+000/+48+000.dsf (216748 tris, 13 skipped for -19.0 m^2)
+0:16:11.123 I/SCN: DSF load time: 46511 for file Global Scenery/Global Airports/Earth nav data/+40+000/+49+000.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:16:13.131 I/SCN: DSF load time: 1981064 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+40+000/+49+000.dsf (200820 tris, 12 skipped for -8.4 m^2)
+0:16:33.746 E/GFX/VK: Encountered Vulkan error VK_ERROR_UNKNOWN. Expression: vkQueueSubmit(m_queue, 1, &info, data.fence->get_fence()). C:/Users/Administrator/builds/eiafPmXpN/0/x-plane/design/source_code/core/gfx/Vulkan/gfx_vk_queue.cpp:469
+0:16:33.746 I/GFX/VK: ------------------------------------------
+0:16:33.746 I/GFX/VK: Information for generic allocations:
+0:16:33.746 I/GFX/VK: Info for heap: 0
+0:16:33.746 I/GFX/VK: 	Block count: 17, allocation count: 6473, block size: 2.75 gb
+0:16:33.746 I/GFX/VK: 	Used: 2.09 gb, unused: 678.84 mb
+0:16:33.746 I/GFX/VK: Info for heap: 1
+0:16:33.746 I/GFX/VK: 	Block count: 17, allocation count: 11374, block size: 2.53 gb
+0:16:33.746 I/GFX/VK: 	Used: 1.65 gb, unused: 901.68 mb
+0:16:33.746 I/GFX/VK: Info for heap: 2
+0:16:33.746 I/GFX/VK: 	Block count: 3, allocation count: 74, block size: 24.00 mb
+0:16:33.746 I/GFX/VK: 	Used: 18.19 mb, unused: 5.81 mb
+0:16:33.746 I/GFX/VK: ------------------------------------------
+0:16:33.746 I/GFX/VK: Information for plugin allocations:
+0:16:33.746 I/GFX/VK: Heap 0: allocation count: 287, allocated: 323.91 mb
+0:16:33.746 I/GFX/VK: Heap 1: allocation count: 16, allocated: 29.86 mb
+0:16:33.746 I/GFX/VK: Heap 2: allocation count: 58, allocated: 2.19 mb
+0:16:33.746 I/GFX/VK: ------------------------------------------
+0:16:33.746 I/GFX/VK: Budget information:
+0:16:33.746 I/GFX/VK: Heap 0: budget: 6.98 gb (7499304448 bytes), usage: 3.45 gb (3702870784 bytes)
+0:16:33.746 I/GFX/VK: Heap 1: budget: 11.17 gb (11998943232 bytes), usage: 2.67 gb (2862821376 bytes)
+0:16:33.746 I/GFX/VK: Heap 2: budget: 231.17 mb (242401760 bytes), usage: 26.19 mb (27458720 bytes)
+0:16:33.746 I/GFX: Saved a memory report in Output/diagnostic reports//Report - 2026-03-01 12.58.44.zip
+0:16:33.746 E/SYS: MACIBM_alert: Encountered critical Vulkan error!
+0:16:33.746 E/SYS: MACIBM_alert: VK_ERROR_UNKNOWN
+0:16:33.746 E/SYS: MACIBM_alert: vkQueueSubmit(m_queue, 1, &info, data.fence->get_fence())
+0:16:33.746 E/SYS: MACIBM_alert: Please submit the auto crash report form.
+0:16:33.746 E/SYS: MACIBM_alert: C:/Users/Administrator/builds/eiafPmXpN/0/x-plane/design/source_code/core/gfx/Vulkan/gfx_vk_queue.cpp:469
+--=={This application has crashed!}==--
+C:\X-Plane 12\X-Plane.exe
+(Art controls are modified.)
+========= MODIFIED ART CONTROLS =========
+ PLG: perf/cockpit_kill_dist: 300000
+ PLG: panel/always_render: 1
+========= MODIFIED ART CONTROLS =========
+--=={FILE: C:\X-Plane 12\Log_ATC.txt}==--
+--=={UUID: 99b3c4c5-7e8e-4358-b383-980fbacc30cc}==--
+upload successful

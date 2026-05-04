@@ -1,0 +1,9 @@
+{
+  "description": "Demo case for missing scenery library/object without triggering macOS quarantine false positive.",
+  "must_detect": [
+    { "kind": "missing_scenery_asset", "min_occurrences": 1 },
+    { "kind": "missing_scenery_object", "min_occurrences": 1 },
+    { "kind": "missing_scenery_library", "min_occurrences": 1 }
+  ],
+  "must_not_detect": ["macos_security_block"]
+}

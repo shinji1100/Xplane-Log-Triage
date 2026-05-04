@@ -1,0 +1,9 @@
+{
+  "description": "i7-10700K + AMD Radeon Pro 5500 XT: VK_ERROR_UNKNOWN crash with standard crash marker and UUID",
+  "must_detect": [
+    { "kind": "vulkan_result_error", "min_occurrences": 1 },
+    { "kind": "application_crash", "min_occurrences": 1 },
+    { "kind": "pre_crash_context", "min_occurrences": 1 }
+  ],
+  "must_not_detect": ["abrupt_termination", "early_silent_crash"]
+}

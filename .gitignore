@@ -1,0 +1,10 @@
+/target/
+/report.html
+/report.json
+/forum-summary.txt
+*.exe
+*.pdb
+*.zip
+*.bak
+/handoff/
+/docs/market-research.md

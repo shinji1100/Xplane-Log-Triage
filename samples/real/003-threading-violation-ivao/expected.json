@@ -1,0 +1,9 @@
+{
+  "description": "i9-12900K + RTX 3090: IVAO Altitude threading violation leads to abrupt termination",
+  "must_detect": [
+    { "kind": "threading_violation", "min_occurrences": 1 },
+    { "kind": "abrupt_termination", "min_occurrences": 1 },
+    { "kind": "missing_scenery_object", "min_occurrences": 1 }
+  ],
+  "must_not_detect": ["application_crash"]
+}

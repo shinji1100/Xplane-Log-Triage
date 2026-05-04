@@ -1,0 +1,12 @@
+Log.txt for X-Plane 12.00 demo
+OS: Windows 11
+CPU type: 8664
+OpenGL Renderer: Demo GPU
+Fetching plugins for E:\SteamLibrary/steamapps/common/X-Plane 12/Resources/plugins
+Loaded: Resources/plugins/Example/win_x64/example.xpl
+FlyWithLua: Plugin Scripts Quarantine Dir: E:\SteamLibrary/steamapps/common/X-Plane 12/Resources/plugins/FlyWithLua/Scripts (Quarantine)/
+0:00:13.929 E/SCN: The art asset 'PP146-lib/GroundTextures/CarTireTracks.lin' could not be found.
+0:00:13.930 E/SCN: Unable to locate object: PP146-lib/Objects/Test.obj
+0:00:13.931 E/SYS: MACIBM_alert: It requires an additional library scenery package that is not installed, or it is missing some of its files.
+0:00:14.000 I/SCN: Custom scenery load complete.
+

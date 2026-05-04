@@ -1,0 +1,1464 @@
+Log.txt for X-Plane 12.4.1-r1-52b26ed9 (build 124104 Intel 64-bit, Vulkan 982da2012dd08f0a729a495902f3cdfd26d47ebc)
+Compiled on Mar 25 2026 18:29:28
+X-Plane Started on Tue Apr  7 18:36:36 2026
+
+This log file is generated automatically by Laminar Research applications and contains diagnostics about your graphics hardware, installation, and any error conditions.
+If you need to contact tech support or file a bug, please send us this file. NOTE: this file is rewritten every time you start ANY of your X-System applications.
+
+Windows 10.0 (build 19045/2)
+This is a 64-bit version of Windows.
+CPU type: AMD Ryzen 3 2200G with Radeon Vega Graphics - Speed: 3.2-3.6 GHz - Cores: 4
+          Microcode 0x810100b
+Physical Memory (total for computer): 8515452928
+Maximum Virtual Memory (for X-Plane only): 140737488224256
+
+X-System folder:'C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/', case sensitive=0
+
+0:00:00.000 D/TRN: Unable to determine default language. May need to prompt the user to select.
+0:00:00.000 I/GFX/VK: Vulkan Layers: VK_LAYER_AMD_switchable_graphics (1), VK_LAYER_EOS_Overlay (1), VK_LAYER_VALVE_steam_overlay (1), VK_LAYER_VALVE_steam_fossilize (1)
+0:00:00.000 I/GFX/VK: Capability list:
+Vulkan Device       : Radeon RX 570 Series (6aa5000000)
+Vulkan Version      : 1.3.260
+Vulkan Driver       : 2.0.279
+Vulkan Extensions   : VK_KHR_16bit_storage VK_KHR_8bit_storage VK_KHR_bind_memory2 VK_KHR_buffer_device_address VK_KHR_copy_commands2 VK_KHR_create_renderpass2 VK_KHR_dedicated_allocation VK_KHR_depth_stencil_resolve VK_KHR_descriptor_update_template VK_KHR_device_group VK_KHR_draw_indirect_count VK_KHR_driver_properties VK_KHR_dynamic_rendering VK_KHR_external_fence VK_KHR_external_fence_win32 VK_KHR_external_memory VK_KHR_external_memory_win32 VK_KHR_external_semaphore VK_KHR_external_semaphore_win32 VK_KHR_format_feature_flags2 VK_KHR_fragment_shader_barycentric VK_KHR_get_memory_requirements2 VK_KHR_global_priority VK_KHR_imageless_framebuffer VK_KHR_image_format_list VK_KHR_maintenance1 VK_KHR_maintenance2 VK_KHR_maintenance3 VK_KHR_maintenance4 VK_KHR_map_memory2 VK_KHR_multiview VK_KHR_pipeline_executable_properties VK_KHR_pipeline_library VK_KHR_push_descriptor VK_KHR_relaxed_block_layout VK_KHR_sampler_mirror_clamp_to_edge VK_KHR_sampler_ycbcr_conversion VK_KHR_separate_depth_stencil_layouts VK_KHR_shader_atomic_int64 VK_KHR_shader_clock VK_KHR_shader_draw_parameters VK_KHR_shader_float16_int8 VK_KHR_shader_float_controls VK_KHR_shader_integer_dot_product VK_KHR_shader_non_semantic_info VK_KHR_shader_subgroup_extended_types VK_KHR_shader_subgroup_uniform_control_flow VK_KHR_shader_terminate_invocation VK_KHR_spirv_1_4 VK_KHR_storage_buffer_storage_class VK_KHR_swapchain VK_KHR_swapchain_mutable_format VK_KHR_synchronization2 VK_KHR_timeline_semaphore VK_KHR_uniform_buffer_standard_layout VK_KHR_variable_pointers VK_KHR_vulkan_memory_model VK_KHR_win32_keyed_mutex VK_KHR_workgroup_memory_explicit_layout VK_KHR_zero_initialize_workgroup_memory VK_EXT_4444_formats VK_EXT_attachment_feedback_loop_layout VK_EXT_calibrated_timestamps VK_EXT_color_write_enable VK_EXT_conditional_rendering VK_EXT_custom_border_color VK_EXT_depth_clamp_zero_one VK_EXT_depth_clip_control VK_EXT_depth_clip_enable VK_EXT_depth_range_unrestricted VK_EXT_descriptor_buffer VK_EXT_descriptor_indexing VK_EXT_device_address_binding_report VK_EXT_device_fault VK_EXT_dynamic_rendering_unused_attachments VK_EXT_extended_dynamic_state VK_EXT_extended_dynamic_state2 VK_EXT_extended_dynamic_state3 VK_EXT_external_memory_host VK_EXT_full_screen_exclusive VK_EXT_global_priority VK_EXT_global_priority_query VK_EXT_hdr_metadata VK_EXT_host_query_reset VK_EXT_image_robustness VK_EXT_image_view_min_lod VK_EXT_index_type_uint8 VK_EXT_inline_uniform_block VK_EXT_line_rasterization VK_EXT_load_store_op_none VK_EXT_memory_budget VK_EXT_memory_priority VK_EXT_mutable_descriptor_type VK_EXT_non_seamless_cube_map VK_EXT_pageable_device_local_memory VK_EXT_pipeline_creation_cache_control VK_EXT_pipeline_creation_feedback VK_EXT_primitive_topology_list_restart VK_EXT_private_data VK_EXT_provoking_vertex VK_EXT_queue_family_foreign VK_EXT_robustness2 VK_EXT_sampler_filter_minmax VK_EXT_sample_locations VK_EXT_scalar_block_layout VK_EXT_separate_stencil_usage VK_EXT_shader_atomic_float VK_EXT_shader_demote_to_helper_invocation VK_EXT_shader_image_atomic_int64 VK_EXT_shader_module_identifier VK_EXT_shader_stencil_export VK_EXT_shader_subgroup_ballot VK_EXT_shader_subgroup_vote VK_EXT_shader_viewport_index_layer VK_EXT_subgroup_size_control VK_EXT_texel_buffer_alignment VK_EXT_tooling_info VK_EXT_transform_feedback VK_EXT_vertex_attribute_divisor VK_EXT_ycbcr_image_arrays VK_AMD_buffer_marker VK_AMD_calibrated_timestamps VK_AMD_display_native_hdr VK_AMD_draw_indirect_count VK_AMD_gcn_shader VK_AMD_gpa_interface VK_AMD_gpu_shader_half_float VK_AMD_gpu_shader_int16 VK_AMD_memory_overallocation_behavior VK_AMD_mixed_attachment_samples VK_AMD_rasterization_order VK_AMD_shader_ballot VK_AMD_shader_core_properties VK_AMD_shader_core_properties2 VK_AMD_shader_early_and_late_fragment_tests VK_AMD_shader_explicit_vertex_parameter VK_AMD_shader_fragment_mask VK_AMD_shader_image_load_store_lod VK_AMD_shader_info VK_AMD_shader_trinary_minmax VK_GOOGLE_decorate_string VK_GOOGLE_hlsl_functionality1 VK_GOOGLE_user_type VK_VALVE_mutable_descriptor_type 
+Vulkan Instance Extensions: VK_KHR_device_group_creation VK_KHR_external_fence_capabilities VK_KHR_external_memory_capabilities VK_KHR_external_semaphore_capabilities VK_KHR_get_physical_device_properties2 VK_KHR_get_surface_capabilities2 VK_KHR_surface VK_KHR_win32_surface VK_EXT_debug_report VK_EXT_debug_utils VK_EXT_swapchain_colorspace VK_KHR_portability_enumeration VK_LUNARG_direct_driver_loading 
+0:00:00.000 I/GFX/VK: 
+alpha_to_one               : 0	amd_buffer_markers         : 1	anisotropy                 : 1	baseline_desktop           : 1	baseline_desktop_linux     : 0	
+baseline_desktop_win32     : 1	baseline_mobile            : 0	buffer_device_address      : 1	descriptor_buffers         : 0	ext_device_fault           : 1	
+fullscreen_exclusive       : 1	host_query_reset           : 1	maintenance4               : 1	memory_budget              : 0	nv_device_diagnostics      : 0	
+pageable_device_memory     : 1	push_descriptors           : 1	qcom_render_pass_transform : 0	shader_float16             : 0	shader_int16               : 0	
+sparse                     : 0	storage_image_multisample  : 1	timeline_semaphores        : 1	validation_cache           : 0	vulkan_11                  : 1	
+vulkan_12                  : 1	vulkan_13                  : 1	
+0:00:00.000 I/GFX: 
+anisotropic_avail   : 1	coarse_timer_avail  : 1	precise_timer_avail : 1	tess_avail          : 0	geom_avail          : 0	
+viewport_arr        : 1	layer_arr           : 1	native_reverse_z    : 1	has_reverse_z       : 1	
+persistent map      : 1	msaa shader write   : 1	shader float16      : 0	shader int16        : 0	
+rebar_avail         : 0	alpha_to_one_avail  : 0	msaa_storage_image_avail: 1	
+sparse bindings     : 0	sparse page size    : 0	
+max iso filtering   : 16
+max samples         : 3
+max texture size    : 16384 (hardware limit)
+max tex units       : 4294967295
+
+This video card is bucketed as: Vulkan with async compute
+0:00:00.000 I/GFX/VK: Device Queues:
+Queue 0: Generic, Presentation, (VK_QUEUE_GRAPHICS_BIT|VK_QUEUE_COMPUTE_BIT|VK_QUEUE_TRANSFER_BIT|VK_QUEUE_SPARSE_BINDING_BIT)
+Queue 1: Async Compute, (VK_QUEUE_COMPUTE_BIT|VK_QUEUE_TRANSFER_BIT|VK_QUEUE_SPARSE_BINDING_BIT)
+Queue 2: Transfer, (VK_QUEUE_TRANSFER_BIT|VK_QUEUE_SPARSE_BINDING_BIT)
+0:00:00.000 I/GFX/VK: Heap info (3 heaps)
+	Heap 0 - Flags: VK_MEMORY_HEAP_DEVICE_LOCAL_BIT|VK_MEMORY_HEAP_MULTI_INSTANCE_BIT, size: 3.75 gb
+	Heap 1 - Flags: VkMemoryHeapFlags(0), size: 3.71 gb
+	Heap 2 - Flags: VK_MEMORY_HEAP_DEVICE_LOCAL_BIT|VK_MEMORY_HEAP_MULTI_INSTANCE_BIT, size: 256.00 mb
+Memory type info (8 types)
+	Heap: 0, flags: VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT
+	Heap: 1, flags: VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT|VK_MEMORY_PROPERTY_HOST_COHERENT_BIT
+	Heap: 2, flags: VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT|VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT|VK_MEMORY_PROPERTY_HOST_COHERENT_BIT
+	Heap: 1, flags: VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT|VK_MEMORY_PROPERTY_HOST_COHERENT_BIT|VK_MEMORY_PROPERTY_HOST_CACHED_BIT
+	Heap: 0, flags: VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT
+	Heap: 1, flags: VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT|VK_MEMORY_PROPERTY_HOST_COHERENT_BIT
+	Heap: 2, flags: VK_MEMORY_PROPERTY_DEVICE_LOCAL_BIT|VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT|VK_MEMORY_PROPERTY_HOST_COHERENT_BIT
+	Heap: 1, flags: VK_MEMORY_PROPERTY_HOST_VISIBLE_BIT|VK_MEMORY_PROPERTY_HOST_COHERENT_BIT|VK_MEMORY_PROPERTY_HOST_CACHED_BIT
+0:00:00.000 I/GFX/VK: 
+Discovered Vulkan devices, in order of preference:
+	 (0) Radeon RX 570 Series
+		Vulkan: 1.3.260, driver: 0.0.0
+		LUID: 6aa5000000
+		Bridge distance: 0
+		Zink profile: VP_ZINK_gl46_baseline
+		This device is usable
+
+0:00:00.000 I/GFX/Bridge: OpenGL bridge device:
+	 zink Vulkan 1.3(Radeon RX 570 Series (AMD_PROPRIETARY))
+		OpenGL: 4.6 (Compatibility Profile) Mesa 23.2.1 (git-ea714de013)
+		LUID: 6aa5000000
+
+0:00:00.000 I/GFX: Diagnostics         : memory	
+Device memory       : 3600663888
+Host memory         : 3831953818
+
+
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/depth_resolve_mapping.xsv with hash: 30f06cb0b145b0503d4bd18822dce21
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/depth_resolve.xsa with hash: 8835a0884947aa94186288cb80f9777e
+0:00:00.000 I/GFX/bridge: 
+OpenGL bridge device:
+OpenGL Vendor       : Mesa
+OpenGL Render       : zink Vulkan 1.3(Radeon RX 570 Series (AMD_PROPRIETARY)) (6aa5000000)
+OpenGL Version      : 4.6 (Compatibility Profile) Mesa 23.2.1 (git-ea714de013) (460/687)
+OpenGL Extensions   : GL_ARB_multisample GL_EXT_abgr GL_EXT_bgra GL_EXT_blend_color GL_EXT_blend_minmax GL_EXT_blend_subtract GL_EXT_copy_texture GL_EXT_subtexture GL_EXT_texture_object GL_EXT_vertex_array GL_EXT_compiled_vertex_array GL_EXT_texture GL_EXT_texture3D GL_IBM_rasterpos_clip GL_ARB_point_parameters GL_EXT_draw_range_elements GL_EXT_packed_pixels GL_EXT_point_parameters GL_EXT_rescale_normal GL_EXT_separate_specular_color GL_EXT_texture_edge_clamp GL_SGIS_generate_mipmap GL_SGIS_texture_border_clamp GL_SGIS_texture_edge_clamp GL_SGIS_texture_lod GL_ARB_framebuffer_sRGB GL_ARB_multitexture GL_EXT_framebuffer_sRGB GL_IBM_multimode_draw_arrays GL_IBM_texture_mirrored_repeat GL_ARB_texture_cube_map GL_ARB_texture_env_add GL_ARB_transpose_matrix GL_EXT_blend_func_separate GL_EXT_fog_coord GL_EXT_multi_draw_arrays GL_EXT_secondary_color GL_EXT_texture_env_add GL_EXT_texture_filter_anisotropic GL_EXT_texture_lod_bias GL_INGR_blend_func_separate GL_NV_blend_square GL_NV_light_max_exponent GL_NV_texgen_reflection GL_NV_texture_env_combine4 GL_S3_s3tc GL_SUN_multi_draw_arrays GL_ARB_texture_border_clamp GL_ARB_texture_compression GL_EXT_framebuffer_object GL_EXT_texture_compression_s3tc GL_EXT_texture_env_combine GL_EXT_texture_env_dot3 GL_MESA_window_pos GL_NV_packed_depth_stencil GL_NV_texture_rectangle GL_ARB_depth_texture GL_ARB_occlusion_query GL_ARB_shadow GL_ARB_texture_env_combine GL_ARB_texture_env_crossbar GL_ARB_texture_env_dot3 GL_ARB_texture_mirrored_repeat GL_ARB_window_pos GL_ATI_fragment_shader GL_EXT_stencil_two_side GL_EXT_texture_cube_map GL_NV_copy_depth_to_color GL_NV_depth_clamp GL_NV_fog_distance GL_NV_half_float GL_APPLE_packed_pixels GL_ARB_draw_buffers GL_ARB_fragment_program GL_ARB_fragment_shader GL_ARB_shader_objects GL_ARB_vertex_program GL_ARB_vertex_shader GL_ATI_draw_buffers GL_ATI_texture_env_combine3 GL_ATI_texture_float GL_EXT_shadow_funcs GL_EXT_stencil_wrap GL_MESA_pack_invert GL_NV_primitive_restart GL_ARB_depth_clamp GL_ARB_fragment_program_shadow GL_ARB_half_float_pixel GL_ARB_occlusion_query2 GL_ARB_point_sprite GL_ARB_shading_language_100 GL_ARB_sync GL_ARB_texture_non_power_of_two GL_ARB_vertex_buffer_object GL_ATI_blend_equation_separate GL_EXT_blend_equation_separate GL_OES_read_format GL_ARB_color_buffer_float GL_ARB_pixel_buffer_object GL_ARB_texture_compression_rgtc GL_ARB_texture_float GL_ARB_texture_rectangle GL_ATI_texture_compression_3dc GL_EXT_packed_float GL_EXT_pixel_buffer_object GL_EXT_texture_compression_dxt1 GL_EXT_texture_compression_rgtc GL_EXT_texture_rectangle GL_EXT_texture_sRGB GL_EXT_texture_shared_exponent GL_ARB_framebuffer_object GL_EXT_framebuffer_blit GL_EXT_framebuffer_multisample GL_EXT_packed_depth_stencil GL_ARB_vertex_array_object GL_ATI_separate_stencil GL_EXT_draw_buffers2 GL_EXT_draw_instanced GL_EXT_gpu_program_parameters GL_EXT_gpu_shader4 GL_EXT_texture_array GL_EXT_texture_compression_latc GL_EXT_texture_integer GL_EXT_texture_sRGB_decode GL_EXT_timer_query GL_OES_EGL_image GL_EXT_texture_buffer_object GL_AMD_texture_texture4 GL_ARB_copy_buffer GL_ARB_depth_buffer_float GL_ARB_draw_instanced GL_ARB_half_float_vertex GL_ARB_instanced_arrays GL_ARB_map_buffer_range GL_ARB_texture_buffer_object GL_ARB_texture_rg GL_ARB_texture_swizzle GL_ARB_vertex_array_bgra GL_EXT_texture_swizzle GL_EXT_vertex_array_bgra GL_NV_conditional_render GL_AMD_conservative_depth GL_AMD_draw_buffers_blend GL_AMD_seamless_cubemap_per_texture GL_ARB_ES2_compatibility GL_ARB_blend_func_extended GL_ARB_compatibility GL_ARB_debug_output GL_ARB_draw_buffers_blend GL_ARB_draw_elements_base_vertex GL_ARB_explicit_attrib_location GL_ARB_fragment_coord_conventions GL_ARB_provoking_vertex GL_ARB_sample_shading GL_ARB_sampler_objects GL_ARB_seamless_cube_map GL_ARB_shader_texture_lod GL_ARB_tessellation_shader GL_ARB_texture_buffer_object_rgb32 GL_ARB_texture_cube_map_array GL_ARB_texture_gather GL_ARB_texture_multisample GL_ARB_texture_query_lod GL_ARB_texture_rgb10_a2ui GL_ARB_uniform_buffer_object GL_ARB_vertex_type_2_10_10_10_rev GL_ATI_meminfo GL_EXT_provoking_vertex GL_EXT_texture_snorm GL_MESA_texture_signed_rgba GL_NV_copy_image GL_NV_texture_barrier GL_ARB_draw_indirect GL_ARB_get_program_binary GL_ARB_gpu_shader5 GL_ARB_gpu_shader_fp64 GL_ARB_robustness GL_ARB_separate_shader_objects GL_ARB_shader_bit_encoding GL_ARB_shader_precision GL_ARB_shader_subroutine GL_ARB_texture_compression_bptc GL_ARB_timer_query GL_ARB_transform_feedback2 GL_ARB_transform_feedback3 GL_ARB_vertex_attrib_64bit GL_ARB_viewport_array GL_EXT_direct_state_access GL_EXT_vertex_attrib_64bit GL_AMD_multi_draw_indirect GL_ANGLE_texture_compression_dxt3 GL_ANGLE_texture_compression_dxt5 GL_ARB_base_instance GL_ARB_compressed_texture_pixel_storage GL_ARB_conservative_depth GL_ARB_internalformat_query GL_ARB_map_buffer_alignment GL_ARB_shader_atomic_counters GL_ARB_shader_image_load_store GL_ARB_shading_language_420pack GL_ARB_shading_language_packing GL_ARB_texture_storage GL_ARB_transform_feedback_instanced GL_EXT_framebuffer_multisample_blit_scaled GL_EXT_transform_feedback GL_AMD_query_buffer_object GL_AMD_shader_trinary_minmax GL_AMD_vertex_shader_layer GL_AMD_vertex_shader_viewport_index GL_ARB_ES3_compatibility GL_ARB_arrays_of_arrays GL_ARB_clear_buffer_object GL_ARB_compute_shader GL_ARB_copy_image GL_ARB_explicit_uniform_location GL_ARB_fragment_layer_viewport GL_ARB_framebuffer_no_attachments GL_ARB_invalidate_subdata GL_ARB_multi_draw_indirect GL_ARB_program_interface_query GL_ARB_robust_buffer_access_behavior GL_ARB_shader_image_size GL_ARB_shader_storage_buffer_object GL_ARB_stencil_texturing GL_ARB_texture_buffer_range GL_ARB_texture_query_levels GL_ARB_texture_storage_multisample GL_ARB_texture_view GL_ARB_vertex_attrib_binding GL_KHR_debug GL_KHR_robustness GL_KHR_texture_compression_astc_ldr GL_ARB_buffer_storage GL_ARB_clear_texture GL_ARB_compute_variable_group_size GL_ARB_enhanced_layouts GL_ARB_indirect_parameters GL_ARB_internalformat_query2 GL_ARB_multi_bind GL_ARB_query_buffer_object GL_ARB_seamless_cubemap_per_texture GL_ARB_shader_draw_parameters GL_ARB_shader_group_vote GL_ARB_shading_language_include GL_ARB_texture_mirror_clamp_to_edge GL_ARB_texture_stencil8 GL_ARB_vertex_type_10f_11f_11f_rev GL_EXT_debug_label GL_EXT_shader_integer_mix GL_NVX_gpu_memory_info GL_ARB_ES3_1_compatibility GL_ARB_clip_control GL_ARB_conditional_render_inverted GL_ARB_cull_distance GL_ARB_derivative_control GL_ARB_direct_state_access GL_ARB_get_texture_sub_image GL_ARB_shader_texture_image_samples GL_ARB_texture_barrier GL_ARB_transform_feedback_overflow_query GL_EXT_polygon_offset_clamp GL_KHR_blend_equation_advanced GL_KHR_context_flush_control GL_KHR_robust_buffer_access_behavior GL_ARB_ES3_2_compatibility GL_ARB_gpu_shader_int64 GL_ARB_parallel_shader_compile GL_ARB_shader_atomic_counter_ops GL_ARB_shader_ballot GL_ARB_shader_viewport_layer_array GL_EXT_texture_sRGB_R8 GL_EXT_texture_sRGB_RG8 GL_KHR_no_error GL_KHR_texture_compression_astc_sliced_3d GL_ARB_gl_spirv GL_ARB_spirv_extensions GL_MESA_shader_integer_functions GL_ARB_polygon_offset_clamp GL_ARB_texture_filter_anisotropic GL_EXT_memory_object GL_EXT_memory_object_win32 GL_EXT_semaphore GL_EXT_semaphore_win32 GL_KHR_parallel_shader_compile GL_EXT_EGL_image_storage GL_MESA_framebuffer_flip_y GL_EXT_EGL_sync GL_EXT_demote_to_helper_invocation GL_NV_ES1_1_compatibility 
+
+CPU count        : 4
+0:00:00.000 I/GFX/VK: Surface formats for surface:
+0:00:00.000 I/GFX/VK: 	VK_FORMAT_R8G8B8A8_UNORM
+0:00:00.000 I/GFX/VK: 	VK_FORMAT_B8G8R8A8_UNORM
+0:00:00.000 I/GFX/VK: 	VK_FORMAT_R16G16B16A16_SFLOAT
+0:00:00.000 I/GFX/VK: 	VK_FORMAT_A2B10G10R10_UNORM_PACK32
+0:00:00.000 I/GFX/VK: 	VK_FORMAT_A2B10G10R10_UNORM_PACK32
+0:00:00.000 I/GFX/VK: 	VK_FORMAT_R8G8B8A8_SRGB
+0:00:00.000 I/GFX/VK: 	VK_FORMAT_B8G8R8A8_SRGB
+0:00:00.000 I/GFX/VK: Picked VK_FORMAT_B8G8R8A8_SRGB as the common window surface format
+0:00:00.000 I/GFX/VK: Surface 000002AF6F0A80A0:
+0:00:00.000 I/GFX/VK: 	minImageCount 2:
+0:00:00.000 I/GFX/VK: 	maxImageCount 16:
+0:00:00.000 I/GFX/VK: 	supportedUsageFlags 9f:
+0:00:00.000 I/GFX/VK: 	supportedTransforms: VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR
+0:00:00.000 I/GFX/VK: 	currentTransform: VK_SURFACE_TRANSFORM_IDENTITY_BIT_KHR
+0:00:00.000 I/GFX/VK: 	supported modes:
+0:00:00.000 I/GFX/VK: 		VK_PRESENT_MODE_IMMEDIATE_KHR:
+0:00:00.000 I/GFX/VK: 		VK_PRESENT_MODE_FIFO_KHR:
+0:00:00.000 I/GFX/VK: 		VK_PRESENT_MODE_FIFO_RELAXED_KHR:
+0:00:00.000 I/GFX/VK: Disabling fullscreen exclusive mode for swapchain 000002AF045B1550
+0:00:00.000 I/GFX/VK: Created swapchain for 000002AF045B1550 with size { 1920x1080x2 }. Mode: VK_PRESENT_MODE_IMMEDIATE_KHR
+0:00:00.000 I/WMG: Monitor 0: { 0, 0, 1920, 1080 }
+0:00:00.000 I/WMG: Re-building fbos for window 000002AF04661F90 using pool 6
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/legacy_flat_mapping.xsv with hash: 956d32276e6bab36ab0165f1e3edca6
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/legacy_flat.xsa with hash: d1463477a6fd76fe0f5c7cc5efac4
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/legacy_depth_mapping.xsv with hash: 49a43b5e6fd837bc6a0a77867362971
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/legacy_depth.xsa with hash: 29f950494ceb1f34e6d1b4839b3e1d7
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/blit_mapping.xsv with hash: 3b5ac09abb7ccf81caa01091d550ee8d
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/blit.xsa with hash: 9deae64ac4a9f16c31ab7407bfe8931
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/font_mapping.xsv with hash: 49deaf6c535cb779f56893f266839eb7
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/font.xsa with hash: ba871d64971e30ca5d33828a296765f5
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/minify_mapping.xsv with hash: ef4ae62a21eada2f31385addd83419aa
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/minify.xsa with hash: 5a875a783c9192b0fde4afff8225449d
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/gstack_mapping.xsv with hash: 6ef3519592c2e8350352c638445ae1
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/gstack.xsa with hash: b3a66ae656122cb8e3b845997d65c7c9
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/in_place_blur_mapping.xsv with hash: 3527ceffb5fc1a452a65abc72cf397
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/in_place_blur.xsa with hash: 36989187a59fbfe99742be882b695896
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/single_pass_blur_mapping.xsv with hash: da32411bda78213a33e686a2b73715f
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/single_pass_blur.xsa with hash: 8f2ceb93864029da4148e682cc627528
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/background_blur_mapping.xsv with hash: f7eaadaf6bf8a5daa71ba877f9d766ea
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/background_blur.xsa with hash: 802139d85d4d37f37a8241a0d1adb79
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/resolve_mapping.xsv with hash: da9fec286b74d0eda7664e9e23d5f945
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/resolve.xsa with hash: 7b855a46a3938b5ce04329166022d3
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/fake_terrain_mapping.xsv with hash: 20492eaa90af88df93f208895b1690
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/fake_terrain.xsa with hash: 223e10d34c9bbd15e58730236d12e98a
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/line3d_mapping.xsv with hash: 619735abf927a6fd94528cd47c6cf51
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/line3d.xsa with hash: fc30fd4bd4a37b31f489118f67aad9a
+0:00:00.000 I/GFX: Loaded mapping Resources/shaders/bin/terrain_mapping.xsv with hash: 90e1d12e371ce98b569187da9490a4
+0:00:00.000 I/GFX: Loaded archive Resources/shaders/bin/spv/terrain.xsa with hash: 4e82af67769587b3308bb66e2bb9420
+0:00:02.208 I/FMOD: Initial Sample rate: 48000 speaker mode: 3 (2 speakers)
+Fetching plugins for C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Resources/plugins
+
+Loaded: C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Resources/plugins/PluginAdmin/64/win.xpl (xpsdk.examples.pluginadmin).
+
+2026-04-07 18:36:43 BetterPushback[xplane.c:896]: INFO: This is Better Pushback (MOD) -v1.11 libacfutils-9aff3bf - for X-Plane 11/12
+2026-04-07 18:36:44 BetterPushback[cfg.cpp:1372]: current version v1.11 / new available version v1.12 / update available true
+Loaded: C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Resources/plugins/BetterPushback/win_x64/BetterPushback.xpl (skiselkov.BetterPushback).
+
+FlyWithLua: Your system path is C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/
+FlyWithLua: System Dir: C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/
+FlyWithLua: Plugin Dir: C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Resources/plugins/FlyWithLua
+FlyWithLua: Plugin Scripts Dir: C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Resources/plugins/FlyWithLua/Scripts
+FlyWithLua: Plugin Internals Dir: C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Resources/plugins/FlyWithLua/Internals/
+FlyWithLua: Plugin Modules Dir: C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Resources/plugins/FlyWithLua/Modules/
+FlyWithLua: Plugin Scripts Quarantine Dir: C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Resources/plugins/FlyWithLua/Scripts (Quarantine)/
+FlyWithLua: Plugin Version: 2.8.12 build Mar 31 2024 09:02:02
+Loaded: C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Resources/plugins/FlyWithLua/win_x64/FlyWithLua.xpl (CarstenLynker.FlyWithLua.NG+).
+
+0:00:02.208 xPilot: xPilot version 3.0.2 initialized
+Loaded: C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Resources/plugins/xPilot/win_x64/xPilot.xpl (org.vatsim.xpilot).
+
+2026-04-07 18:36:44 BetterPushback[cfg.cpp:1372]: current version v1.11 / new available version v1.12 / update available true
+0:00:02.208 xPilot: xPilot plugin enabled
+[X-Plane]: Dataref sim/private/controls/mouse_yoke/thickness is already registered by X-Plane
+0:00:02.208 D/HID: HID Bridge Running
+0:00:02.208 I/GFX: Loaded mapping Resources/shaders/bin/tchotchke_mapping.xsv with hash: 7387ed9eef369f5e31c99985e301240
+0:00:02.208 I/GFX: Loaded archive Resources/shaders/bin/spv/tchotchke.xsa with hash: 553fb6f6e0ddb77fd6aec15f656bf9ed
+I found the following scenery packages (prioritized in this order):
+  0 Custom Scenery/Aerosoft - LFMN Nice Cote d Azur X/
+  1 Custom Scenery/Aerosoft - LPFR Faro/
+  2 Custom Scenery/X-Plane Airports - EGPR Barra/
+  3 Custom Scenery/X-Plane Airports - KBTV Burlington/
+  4 Custom Scenery/X-Plane Airports - KJRB Downtown Manhattan Heliport/
+  5 Custom Scenery/X-Plane Airports - LSEZ Zermatt Heliport/
+  6 Custom Scenery/X-Plane Airports - TFFJ St Barthelemy/
+  7 Custom Scenery/X-Plane Airports - TNCS Juancho E Yrausquin/
+  8 Custom Scenery/X-Plane Landmarks - Dubai/
+  9 Custom Scenery/X-Plane Landmarks - Saint Louis/
+ 10 Global Scenery/Global Airports/
+ 11 Custom Scenery/X-Plane Landmarks - Berlin and Frankfurt/
+ 12 Custom Scenery/X-Plane Landmarks - Budapest/
+ 13 Custom Scenery/X-Plane Landmarks - Chicago/
+ 14 Custom Scenery/X-Plane Landmarks - Las Vegas/
+ 15 Custom Scenery/X-Plane Landmarks - London/
+ 16 Custom Scenery/X-Plane Landmarks - Los Angeles/
+ 17 Custom Scenery/X-Plane Landmarks - New York/
+ 18 Custom Scenery/X-Plane Landmarks - Paris/
+ 19 Custom Scenery/X-Plane Landmarks - Portland/
+ 20 Custom Scenery/X-Plane Landmarks - Rio De Janeiro/
+ 21 Custom Scenery/X-Plane Landmarks - Salzburg/
+ 22 Custom Scenery/X-Plane Landmarks - San Francisco/
+ 23 Custom Scenery/X-Plane Landmarks - Sydney/
+ 24 Custom Scenery/X-Plane Landmarks - Washington DC/
+ 25 Global Scenery/X-Plane 12 Demo Areas/
+ 26 Global Scenery/X-Plane 12 Global Scenery/
+ 27 Resources/default scenery/1000 autogen/
+ 28 Resources/default scenery/1000 decals/
+ 29 Resources/default scenery/1000 roads/
+ 30 Resources/default scenery/1000 world terrain/
+ 31 Resources/default scenery/1200 atc data/
+ 32 Resources/default scenery/1200 beaches/
+ 33 Resources/default scenery/1200 forests/
+ 34 Resources/default scenery/700 roads/
+ 35 Resources/default scenery/900 beaches/
+ 36 Resources/default scenery/900 europe objects/
+ 37 Resources/default scenery/900 forests/
+ 38 Resources/default scenery/900 roads/
+ 39 Resources/default scenery/900 us objects/
+ 40 Resources/default scenery/900 world object placeholders/
+ 41 Resources/default scenery/airport scenery/
+ 42 Resources/default scenery/sim objects/
+ 43 Resources/tutorials/tutorials_Alaska/
+ 44 Resources/tutorials/tutorials_Hawaii/
+ 45 Resources/tutorials/tutorials_Portland/
+ 46 Resources/tutorials/tutorials_Seattle/
+
+0:00:02.208 I/NAVT: 342032 Obstacles are done loading async...
+0:00:02.208 W/APT: Unknown key 'altimeter_setting' for '[H] Uniklinik Frankfurt a.M.' in Global Scenery/Global Airports/Earth nav data/apt.dat on line 433593.
+0:00:02.208 E/APT: The airport ETOU (Wiesbaden Erbenheim AAF) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:02.208 E/APT: The airport ETHB (Bueckeburg AB) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:02.208 E/APT: The airport EEEI (Ämari AB) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:02.208 E/APT: The airport EBCV (Chievres Air Base) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:02.208 E/APT: The airport EHLW (Leeuwarden) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:02.208 E/APT: The airport KPSM (PORTSMOUTH INTL AT PEASE) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:02.208 E/APT: The airport KAGC (Allegheny Co) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:02.208 E/APT: The airport KTRI (Tri Cities Rgnl Tn Va) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:02.208 E/APT: The airport LIED (Decimomannu) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:02.208 I/NAVT: Airspaces are done loading async...
+0:00:02.208 E/APT: The airport LERT (Cadiz Rota) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:02.208 E/APT: The airport XLT0003 (Cukurova) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:02.208 E/APT: The airport KAFW (Fort Worth Alliance) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:02.208 E/APT: The airport LCPH (Pafos Intl) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:02.208 E/APT: The airport RJOP ([H] Komatsushima AB) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:02.208 E/APT: The airport RCKH (Kaohsiung Intl) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:02.208 E/APT: The airport RCFN (Taitung Fongnian) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:02.208 E/APT: The airport OEMA (Prince Mohammad bin Abdulaziz) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:02.208 E/APT: The airport OEDF (King Fahd Intl) has lost some controllers due to bad frequencies.  Each controller needs at least one frequency in the range of 118.00 to 136.990 mhz.
+0:00:02.208 W/APT: WARNING: airport Hubbard (ID TA49) overrides code 25TX but it has already been overridden by Chennault Airfield (ID XK00BR)
+0:00:02.208 W/APT: WARNING: airport Standard Field (ID 1M6) overrides code 5KY4 but it has already been overridden by Muhlenberg Co (ID M21)
+0:00:02.208 W/APT: WARNING: airport Stony Creek (ID XY000M) overrides code AU999 but it has already been overridden by Bunurong Field (ID XY000G)
+0:00:02.208 W/APT: WARNING: airport Washington Island (ID XK2P2) overrides code WI47 but it has already been overridden by Timberline (ID XKWI47)
+0:00:02.208 W/APT: WARNING: airport [H] Cape Decision C. G. (ID PACE) overrides code CDE but it has already been overridden by Caledonia (ID XMP0008)
+0:00:02.208 W/APT: WARNING: airport [H] Grace Hospital Emergency Medical (ID 5NC3) overrides code BQ1 but it has already been overridden by Gilliam-McConnell (ID XK002J)
+0:00:02.208 W/APT: WARNING: airport [H] Mays (ID OH71) overrides code 6CM but it has already been overridden by Chapman Memorial Field (ID 00I)
+0:00:02.208 W/APT: WARNING: airport [X] Stockton Muni (ID SN07) overrides code 07S but it has already been overridden by Beaumont Hotel (ID 7K9)
+0:00:02.208 I/APT: Airport '[H] Mendota Community Hospital' (ID 74IL, code 14IL) overrides '[H] Kewanee Hospital' (ID 14IL).
+0:00:02.208 I/APT: Airport 'Outlaw Flyers' (ID XK009M, code 16XS) overrides 'Propwash' (ID 16XS).
+0:00:02.208 I/APT: Airport 'Slack' (ID 9N6, code 18PA) overrides 'Echo' (ID 18PA).
+0:00:02.208 I/APT: Airport 'Nest of Eagles' (ID 9WI7, code 1H9) overrides 'Ribble' (ID 1H9).
+0:00:02.208 I/APT: Airport 'Ickes' (ID XK006G, code 1PS0) overrides '[H] Southern Adams County' (ID 1PS0).
+0:00:02.208 I/APT: Airport 'Pela 15' (ID XK007J, code 1TN1) overrides '[H] Clayton' (ID 1TN1).
+0:00:02.208 I/APT: Airport 'Etna' (ID XK004V, code 2AR1) overrides 'Ozark Aerodrome' (ID 2AR1).
+0:00:02.208 I/APT: Airport 'Flying Hare Field' (ID XK009C, code 34XS) overrides 'Kenley Ranch' (ID 34XS).
+0:00:02.208 I/APT: Airport 'Clark' (ID 3TX6, code 3T6) overrides 'Gum Island' (ID 3T6).
+0:00:02.208 I/APT: Airport 'Middle Bass Island' (ID XK0033, code 3T7) overrides 'Pavlat' (ID 3T7).
+0:00:02.208 I/APT: Airport 'Gerald Weidner' (ID H33, code 4IS9) overrides '[H] Doctors Hospital' (ID 4IS9).
+0:00:02.208 I/APT: Airport 'Kapaun-Wilson Field' (ID 00Y, code 4MN5) overrides '[H] Chisago Health Services' (ID 4MN5).
+0:00:02.208 I/APT: Airport '[H] Meritus Hospital' (ID XK005Q, code 5MD3) overrides '[H] Sinai Hospital' (ID 5MD3).
+0:00:02.208 I/APT: Airport 'Old Hoppe Place' (ID 67TX, code 67T) overrides 'Fisher Ranch' (ID 67T).
+0:00:02.208 I/APT: Airport 'American Creek' (ID AK80, code 80A) overrides 'McLean Brothers' (ID 80A).
+0:00:02.208 I/APT: Airport 'Maxson Airfield' (ID 89N, code 89NY) overrides 'Sheldon Airstrip' (ID 89NY).
+0:00:02.208 I/APT: Airport 'Barnesville Muni' (ID 8M3, code 9MN3) overrides '[S] Fountain Lake' (ID 9MN3).
+0:00:02.208 I/APT: Airport 'CD-3 Airstrip' (ID XPA000D, code AK20) overrides 'Quail Creek' (ID AK20).
+0:00:02.208 I/APT: Airport 'Big Creek' (ID XPA000J, code AK51) overrides '[S] Tazlina Smokey Lake' (ID AK51).
+0:00:02.208 I/APT: Airport 'Snowy Range' (ID XY000K, code AU53) overrides 'Mundrabilla Road' (ID AU53).
+0:00:02.208 I/APT: Airport 'Dingo' (ID XY0034, code AU90) overrides 'Cranbrook' (ID AU90).
+0:00:02.208 I/APT: Airport 'Hidden Valley' (ID XK0011, code AZ43) overrides 'Solair Estates' (ID AZ43).
+0:00:02.208 I/APT: Airport 'Lower Loon Creek' (ID ID67, code C53) overrides 'John Deere Dubuque Works' (ID C53).
+0:00:02.208 I/APT: Airport 'Cayuse Creek USFS' (ID S74, code C64) overrides 'Wawasee' (ID C64).
+0:00:02.208 I/APT: Airport 'Ullswater' (ID XC008L, code CLW2) overrides 'Lewvan (Farr Air)' (ID CLW2).
+0:00:02.208 I/APT: Airport 'Colorado Springs East' (ID A50, code CO49) overrides 'Flying Lazy D Ranch' (ID CO49).
+0:00:02.208 I/APT: Airport 'Pakuba Airfield' (ID HUKF, code HUPA) overrides 'Bugungu Airstrip' (ID HUPA).
+0:00:02.208 I/APT: Airport 'Hell Roaring Ranch' (ID XK00CE, code ID39) overrides 'Owen Ranches Inc' (ID ID39).
+0:00:02.208 I/APT: Airport 'Fairfield Ranch (pvt)' (ID XK00CD, code ID70) overrides '[H] Adams Gulch' (ID ID70).
+0:00:02.208 I/APT: Airport 'Foster Field' (ID 7A4, code IL28) overrides 'Werries' (ID IL28).
+0:00:02.208 I/APT: Airport 'Harrold' (ID 2IN6, code IN16) overrides 'Wilkins Strip' (ID IN16).
+0:00:02.208 I/APT: Airport 'Wolfe Field' (ID 3C9, code IN65) overrides 'Culp Farms' (ID IN65).
+0:00:02.208 I/APT: Airport '[H] Kantonsspital St.Gallen' (ID XLS0010, code LSHG) overrides '[H] Gampel' (ID LSHG).
+0:00:02.208 I/APT: Airport 'Mountainair Muni' (ID Q04, code M10) overrides 'Hunter' (ID M10).
+0:00:02.208 I/APT: Airport 'Bel-Voir Acres' (ID MO61, code MO04) overrides 'Lyell' (ID MO04).
+0:00:02.208 I/APT: Airport 'Sassuolo' (ID XLI001U, code MO07) overrides '[S] Bagnell' (ID MO07).
+0:00:02.208 I/APT: Airport 'Table Rock' (ID 36M, code MO32) overrides 'Princeton-Kauffman Meml' (ID MO32).
+0:00:02.208 I/APT: Airport '[H] Red River Heliport' (ID XK006N, code N02) overrides '[H] Keystone' (ID N02).
+0:00:02.208 I/APT: Airport 'Blue Heron' (ID NK93, code N25) overrides 'Westport' (ID N25).
+0:00:02.208 I/APT: Airport 'Harvey Point Defense Test Act' (ID XK008A, code NC01) overrides 'May' (ID NC01).
+0:00:02.208 I/APT: Airport 'Deck Airpark' (ID 02W, code NC11) overrides 'Bear Creek' (ID NC11).
+0:00:02.208 I/APT: Airport 'Old Forge NY' (ID XK00CM, code NK26) overrides 'Coles Landing' (ID NK26).
+0:00:02.208 I/APT: Airport 'Cielo Dorado Estates' (ID TA50, code NM05) overrides 'Williams' (ID NM05).
+0:00:02.208 I/APT: Airport 'Porter' (ID 2I6, code OH92) overrides 'Camstra' (ID OH92).
+0:00:02.208 I/APT: Airport 'JJ & PK Airstrip' (ID 73W, code PA08) overrides 'Moorhead Airpark' (ID PA08).
+0:00:02.208 I/APT: Airport 'Kingsdale Air Park' (ID 76W, code PA23) overrides 'Mifflintown' (ID PA23).
+0:00:02.208 I/APT: Airport 'Cloudbound' (ID XK006F, code PA47) overrides 'Jim Shearer' (ID PA47).
+0:00:02.208 I/APT: Airport 'Port Alsworth' (ID XPA000G, code PALJ) overrides 'Wilder Runway' (ID PALJ).
+0:00:02.208 I/APT: Airport 'Adjuntas' (ID XTJ0003, code PR20) overrides '[H] Old San Juan' (ID PR20).
+0:00:02.208 I/APT: Airport 'Flying R.N.' (ID KS10, code S10) overrides 'Lake Chelan' (ID S10).
+0:00:02.208 I/APT: Airport 'Weaver Field' (ID XK00DM, code SC94) overrides 'Free Fall Farms' (ID SC94).
+0:00:02.208 I/APT: Airport 'Fazenda Sao Miguel' (ID SJOY, code SDTV) overrides '[H] Tivoli Center' (ID SDTV).
+0:00:02.208 I/APT: Airport 'Agropastoril Bom Pastor' (ID SDRO, code SDWC) overrides 'Aldeia Bau' (ID SDWC).
+0:00:02.208 I/APT: Airport 'Clube CEU' (ID XSB000R, code SIAN) overrides '[H] Hospital Dom Vicente Scherer' (ID SIAN).
+0:00:02.208 I/APT: Airport 'Irmãos Gonçalves' (ID XSB0008, code SIDG) overrides 'Fazenda Jotabasso' (ID SIDG).
+0:00:02.208 I/APT: Airport 'Rio Negrinho' (ID SSRN, code SILN) overrides 'Fazenda Rio Capim' (ID SILN).
+0:00:02.208 I/APT: Airport 'Manoel Urbano' (ID SSPX, code SIMB) overrides '[H] Monumental Business' (ID SIMB).
+0:00:02.208 I/APT: Airport 'Grupo Scheffer' (ID SJIE, code SJIF) overrides 'Fazenda Nova Era' (ID SJIF).
+0:00:02.208 I/APT: Airport 'Jorge Luiz Stocco' (ID XSB000C, code SJOY) overrides 'Fazenda Sao Miguel' (ID SJOY).
+0:00:02.208 I/APT: Airport 'Cond. Aeron. Santos Dumont' (ID XSB000I, code SNDD) overrides 'Fazenda Eldorado' (ID SNDD).
+0:00:02.208 I/APT: Airport 'Tancredo Thomas de Faria' (ID SBGU, code SSGG) overrides 'Fazenda Jacare de Chifre' (ID SSGG).
+0:00:02.208 I/APT: Airport 'Forquilhinha' (ID SBCM, code SSIM) overrides 'Boqueirao Alegre' (ID SSIM).
+0:00:02.208 I/APT: Airport 'Fazenda Serra Dourada' (ID SNIF, code SSUD) overrides '[H] Bom Dia Cafe' (ID SSUD).
+0:00:02.208 I/APT: Airport 'Telemaco Borba' (ID SBTL, code SSVL) overrides 'Fazenda Santa Claudina' (ID SSVL).
+0:00:02.208 I/APT: Airport 'Sao Joao dos Patos' (ID XSB0003, code SSYR) overrides 'Fazenda Santa Maria' (ID SSYR).
+0:00:02.208 I/APT: Airport 'Zirondi' (ID XSB0009, code SSZD) overrides '[H] Aficel' (ID SSZD).
+0:00:02.208 I/APT: Airport 'Playa Pintada' (ID XSVPQ, code SVPQ) overrides 'El Pardillero' (ID SVPQ).
+0:00:02.208 I/APT: Airport 'Luis Eduardo Magalhaes' (ID XSB000G, code SWNB) overrides 'Nobres' (ID SWNB).
+0:00:02.208 I/APT: Airport 'Aero Estates' (ID TS96, code T25) overrides 'Jennings Ranch' (ID T25).
+0:00:02.208 I/APT: Airport 'Goldthwaite Muni' (ID XK007O, code T37) overrides 'Locker Brothers' (ID T37).
+0:00:02.208 I/APT: Airport 'Southwest Lubbock' (ID XK00DD, code T96) overrides 'El Campo Airpark' (ID T96).
+0:00:02.208 I/APT: Airport 'Flying B Ranch' (ID XK009L, code TA12) overrides '[H] Petroleum Helicopters Inc' (ID TA12).
+0:00:02.208 I/APT: Airport 'West Liberty' (ID XK009G, code TS35) overrides '[H] Marriott Astrodome' (ID TS35).
+0:00:02.208 I/APT: Airport 'Hammer Airfield' (ID XK009K, code TS75) overrides 'Mitchell Nr One' (ID TS75).
+0:00:02.208 I/APT: Airport 'El Campo Airpark' (ID T96, code TS96) overrides 'Aero Estates' (ID TS96).
+0:00:02.208 I/APT: Airport 'Fair Weather Field' (ID XK009I, code TX42) overrides 'Bransom Farm' (ID TX42).
+0:00:02.208 I/APT: Airport 'Eberly Ranch' (ID XK008Z, code TX70) overrides 'Hess' (ID TX70).
+0:00:02.208 I/APT: Airport 'Bolaang Mongondow' (ID XWI000P, code WAMI) overrides 'Toli-Toli/Lalos (DGAC)' (ID WAMI).
+0:00:02.208 I/APT: Airport 'Morowali Industrial Park' (ID XWI000L, code WAMP) overrides 'Kasiguncu' (ID WAMP).
+0:00:02.208 I/APT: Airport 'Mukah Lapangan Terbang' (ID XWB0005, code WBGK) overrides 'Mukah' (ID WBGK).
+0:00:02.208 I/APT: Airport 'Rainelle' (ID 9W4, code WV30) overrides 'Leon' (ID WV30).
+0:00:02.208 I/APT: Airport 'Mundaring Weir' (ID YMWR, code YMDW) overrides 'MAITLAND DOWNS' (ID YMDW).
+0:00:02.208 I/APT: Airport 'Mandemar' (ID XY004M, code YMMR) overrides 'MUNMARLARY' (ID YMMR).
+0:00:02.208 I/APT: Airport 'Port Hedland/Wodgina' (ID XY001Z, code YWGA) overrides 'Wonga Beach' (ID YWGA).
+0:00:02.208 I/GFX: Loaded mapping Resources/shaders/bin/cube_filter_compute_mapping.xsv with hash: 582e391cc41e7769e8cbf58d8bc13ff
+0:00:02.208 I/GFX: Loaded archive Resources/shaders/bin/spv/cube_filter_compute.xsa with hash: 26e74f659f9dabd3fa181a4bef472d
+0:00:02.208 I/GFX: Loaded mapping Resources/shaders/bin/cube_filter_raster_mapping.xsv with hash: dc18eb216c2bc747e577d41d4958
+0:00:02.208 I/GFX: Loaded archive Resources/shaders/bin/spv/cube_filter_raster.xsa with hash: aebaf16c545de293a29152a337c4c95
+0:00:02.208 I/GFX: Loaded mapping Resources/shaders/bin/ssr_deferred_mapping.xsv with hash: 6e974a24a6891af8c5ec7ba6a210ed
+0:00:02.208 I/GFX: Loaded archive Resources/shaders/bin/spv/ssr_deferred.xsa with hash: 8e1343d053146ae491080c1bf175b8e
+0:00:02.208 I/GFX: Loaded mapping Resources/shaders/bin/ssr_mesh_mapping.xsv with hash: c82d2abe3d8ab948dae9f324765be8c
+0:00:02.208 I/GFX: Loaded archive Resources/shaders/bin/spv/ssr_mesh.xsa with hash: df1c1239252677ce7360c5c993c93ac
+0:00:02.208 I/GFX: Loaded mapping Resources/shaders/bin/ground_lights_mapping.xsv with hash: 38fa3a197cb8fed5d146c1c1a239ed6
+0:00:02.208 I/GFX: Loaded archive Resources/shaders/bin/spv/ground_lights.xsa with hash: 7dde8270ecba739063f7e5c018d37e4f
+0:00:02.208 I/GFX: Loaded mapping Resources/shaders/bin/light_mapping.xsv with hash: 7487ade43bb0d5665f1b75b91a7c783e
+0:00:02.208 I/GFX: Loaded archive Resources/shaders/bin/spv/light.xsa with hash: c0327a9b6121654eb11f47cb9c484d0
+0:00:02.208 I/GFX: Loaded mapping Resources/shaders/bin/light_tile_mapping.xsv with hash: cda7dbd7aa25bb26763205255463d
+0:00:02.208 I/GFX: Loaded archive Resources/shaders/bin/spv/light_tile.xsa with hash: ebc0dc88ccc464bf36b6897a85b6a90
+0:00:02.208 I/GFX: Loaded mapping Resources/shaders/bin/light_transform_mapping.xsv with hash: 6ab75134dae1cc2c515485128bb2a76
+0:00:02.208 I/GFX: Loaded archive Resources/shaders/bin/spv/light_transform.xsa with hash: d8f784f5269bb5f39b2b03d40e8cfa0
+0:00:02.208 I/GFX: Loaded mapping Resources/shaders/bin/light_vis_mapping.xsv with hash: 1ed38def86b88b5b4412e2e99ab70d5
+0:00:02.208 I/GFX: Loaded archive Resources/shaders/bin/spv/light_vis.xsa with hash: 269a295c77b1ce1a6e1818dba8b6ea10
+0:00:02.208 I/REN: Setting texture resolution read from prefs as 3
+0:00:02.208 I/REN: Settings for profile 'default':
+0:00:02.208 I/REN: Setting |dim under high G-load or hypoxia read from prefs as 1.
+0:00:02.208 I/REN: Setting |3-d drawing detail read from prefs as 2.
+0:00:02.208 I/REN: Setting |drawing range read from prefs as 1.
+0:00:02.208 I/REN: Setting |draw parked aircraft at airports read from prefs as 0.
+0:00:02.208 I/REN: Setting |draw boats in the water  read from prefs as 0.
+0:00:02.208 I/REN: Setting |Cloud quality read from prefs as 1.
+0:00:02.208 I/REN: Setting |FSR quality level read from prefs as 0.
+0:00:02.208 I/REN: Setting |SSAO quality level read from prefs as 0.
+0:00:02.208 I/REN: Setting |Enable 3D trees read from prefs as 0.
+0:00:02.208 I/REN: Setting |3-d shadows read from prefs as 0.
+0:00:02.208 I/REN: Setting |Tree quality level read from prefs as 0.
+0:00:02.208 I/REN: Setting |HDR anti-aliasing read from prefs as 0.
+0:00:02.208 I/REN: Setting |Enable FXAA read from prefs as 1.
+0:00:02.208 I/REN: Setting |Texture Resolution read from prefs as 2.
+0:00:02.208 I/REN: Setting |Anisotropic Filtering read from prefs as 1.
+0:00:02.208 I/REN: Settings for profile 'VR':
+0:00:02.208 I/REN: Setting |dim under high G-load or hypoxia read from prefs as 1.
+0:00:02.208 I/REN: Setting |3-d drawing detail read from prefs as 4.
+0:00:02.208 I/REN: Setting |drawing range read from prefs as 3.
+0:00:02.208 I/REN: Setting |draw parked aircraft at airports read from prefs as 1.
+0:00:02.208 I/REN: Setting |draw boats in the water  read from prefs as 1.
+0:00:02.208 I/REN: Setting |Cloud quality read from prefs as 2.
+0:00:02.208 I/REN: Setting |FSR quality level read from prefs as 0.
+0:00:02.208 I/REN: Setting |SSAO quality level read from prefs as 2.
+0:00:02.208 I/REN: Setting |Enable 3D trees read from prefs as 1.
+0:00:02.208 I/REN: Setting |3-d shadows read from prefs as 2.
+0:00:02.208 I/REN: Setting |Tree quality level read from prefs as 4.
+0:00:02.208 I/REN: Setting |HDR anti-aliasing read from prefs as 0.
+0:00:02.208 I/REN: Setting |Enable FXAA read from prefs as 1.
+0:00:02.208 I/REN: Setting |Texture Resolution read from prefs as 4.
+0:00:02.208 I/REN: Setting |Anisotropic Filtering read from prefs as 16.
+0:00:02.208 D/KTX2: [Resources/bitmaps/world/moon_NML.ktx2] 1024x1024x0 0 layers 11 levels 1 faces none
+0:00:02.208 I/WEBSRV: Port 8086 bound
+0:00:02.208 I/WEBSRV: Port 50039 bound
+0:00:02.208 I/gfx: Max budget for managed buffers changed to 44739242
+0:00:02.208 I/NET: OS has RFC 4941 Privacy Extensions for IPv6 *enabled*, using TEMPORARY IPv6 addresses
+0:00:02.208 I/NET: Ethernet (Realtek PCIe GbE Family Controller) 192.168.129.42
+0:00:02.208 I/NET: Ethernet (Realtek PCIe GbE Family Controller) 2a02:a03f:e70f:ab01:ac28:d476:420:e314
+0:00:02.208 I/NET: (RakNet) Init: Successful!
+0:00:02.208 I/NET: Networking initialized successfully
+0:00:02.208 D/HID: Hardware ADDED(0738, 2221) - Saitek Pro Flight X-56 Rhino Stick at path \\?\hid#vid_0738&pid_2221&mi_00#8&35bb4434&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+0:00:02.208 I/JOY: REGISTER Joystick device: Saitek Pro Flight X-56 Rhino Stick - VID:1848PID:8737, this is a familiar device.
+0:00:02.208 D/HID: 	BUTTON Added Index: 0 (HID_Page_Button/01) for handle: 000002AF9101B820
+0:00:02.208 D/HID: 	BUTTON Added Index: 1 (HID_Page_Button/02) for handle: 000002AF9101B820
+0:00:02.208 D/HID: 	BUTTON Added Index: 2 (HID_Page_Button/03) for handle: 000002AF9101B820
+0:00:02.208 D/HID: 	BUTTON Added Index: 3 (HID_Page_Button/04) for handle: 000002AF9101B820
+0:00:02.208 D/HID: 	BUTTON Added Index: 4 (HID_Page_Button/05) for handle: 000002AF9101B820
+0:00:02.208 D/HID: 	BUTTON Added Index: 5 (HID_Page_Button/06) for handle: 000002AF9101B820
+0:00:02.208 D/HID: 	BUTTON Added Index: 6 (HID_Page_Button/07) for handle: 000002AF9101B820
+0:00:02.208 D/HID: 	BUTTON Added Index: 7 (HID_Page_Button/08) for handle: 000002AF9101B820
+0:00:02.208 D/HID: 	BUTTON Added Index: 8 (HID_Page_Button/09) for handle: 000002AF9101B820
+0:00:02.208 D/HID: 	BUTTON Added Index: 9 (HID_Page_Button/0a) for handle: 000002AF9101B820
+0:00:02.208 D/HID: 	BUTTON Added Index: 10 (HID_Page_Button/0b) for handle: 000002AF9101B820
+0:00:02.208 D/HID: 	BUTTON Added Index: 11 (HID_Page_Button/0c) for handle: 000002AF9101B820
+0:00:02.208 D/HID: 	BUTTON Added Index: 12 (HID_Page_Button/0d) for handle: 000002AF9101B820
+0:00:02.208 D/HID: 	BUTTON Added Index: 13 (HID_Page_Button/0e) for handle: 000002AF9101B820
+0:00:02.208 D/HID: 	BUTTON Added Index: 14 (HID_Page_Button/0f) for handle: 000002AF9101B820
+0:00:02.208 D/HID: 	BUTTON Added Index: 15 (HID_Page_Button/10) for handle: 000002AF9101B820
+0:00:02.208 D/HID: 	BUTTON Added Index: 16 (HID_Page_Button/11) for handle: 000002AF9101B820
+0:00:02.208 D/HID: 	AXIS Added Index: 0 (HID_Page_GenericDesktop/HID_Usage_GD_Y) for handle: 000002AF9101B820. Min/Max 0 - 65535
+0:00:02.208 D/HID: 	AXIS Added Index: 1 (HID_Page_GenericDesktop/HID_Usage_GD_X) for handle: 000002AF9101B820. Min/Max 0 - 65535
+0:00:02.208 D/HID: 	AXIS Added Index: 2 (HID_Page_GenericDesktop/HID_Usage_GD_Rz) for handle: 000002AF9101B820. Min/Max 0 - 4095
+0:00:02.208 D/HID: 	HATSWITCH Added Index: 0 (HID_Page_GenericDesktop/HID_Usage_GD_Hatswitch) for handle: 000002AF9101B820. It has 8 positions.
+0:00:02.208 D/HID: 	AXIS Added Index: 3 (HID_Page_GenericDesktop/HID_Usage_GD_Ry) for handle: 000002AF9101B820. Min/Max 0 - 255
+0:00:02.208 D/HID: 	AXIS Added Index: 4 (HID_Page_GenericDesktop/HID_Usage_GD_Rx) for handle: 000002AF9101B820. Min/Max 0 - 255
+0:00:02.208 D/HID: END HARDWARE
+0:00:02.208 D/HID: Hardware ADDED(0738, a221) - Saitek Pro Flight X-56 Rhino Throttle at path \\?\hid#vid_0738&pid_a221&mi_00#8&334030c0&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+0:00:02.208 I/JOY: REGISTER Joystick device: Saitek Pro Flight X-56 Rhino Throttle - VID:1848PID:41505, this is a familiar device.
+0:00:02.208 D/HID: 	BUTTON Added Index: 0 (HID_Page_Button/01) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 1 (HID_Page_Button/02) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 2 (HID_Page_Button/03) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 3 (HID_Page_Button/04) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 4 (HID_Page_Button/05) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 5 (HID_Page_Button/06) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 6 (HID_Page_Button/07) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 7 (HID_Page_Button/08) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 8 (HID_Page_Button/09) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 9 (HID_Page_Button/0a) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 10 (HID_Page_Button/0b) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 11 (HID_Page_Button/0c) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 12 (HID_Page_Button/0d) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 13 (HID_Page_Button/0e) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 14 (HID_Page_Button/0f) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 15 (HID_Page_Button/10) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 16 (HID_Page_Button/11) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 17 (HID_Page_Button/12) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 18 (HID_Page_Button/13) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 19 (HID_Page_Button/14) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 20 (HID_Page_Button/15) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 21 (HID_Page_Button/16) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 22 (HID_Page_Button/17) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 23 (HID_Page_Button/18) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 24 (HID_Page_Button/19) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 25 (HID_Page_Button/1a) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 26 (HID_Page_Button/1b) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 27 (HID_Page_Button/1c) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 28 (HID_Page_Button/1d) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 29 (HID_Page_Button/1e) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 30 (HID_Page_Button/1f) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 31 (HID_Page_Button/20) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 32 (HID_Page_Button/21) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 33 (HID_Page_Button/22) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 34 (HID_Page_Button/23) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	BUTTON Added Index: 35 (HID_Page_Button/24) for handle: 000002AF9101BBE0
+0:00:02.208 D/HID: 	AXIS Added Index: 0 (HID_Page_GenericDesktop/HID_Usage_GD_Y) for handle: 000002AF9101BBE0. Min/Max 0 - 1023
+0:00:02.208 D/HID: 	AXIS Added Index: 1 (HID_Page_GenericDesktop/HID_Usage_GD_X) for handle: 000002AF9101BBE0. Min/Max 0 - 1023
+0:00:02.208 D/HID: 	AXIS Added Index: 2 (HID_Page_GenericDesktop/HID_Usage_GD_Dial) for handle: 000002AF9101BBE0. Min/Max 0 - 255
+0:00:02.208 D/HID: 	AXIS Added Index: 3 (HID_Page_GenericDesktop/HID_Usage_GD_Slider) for handle: 000002AF9101BBE0. Min/Max 0 - 255
+0:00:02.208 D/HID: 	AXIS Added Index: 4 (HID_Page_GenericDesktop/HID_Usage_GD_Ry) for handle: 000002AF9101BBE0. Min/Max 0 - 255
+0:00:02.208 D/HID: 	AXIS Added Index: 5 (HID_Page_GenericDesktop/HID_Usage_GD_Rz) for handle: 000002AF9101BBE0. Min/Max 0 - 255
+0:00:02.208 D/HID: 	AXIS Added Index: 6 (HID_Page_GenericDesktop/HID_Usage_GD_Rx) for handle: 000002AF9101BBE0. Min/Max 0 - 255
+0:00:02.208 D/HID: 	AXIS Added Index: 7 (HID_Page_GenericDesktop/HID_Usage_GD_Z) for handle: 000002AF9101BBE0. Min/Max 0 - 255
+0:00:02.208 D/HID: END HARDWARE
+0:00:02.208 D/STM: Transitioning from state state_InitialLoading to state_QuickFlightWizard
+0:00:02.208 I/ACF: Loading airplane number 20 with Aircraft/Laminar Research/ToLissA320_V1p2p1/a320_StdDef.acf
+0:00:02.208 I/WXR: Will fetch 'https://weatherservice.x-plane.com/api/v1/manifest/debug/2026-04-07T16:37:02Z' for epoch '1775579822
+0:00:02.208 I/WXR: Parsing weather manifest ID '82731'
+0:00:02.208 I/WIN: Showing subscreen Main Menu
+0:00:02.208 I/OVR: User is entering the holodeck.
+0:00:02.208 I/WIN: Opened window Primary V11 UI
+0:00:22.745 I/WXR: wxr cache: (window 000002AF04661F90) 480 x 270
+0:00:22.745 I/REN: Updating REN_context (window 000002AF04661F90) to 1920x1080x1
+0:00:26.704 I/NAVT: NavData is done loading async...
+0:00:27.134 I/NAVT: Navaids are done loading async...
+0:00:27.340 I/NAVT: Fixes are done loading async...
+0:00:28.342 I/NAVT: Airways are done loading async...
+0:00:28.342 I/NAVT: All navt data is done loading async...
+0:00:31.009 I/WIN: Showing subscreen Settings
+0:00:33.584 I/WIN: Showing subscreen Freeflight
+0:00:35.845 I/WIN: Showing subscreen FreeFlight Location Controller (Advanced)
+0:00:39.138 I/FCG: Applying changes from Flight Configuration screen
+0:00:39.138 I/FCG: Starting new flight in Aircraft/Laminar Research/ToLissA320_V1p2p1/a320_StdDef.acf at B06 (Size Class D)
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/rain_mapping.xsv with hash: c1abb4bdf8bb6f5864e21acd9839cd24
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/rain.xsa with hash: dd44d1db1c65e9b7319ee0e9192afe71
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/shadow_rect_mapping.xsv with hash: 2e8b3bcdceac188d619fe6f4e77a82b6
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/shadow_rect.xsa with hash: a3a3edaa6fe7f1056fe3169230471e
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/debug_mapping.xsv with hash: c58d6dd692ca5b67f77bcf20376c4362
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/debug.xsa with hash: d244f2fbb25136ce13fdd30548a352
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/z_minmax_mapping.xsv with hash: 8dc3763c3cb35372a6f84020c1bb7f9
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/z_minmax.xsa with hash: 9db1418cdb286717fb90d19f792bffc
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/lumi_histo_mapping.xsv with hash: 1f9069ca96b2e1ef8d5d8a516f2449b3
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/lumi_histo.xsa with hash: fc7ea05430ed6ab829522dceec5260fb
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/histo_debug_mapping.xsv with hash: 2a8346ef8367259b87e3e47dc0765bd0
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/histo_debug.xsa with hash: 12181f93eda844a112c3aafecbf2596
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/vegetation_data_mapping.xsv with hash: 50505d29e1eff5727b662661d94a018
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/vegetation_data.xsa with hash: 4f618718d0ac6e2af13f613c96c386
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/vegetation_cull_mapping.xsv with hash: 5a344dcb1361a68685519eed34567920
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/vegetation_cull.xsa with hash: b06bf0a677d7ab071fa2c5ca0a528d
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/weather_apply_compute_mapping.xsv with hash: cfb752985eca761ba128a01121ca7991
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/weather_apply_compute.xsa with hash: 13fc141f534cc43ca11801061d2e8
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/weather_apply_raster_mapping.xsv with hash: a29fdd41c9b470c1613191a7526d6787
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/weather_apply_raster.xsa with hash: 59ec1ead7cb9290db7d2280e553a8
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/cloud_upscale_mapping.xsv with hash: 25dbeead95ddfd9d8c37e97666d4629
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/cloud_upscale.xsa with hash: c265a3d3f7817323acefdc128c2738a0
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/volumetric_apply_mapping.xsv with hash: c5c07180c0d3e477b497cbfdf2a2fa99
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/volumetric_apply.xsa with hash: 7eda25c4ee5e76e734733fb320d86b
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/volumetric_fog_mapping.xsv with hash: 938f6da49ccfc4f3ef5bcfe58e7637
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/volumetric_fog.xsa with hash: 519ee4cf3d7ed88cd67f36cf86bd225
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/cloud_render_raster_mapping.xsv with hash: 6a2a2bac5f8b73da5759451d34533f7c
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/cloud_render_raster.xsa with hash: bd5d6e2ce78db67368ba4b5aa98a5fa
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/cloud_render_compute_mapping.xsv with hash: 77a1c69a0ca65f6594bf27f7f7d4bf
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/cloud_render_compute.xsa with hash: 5c595bd841cce7786aade42fab24ab6
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/cloud_update_mapping.xsv with hash: 124dde29fece4a966c647bd6e4376e1
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/cloud_update.xsa with hash: f710be2064aa49742de2975241de3135
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/cloud_minify_mapping.xsv with hash: fd3d81bb23ba38dcf31fde674b7bd028
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/cloud_minify.xsa with hash: c8363a2376313666d8d9bf8118edb729
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/cloud_map_mapping.xsv with hash: 341d37f977e4272c2f81e39daf8df43
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/cloud_map.xsa with hash: 1ad0a3e5ae6a2c881cf6f15bf8d06b99
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/cloud_shadows_mapping.xsv with hash: c58e91546d89fb41812243e78222589
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/cloud_shadows.xsa with hash: f46a2fd657eb853e1113983ca4111fd5
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/cloud_precipitation_mapping.xsv with hash: d6d2b6a6b24eda74ac495cb2d97afea
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/cloud_precipitation.xsa with hash: d6a0a86d2f978d42eb855afd38d2157
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/cloud_categorize_mapping.xsv with hash: ac148f80b52d3101f248174bf934f8d
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/cloud_categorize.xsa with hash: 8d21799a8be1c1e275a0df4ce3489fe0
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/ripple_mapping.xsv with hash: 91dbe757fd3f3891e3b42682e974e2a
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/ripple.xsa with hash: 93f7b7f3bf50789f1075a4778b543f
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/rain_surface_mapping.xsv with hash: 244b64f6a66a65b4c5b83cf2a1d1e58f
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/rain_surface.xsa with hash: 88c33216bd576b43749425fb99546583
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/rain_visualize_mapping.xsv with hash: 2c6bea9a2c8f397594f9335e5a753167
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/rain_visualize.xsa with hash: e3b39d428c9b8b8db991bb9333a0e0f9
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/rain_forces_visualize_mapping.xsv with hash: dae8329c115bef508935de0473ee5b0
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/rain_forces_visualize.xsa with hash: 6fc293397590484443f1e0e9f02e3eea
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/rain_ice_accumulation_mapping.xsv with hash: 50516ce5bb968afa55ea125145c5526
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/rain_ice_accumulation.xsa with hash: aedc71f54666dd4ddbe7645f095e15a
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/rain_droplets_compute_mapping.xsv with hash: e9c8ac71e990eb64e2fb8811a53bea5
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/rain_droplets_compute.xsa with hash: 945521d25885036881f7db25f12ffb0
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/rain_droplets_wipers_mapping.xsv with hash: 8e291734f42358833f9be08f6b872d57
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/rain_droplets_wipers.xsa with hash: 8a77f6cc170b4e15a8af024bffbf78
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/rain_forces_mapping.xsv with hash: 46d3a7146aaff1d5c61cb43fda24607b
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/rain_forces.xsa with hash: 888b794642d46b2e3256abaeffabcc9
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/rain_normals_mapping.xsv with hash: 8d8870135fbc87e8abc84472a6f6b882
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/rain_normals.xsa with hash: 681c4f65711b8153a7d62469477f4e6
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/rain_draw_mapping.xsv with hash: 20a33dba7fdf9898ae7f332b3c9664a
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/rain_draw.xsa with hash: 6ee1b7b0da9b214cab28d0f6c8ace9e
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/compute_fft_mapping.xsv with hash: 756a53928522af7535378b12a6964ac1
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/compute_fft.xsa with hash: 315137f97662249e10fb1111535d9084
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/cacao_mapping.xsv with hash: 6c3aa87a9173932383e4f3f94c3928b
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/cacao.xsa with hash: 38c357e45f7224fe559128997dfb48c
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/depth_of_field_mapping.xsv with hash: 1dfe9f61a2aabe3e126923c493d66cf5
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/depth_of_field.xsa with hash: 727af91f2eabc6f4273182e5650e845
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/fsr_mapping.xsv with hash: ea4684a1f5ec5565a49115135ada967
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/fsr.xsa with hash: a46e4c52dca0c88d41f44262ffb5dcdf
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/sectional2_mapping.xsv with hash: d276dfa3ea636dc42253bdfcea569789
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/sectional2.xsa with hash: c8e6abf7a3fe37f2a572423bb3718
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/svt_mapping.xsv with hash: 9374414dc18299ef2098d4c96eaac48e
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/svt.xsa with hash: 6e7c78366ee525c1d2dffcf5ea6473a
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/profile_view_mapping.xsv with hash: b48038e9e7679cdbccc572116647cf9
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/profile_view.xsa with hash: 1a2eb38953273afb993abc3df3554c5
+Initializing off screen memory.
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/scatter_compute_t_mapping.xsv with hash: 269c71311bb57feb3e7649bbb1a81
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/scatter_compute_t.xsa with hash: f7cdaae7682276bd5c80d8481e176a
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/scatter_compute_multi_mapping.xsv with hash: f7d5814dcf491dbc863ac5b1abf54036
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/scatter_compute_multi.xsa with hash: 31429df7c41892316b15cd774568b
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/scatter_compute_skydome_mapping.xsv with hash: adbef5f111882a4263c24aac9df9a72
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/scatter_compute_skydome.xsa with hash: 7981f7ad09918ce39fe91b2472189f
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/scatter_compute_scattering_mapping.xsv with hash: 29ffcb7f067e458567f8ab42ef09ab
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/scatter_compute_scattering.xsa with hash: 6e9b2ac0dc7be2af4cefd647d377ca6
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/scatter_render_atmosphere_mapping.xsv with hash: 1b3670fbc2f739f7ed6232711a211fd5
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/scatter_render_atmosphere.xsa with hash: bd92ae724a911b52e9352b2f343f52bf
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/deferred_gbuf_mapping.xsv with hash: e09425b0231a2218874c1b84aaa29a9
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/deferred_gbuf.xsa with hash: 33f3d272f1abd2b2111f856f324eeac9
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/msaa_categorize_mapping.xsv with hash: 3162875f5e95124bdf2283829f13cab
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/msaa_categorize.xsa with hash: f6f1d3d3e827d4a5c3e7428f8c2e7d
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/csm_resolve_mapping.xsv with hash: b7235386f6e25919a9b817574854cb5
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/csm_resolve.xsa with hash: be31302ffba0e3504aeedbbe5a7ec72
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/hdr_mapping.xsv with hash: 7232514acb5539efb2e9339e5ea68254
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/hdr.xsa with hash: 5665379a8dc8e58722ff6330fa97d578
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/bloom_mapping.xsv with hash: 5690f153c7b3943f77b4b28f01fbdb6
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/bloom.xsa with hash: f81d2c973f99d74720f8adbb4b95f55
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/exposure_fusion_mapping.xsv with hash: 2c2e21897ddd56a6bcce7d4ce4824e2
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/exposure_fusion.xsa with hash: 6b2e92f563d93a7be1c44dfd9d7edf7
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/airport_raster_mapping.xsv with hash: 4f29fe149428b26fc1c689b26310a79a
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/airport_raster.xsa with hash: e9c5bc587d171eb6526011f8b17c7
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/acf_map_icon_mapping.xsv with hash: d2b9e6d2e5af9791db82211685b22c4
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/acf_map_icon.xsa with hash: f694ff323fc1a4f3983d319e8a05e4
+Initializing off screen memory complete.
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/ocean_spectrum_mapping.xsv with hash: ceee8c7542f4b19b2e17bdca4282772f
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/ocean_spectrum.xsa with hash: 7329a5cadc6b62bd46dc312296c0289c
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/ocean_bake_textures_mapping.xsv with hash: 632828ea54fed8bedd47a73fd773fa
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/ocean_bake_textures.xsa with hash: 71db9c7889b11e373ac41d23e6faa
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/ocean_variance_mapping.xsv with hash: 79fb294648ac223f773cbf3e58ea4b
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/ocean_variance.xsa with hash: efbbcc0de1b81276aac8347bcfe61d3
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/ocean_mesh_data_mapping.xsv with hash: 18cd973c42e63938ab6f34204756fa1c
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/ocean_mesh_data.xsa with hash: c645a85ec1521ff9931d8d23f2e7b90
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/ocean_mesh_bake_mapping.xsv with hash: 819f102f359a24c6a351129d989c78
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/ocean_mesh_bake.xsa with hash: dd69ba25f5449fea31fdd980db5ab4
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/ocean_shading_mapping.xsv with hash: 85505a535ba72e84deaf08316c771ba
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/ocean_shading.xsa with hash: c6e56e80c47cd0edea4f995da67ec575
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/ocean_meta_data_mapping.xsv with hash: 76e77e50fce34f972a818461d98f6f4
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/ocean_meta_data.xsa with hash: e03545f8cc6d8878b6285a21381ca4
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/ocean_readback_mapping.xsv with hash: 93884afb867a05aaf1128844b3e3192
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/ocean_readback.xsa with hash: 6db0da7d24e799e14bcc9f6ae10f441
+0:00:39.138 I/REN: Updating REN_context (environment_probes) to 256x256x1
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/planet_mapping.xsv with hash: e6f54b2838b6dce49882f4e89bbb53
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/planet.xsa with hash: 969c864bca7b29125ee9f787b23e45
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/dome_mapping.xsv with hash: 9326218494b8ab28cedf73832f1973c
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/dome.xsa with hash: 3eea194cb5f775f486c5b11c15db92
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/astronomical_mapping.xsv with hash: d2ca4670eda31c7481adc2c56e218c26
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/astronomical.xsa with hash: 22b1d931a6d0b0cbe256c5b01378062
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/particle_mapping.xsv with hash: fb14ccc7d73f95d0531aa2eb37a7336
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/particle.xsa with hash: 886e76c4e2d9efabab4c689939e7842a
+0:00:39.138 I/GFX: Loaded mapping Resources/shaders/bin/manip3d_mapping.xsv with hash: cf488718f290e7e35915553a1fb975be
+0:00:39.138 I/GFX: Loaded archive Resources/shaders/bin/spv/manip3d.xsa with hash: 154ba72fa51cab379349ff17a5d3f7b9
+0:01:16.095 I/WXR: Will fetch 'https://weatherservice.x-plane.com/api/v1/manifest/debug/2026-04-07T16:37:56Z' for epoch '1775579876
+0:01:16.095 D/STM: Transitioning from state state_QuickFlightWizard to state_NormalLoading
+Aircraft plugin unload complete.
+0:01:16.095 I/ACF: Loading airplane number 0 with Aircraft/Laminar Research/ToLissA320_V1p2p1/a320_StdDef.acf
+FlyWithLua Info: XPLM_MSG_FMOD_BANK_UNLOADING & xplm_RadioBank  true
+FlyWithLua Info: fmod_uninitialize() FmodSounds.size =  0
+FlyWithLua Info: fmod_uninitialize()  Should be 0 now FmodSounds.size =  0
+2026-04-07 18:37:56 BetterPushback[bp.c:1222]: WARN: Aircraft not on the ground.
+Fetching plugins for C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Aircraft/Laminar Research/ToLissA320_V1p2p1/plugins
+
+ToLiss aircraft systems plugin starting up.
+ToLiss aircraft systems plugin: Found Aircraft path. Aircraft\Laminar Research\ToLissA320_V1p2p1\
+
+[AirbusFBW_A320_XP11/win_x64/AirbusFBW_A320_XP11.xpl]: Dataref AirbusFBW/SDline5b is already registered by AirbusFBW_A320_XP11/win_x64/AirbusFBW_A320_XP11.xpl
+ToLiss aircraft systems plugin: Registering datarefs.
+0:01:16.095 W/ART: 
+********************************************************** WARNING *******************************************************
+**                                                                                                                      **
+** Art controls are being modified. These are development tools which may cause unpredictable or unstable behaviour and **
+** SHOULD NOT be used in normal operation. Please avoid touching art controls if you need to file a bug report.         **
+**                                                                                                                      **
+**************************************************************************************************************************
+0:01:16.095 W/ART: Art control 'skyc/max_shadow_angle' was modified by AirbusFBW_A320_XP11/win_x64/AirbusFBW_A320_XP11.xpl.
+0:01:16.095 W/ART: Art control 'skyc/min_shadow_angle' was modified by AirbusFBW_A320_XP11/win_x64/AirbusFBW_A320_XP11.xpl.
+ToLiss aircraft systems plugin: Preparing Terrain on ND feature.
+0:01:16.095 I/WXR: Parsing weather manifest ID '82731'
+ToLiss aircraft systems plugin: Initializing OpenGL drawing.
+Reserved 7101984 bytes for buffered situation file saving.
+ToLiss aircraft systems plugin: Using default checklist.
+ToLiss aircraft systems plugin: Cannot read UDP configuration xml file.
+ToLiss aircraft systems plugin: Loading preferences.
+ToLiss aircraft systems plugin: Building navigation database.
+Maximum number of runways reached for airport: KEDW
+ToLiss aircraft systems plugin: Found file scenery_packs.ini. Analysing custom scenery airports.
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Landmarks - Washington DC\Earth nav data\apt.dat
+Did not find any airport data in this scenery.
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Landmarks - Sydney\Earth nav data\apt.dat
+Did not find any airport data in this scenery.
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Landmarks - San Francisco\Earth nav data\apt.dat
+Did not find any airport data in this scenery.
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Landmarks - Salzburg\Earth nav data\apt.dat
+Did not find any airport data in this scenery.
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Landmarks - Rio De Janeiro\Earth nav data\apt.dat
+Did not find any airport data in this scenery.
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Landmarks - Portland\Earth nav data\apt.dat
+Did not find any airport data in this scenery.
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Landmarks - Paris\Earth nav data\apt.dat
+Did not find any airport data in this scenery.
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Landmarks - New York\Earth nav data\apt.dat
+Did not find any airport data in this scenery.
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Landmarks - Los Angeles\Earth nav data\apt.dat
+Did not find any airport data in this scenery.
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Landmarks - London\Earth nav data\apt.dat
+Did not find any airport data in this scenery.
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Landmarks - Las Vegas\Earth nav data\apt.dat
+Did not find any airport data in this scenery.
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Landmarks - Chicago\Earth nav data\apt.dat
+Did not find any airport data in this scenery.
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Landmarks - Budapest\Earth nav data\apt.dat
+Did not find any airport data in this scenery.
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Landmarks - Berlin and Frankfurt\Earth nav data\apt.dat
+Did not find any airport data in this scenery.
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\*GLOBAL_AIRPORTS*Earth nav data\apt.dat
+Did not find any airport data in this scenery.
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Landmarks - Saint Louis\Earth nav data\apt.dat
+Read custom scenery info for: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Landmarks - Saint Louis\Earth nav data\apt.dat
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Landmarks - Dubai\Earth nav data\apt.dat
+Read custom scenery info for: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Landmarks - Dubai\Earth nav data\apt.dat
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Airports - TNCS Juancho E Yrausquin\Earth nav data\apt.dat
+Read custom scenery info for: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Airports - TNCS Juancho E Yrausquin\Earth nav data\apt.dat
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Airports - TFFJ St Barthelemy\Earth nav data\apt.dat
+Read custom scenery info for: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Airports - TFFJ St Barthelemy\Earth nav data\apt.dat
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Airports - LSEZ Zermatt Heliport\Earth nav data\apt.dat
+Read custom scenery info for: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Airports - LSEZ Zermatt Heliport\Earth nav data\apt.dat
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Airports - KJRB Downtown Manhattan Heliport\Earth nav data\apt.dat
+Read custom scenery info for: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Airports - KJRB Downtown Manhattan Heliport\Earth nav data\apt.dat
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Airports - KBTV Burlington\Earth nav data\apt.dat
+Updated data for airport: KBTV
+Read custom scenery info for: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Airports - KBTV Burlington\Earth nav data\apt.dat
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Airports - EGPR Barra\Earth nav data\apt.dat
+Read custom scenery info for: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\X-Plane Airports - EGPR Barra\Earth nav data\apt.dat
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\Aerosoft - LPFR Faro\Earth nav data\apt.dat
+Updated data for airport: LPFR
+Read custom scenery info for: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\Aerosoft - LPFR Faro\Earth nav data\apt.dat
+Evaluating custom path: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\Aerosoft - LFMN Nice Cote d Azur X\Earth nav data\apt.dat
+Updated data for airport: LFMN
+Read custom scenery info for: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\Aerosoft - LFMN Nice Cote d Azur X\Earth nav data\apt.dat
+ToLiss aircraft systems plugin: Number of airports: 11180; database size for Airports: 2370160 bytes
+ToLiss aircraft systems plugin: Number of runways: 16518, database size for Runways: 1721200 bytes
+Starting to parse navigation aid datafile.
+Using default nav data from file: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Resources\default data\earth_nav.dat.
+First parse of NAV data complete.
+Second parse of NAV data complete.
+Reading ILS data from file: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Custom Scenery\Global Airports\Earth nav data\earth_nav.dat.
+ToLiss aircraft systems plugin: Database size for VORs: 209836 bytes
+ToLiss aircraft systems plugin: Database size for NDBs: 111488 bytes
+ToLiss aircraft systems plugin: Database size for ILS/LOCs: 346880 bytes
+Starting to parse waypoint datafile.
+ Opening default fix data: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Resources\default data\earth_fix.dat
+Parsing of waypoint data complete.
+Added additional waypoint data.
+ToLiss aircraft systems plugin: Number of waypoints in DB: 240674; database size for Waypoints: 6738872 bytes
+ToLiss aircraft systems plugin: Navigation Aids Indexing database size: 4052208 bytes, Number of entries: 253263
+ Opening default hold data: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Resources\default data\earth_hold.dat
+ToLiss aircraft systems plugin: Importing Airways.
+Loaded Airways from Quick Load Cache File.
+ToLiss aircraft systems plugin: Starting company route caching.
+ToLiss aircraft systems plugin: Looking for .fms files in directory: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Output\FMS plans\
+ToLiss aircraft systems plugin: Looking for .qpc files in directory: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Resources\plugins\ToLissFlightPlans\
+ToLiss aircraft systems plugin: Finished company route caching.
+0:01:16.095 W/ART: Art control 'panel/always_render' was modified by AirbusFBW_A320_XP11/win_x64/AirbusFBW_A320_XP11.xpl.
+ToLiss aircraft systems plugin: Allocating memory for replay.
+ToLiss aircraft systems plugin: Startup complete: TLS A320 NEO V1.2.1
+ Build number: 1659; License ID: 
+Loaded: C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Aircraft/Laminar Research/ToLissA320_V1p2p1/plugins/AirbusFBW_A320_XP11/win_x64/AirbusFBW_A320_XP11.xpl (XP11.ToLiss.A320.systems).
+
+2026-04-07 18:38:02 librain[plugin.c:590]: This is librain (v0.10) libacfutils-3babedf
+Loaded: C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Aircraft/Laminar Research/ToLissA320_V1p2p1/plugins/RainEffects/win_x64/RainEffects.xpl (skiselkov.librain).
+
+[A319/A321 INFO]: Starting X-Plane SASL plugin v3.20.1+7565fbc [Commercial Edition]
+[A319/A321 INFO]: A319/A321 | Aircraft | Start Full
+[A319/A321 INFO]: Loading cursors...
+Loaded: C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Aircraft/Laminar Research/ToLissA320_V1p2p1/plugins/sasl/64/win.xpl (1-sim A319/A321).
+
+[A319/A321 INFO]: Enabling...
+[A319/A321 INFO]: Sound output device: OpenAL Soft
+[A319/A321 INFO]: Initializing...
+[A319/A321 INFO]: [DISPLAY] Monitor 0: 0, 0, 1920, 1080
+[A319/A321 INFO]: Path to module: C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Aircraft/Laminar Research/ToLissA320_V1p2p1/plugins/sasl/data/modules/main.secured
+[A319/A321 INFO]: Loading module...
+[A319/A321 INFO]: [LUA]: loading	module
+[A319/A321 INFO]: [LUA]: loading	oxyMask
+[A319/A321 INFO]: [LUA]: loading	panel1
+[A319/A321 INFO]: [LUA]: loading	rectangle
+[A319/A321 INFO]: [LUA]: including	math.lib.lua
+[A319/A321 INFO]: [LUA]: including	datarefs.lib.lua
+[A319/A321 INFO]: [LUA]: including	synchronization.lua
+[A319/A321 INFO]: [LUA]: including	backwordsynchronization.lua
+[A319/A321 INFO]: [LUA]: loading	time_logic
+[A319/A321 INFO]: [LUA]: loading	wheel_new
+[A319/A321 INFO]: [LUA]: including	wheel_objs.lib.lua
+[A319/A321 INFO]: [LUA]: loading	instruments
+[A319/A321 (SASL)]: Dataref 'sim/cockpit2/controls/parking_brake_ratio' has been replaced. Please use the new name.
+[A319/A321 INFO]: [LUA]: loading	reflections
+[A319/A321 INFO]: [LUA]: loading	animations
+[A319/A321 INFO]: [LUA]: loading	rain
+[A319/A321 (SASL)]: Dataref 'sim/weather/rain_percent' has been replaced. Please use the new name.
+[A319/A321 INFO]: [LUA]: loading	panel_logic
+[A319/A321 INFO]: Scripts loading time: 2.1227
+[A319/A321 INFO]: Module loaded
+0:01:16.095 D/OBJ: CPU Geometry: 46326 (99.98%) 56448 (99.98%) "Aircraft/Laminar Research/ToLissA320_V1p2p1/cockpit_INN.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 436 (48.39%) 870 (42.15%) "Aircraft/Laminar Research/ToLissA320_V1p2p1/objects/GlassInterior.obj"
+0:01:16.095 I/FMOD: Master bank Aircraft/Laminar Research/ToLissA320_V1p2p1/fmod/ Sample rate: 48000 speaker mode: 3 (2 speakers)
+0:01:16.095 I/SND: This aircraft is using FMOD in FULL mode.
+FlyWithLua Info: XPLM_MSG_FMOD_BANK_LOADED & xplm_RadioBank  true
+WARNING: auto-gen annotation not inside a tile.
+0:01:16.095 I/FLT: Init dat_p0 type:'ramp_start' apt:EDDL start at:B06
+0:01:16.095 I/SCN: DSF load time: 103526 for file Global Scenery/Global Airports/Earth nav data/+50+000/+52+005.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:01:16.095 I/SCN: DSF load time: 1050437 for file Global Scenery/Global Airports/Earth nav data/+50+000/+52+007.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:01:16.095 I/SCN: DSF load time: 1098357 for file Global Scenery/Global Airports/Earth nav data/+50+000/+50+007.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:01:16.095 I/SCN: DSF load time: 1883044 for file Global Scenery/Global Airports/Earth nav data/+50+000/+50+005.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:01:16.095 I/SCN: DSF load time: 3434581 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+52+007.dsf (310492 tris, 16 skipped for -24.5 m^2)
+0:01:16.095 I/SCN: DSF load time: 91630 for file Global Scenery/Global Airports/Earth nav data/+50+000/+52+008.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:01:16.095 I/SCN: DSF load time: 4893449 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+52+005.dsf (778802 tris, 303 skipped for -16534.2 m^2)
+0:01:16.095 I/SCN: DSF load time: 75998 for file Global Scenery/Global Airports/Earth nav data/+50+000/+52+006.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:01:16.095 I/SCN: DSF load time: 5778202 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+50+007.dsf (306226 tris, 19 skipped for -30.6 m^2)
+0:01:16.095 I/SCN: DSF load time: 5399672 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+50+005.dsf (304280 tris, 13 skipped for -13.3 m^2)
+0:01:16.095 D/OBJ: CPU Geometry: 27 (0.93%) 39 (0.67%) "Resources/default scenery/1000 autogen/US/industrial/obstacles/objects/mast200m.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 30 (1.00%) 42 (0.63%) "Resources/default scenery/1000 autogen/US/industrial/obstacles/objects/mast200m2.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 30 (1.23%) 42 (0.74%) "Resources/default scenery/1000 autogen/US/industrial/obstacles/objects/mast200m3.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 27 (0.86%) 39 (0.55%) "Resources/default scenery/1000 autogen/US/industrial/obstacles/objects/mast200m4.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 6 (4.92%) 12 (6.25%) "Resources/default scenery/1000 autogen/US/urban_high/objects/uh22_5x30v4.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 88 (4.42%) 132 (3.11%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower12_2.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 31 (13.90%) 48 (11.94%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower12_0.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 16 (5.26%) 24 (5.13%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower12_1.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 11 (6.21%) 15 (4.81%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower3_0.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (1.96%) 6 (1.92%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower3_1.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 8 (3.70%) 12 (2.99%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower3_2.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 8 (4.88%) 12 (4.44%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower8_5.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 8 (4.88%) 12 (4.44%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower8_4.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 24 (14.63%) 54 (19.57%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower3_3.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 16 (10.81%) 36 (15.38%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower8_1.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 24 (16.67%) 54 (21.95%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower3_4.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 24 (13.95%) 54 (19.57%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower8_3.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 24 (16.67%) 54 (21.95%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower3_5.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 24 (16.90%) 42 (17.07%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower8_2.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 9 (8.57%) 15 (9.09%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower5_0.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (7.69%) 6 (7.69%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower8_6.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (5.56%) 6 (5.26%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower5_1.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 24 (6.15%) 78 (9.15%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower7_0.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 24 (5.02%) 78 (9.15%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower7_1.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (7.14%) 6 (7.14%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower5_2.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 114 (25.00%) 213 (28.74%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower9_1.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 11 (2.67%) 15 (2.10%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower1-1.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 50 (10.96%) 93 (12.55%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower9_2.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 8 (2.41%) 12 (2.08%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower1-2.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (1.24%) 6 (1.15%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower18-1.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 36 (33.33%) 54 (33.33%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower5_3.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 44 (0.43%) 66 (0.26%) "Resources/default scenery/1000 autogen/global_objects/objects/RooftopHelipad4.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 84 (24.78%) 174 (31.35%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower9_3.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (2.63%) 6 (1.72%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower18-2.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 72 (0.49%) 108 (0.29%) "Resources/default scenery/1000 autogen/global_objects/objects/RooftopHelipad3.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 8 (2.44%) 12 (2.06%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower20-1.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 15 (3.74%) 21 (2.95%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower1-3.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (1.96%) 6 (1.89%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower21-1.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (0.65%) 6 (0.42%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower19-1.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (3.64%) 6 (3.45%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower20-2.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 46 (0.55%) 84 (0.34%) "Resources/default scenery/1000 autogen/global_objects/objects/RooftopHelipad1.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (2.67%) 6 (2.63%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower22-1.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 8 (2.20%) 12 (1.92%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower20.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (0.35%) 6 (0.30%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower23-4.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (2.13%) 6 (2.13%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower21-2.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 8 (0.98%) 12 (0.92%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sign_digi_clock3.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 12 (0.18%) 30 (0.16%) "Resources/default scenery/1000 autogen/global_objects/objects/RooftopHelipad5.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (0.75%) 6 (0.74%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower20-3.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (2.78%) 6 (2.44%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower22-2.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (2.45%) 6 (2.47%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower21-3.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (0.94%) 6 (0.81%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower23-1.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (2.65%) 6 (2.67%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower22-3.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (0.67%) 6 (0.62%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower23-2.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (0.48%) 6 (0.39%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower22-4.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (0.72%) 6 (0.70%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower23-3.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 67 (2.55%) 117 (1.44%) "Resources/default scenery/1000 autogen/US/urban_high/objects/HR40x55x210.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 35 (0.26%) 78 (0.24%) "Resources/default scenery/1000 autogen/global_objects/objects/RooftopHelipad2A.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 16 (9.09%) 24 (8.33%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower13_1.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (1.96%) 6 (1.85%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower13_2.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 7 (2.46%) 9 (1.90%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower13_3.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (1.49%) 6 (1.37%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower17-1.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (1.52%) 6 (1.37%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower17-2.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 43 (1.63%) 54 (0.86%) "Resources/default scenery/1000 autogen/US/urban_high/objects/antenna_100m.obj"
+0:01:16.095 I/SCN: DSF load time: 51352976 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+52+008.dsf (276700 tris, 9 skipped for -10.0 m^2)
+0:01:16.095 I/SCN: DSF load time: 51172387 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+52+006.dsf (497014 tris, 89 skipped for -2902.7 m^2)
+0:01:16.095 I/SCN: DSF load time: 158548 for file Global Scenery/Global Airports/Earth nav data/+50+000/+50+006.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:01:16.095 D/OBJ: CPU Geometry: 35 (0.25%) 78 (0.23%) "Resources/default scenery/1000 autogen/global_objects/objects/RooftopHelipad2.obj"
+0:01:16.095 I/SCN: DSF load time: 356727 for file Global Scenery/Global Airports/Earth nav data/+50+000/+50+008.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:01:16.095 I/SCN: DSF load time: 12139 for file Custom Scenery/X-Plane Landmarks - Berlin and Frankfurt/Earth nav data/+50+000/+50+008.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:01:16.095 I/SCN: DSF load time: 3981203 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+50+006.dsf (262151 tris, 3 skipped for -4.6 m^2)
+0:01:16.095 D/OBJ: CPU Geometry: 27 (2.14%) 39 (1.72%) "Resources/default scenery/1000 autogen/US/industrial/obstacles/objects/mast400m.obj"
+0:01:16.095 I/SCN: DSF load time: 4522515 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+50+008.dsf (304253 tris, 10 skipped for -7.3 m^2)
+0:01:16.095 I/SCN: DSF load time: 98541 for file Global Scenery/Global Airports/Earth nav data/+50+000/+51+005.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:01:16.095 I/SCN: DSF load time: 204781 for file Global Scenery/Global Airports/Earth nav data/+50+000/+51+007.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:01:16.095 D/OBJ: CPU Geometry: 20 (22.99%) 48 (25.40%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0415J0297R120A.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 8 (4.65%) 18 (5.13%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0570J0382R085A.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 8 (3.70%) 12 (2.99%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0300A0300R048D.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 5 (5.00%) 9 (4.69%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0295J0191A075A.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 6 (2.69%) 12 (3.48%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0300A0450S055A.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 11 (3.82%) 15 (3.12%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0298A0235R081A.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 40 (22.22%) 66 (23.91%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0285A0285R120A.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (1.82%) 6 (1.85%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0300A0300S055B.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 16 (5.06%) 36 (6.98%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0358A0358R077A.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 8 (2.72%) 12 (2.70%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0174A0129A120A.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 6 (4.92%) 12 (6.25%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0225A0300A042C.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 6 (4.48%) 12 (5.88%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0225A0300A059A.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 6 (11.11%) 12 (14.29%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0225A0300A062B.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 24 (16.67%) 54 (21.95%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0140A0257A040A.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 4 (3.03%) 6 (3.03%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0338A0161O060A.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 24 (6.09%) 78 (9.15%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0594J0324A122A.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 8 (2.94%) 12 (2.94%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0597A0375A052A.obj"
+0:01:16.095 I/SCN: DSF load time: 5991646 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+51+007.dsf (401711 tris, 66 skipped for -13804.6 m^2)
+0:01:16.095 I/SCN: DSF load time: 12043155 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+51+005.dsf (574053 tris, 175 skipped for -118213.2 m^2)
+0:01:16.095 I/SCN: DSF load time: 150803 for file Global Scenery/Global Airports/Earth nav data/+50+000/+51+008.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:01:16.095 D/OBJ: CPU Geometry: 11 (3.31%) 15 (2.63%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower2.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 31 (9.12%) 57 (9.41%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower2-1.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 7 (3.45%) 9 (2.48%) "Resources/default scenery/1000 autogen/US/urban_high/objects/tower2-2.obj"
+0:01:16.095 I/SCN: DSF load time: 264057 for file Global Scenery/Global Airports/Earth nav data/+50+000/+51+006.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:01:16.095 I/SCN: DSF load time: 3851828 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+51+008.dsf (268783 tris, 17 skipped for -18132.1 m^2)
+0:01:16.095 I/SCN: DSF load time: 6072749 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+51+006.dsf (429736 tris, 51 skipped for -19902.6 m^2)
+0:01:16.095 I/SCN: Preload time: 13729037
+0:01:16.095 I/REPLAY: Starting replay recording
+0:01:16.095 I/SCN: Preload time: 919251
+0:01:16.095 D/OBJ: CPU Geometry: 584 (100.00%) 1464 (100.00%) "Resources/default scenery/sim objects/dynamic/ford_carrier_parts/Gerald_R_Ford_Deck.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 57 (100.00%) 57 (100.00%) "Resources/default scenery/sim objects/dynamic/ford_carrier_parts/Gerald_R_Ford_HangarPavement.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 320 (0.37%) 480 (0.21%) "Resources/default scenery/sim objects/ships/parts/BulkCarrier_155A_BaseModel.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 320 (0.40%) 480 (0.23%) "Resources/default scenery/sim objects/ships/parts/BulkCarrier_155B_BaseModel.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 327 (0.30%) 822 (0.31%) "Resources/default scenery/sim objects/ships/parts/BulkCarrier_190A_BaseModel.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 327 (0.30%) 822 (0.31%) "Resources/default scenery/sim objects/ships/parts/BulkCarrier_190C_BaseModel.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 480 (0.46%) 1146 (0.47%) "Resources/default scenery/sim objects/ships/parts/BulkCarrier_342B_BaseModel.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 122 (0.08%) 216 (0.08%) "Resources/default scenery/sim objects/dynamic/Perry.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 28 (0.03%) 42 (0.02%) "Resources/default scenery/sim objects/ships/parts/ContainerCarrier_155A_BaseModel.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 408 (0.22%) 612 (0.12%) "Resources/default scenery/sim objects/ships/parts/ContainerCarrier_399A_BaseModel.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 408 (0.22%) 612 (0.12%) "Resources/default scenery/sim objects/ships/parts/ContainerCarrier_399B_BaseModel.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 225 (0.12%) 636 (0.13%) "Resources/default scenery/sim objects/ships/parts/LNGCarrier_190A_BaseModel.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 300 (0.15%) 756 (0.15%) "Resources/default scenery/sim objects/ships/parts/LNGCarrier_190B_BaseModel.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 225 (0.12%) 636 (0.13%) "Resources/default scenery/sim objects/ships/parts/LNGCarrier_190C_BaseModel.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 320 (0.16%) 816 (0.17%) "Resources/default scenery/sim objects/ships/parts/LNGCarrier_190D_BaseModel.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 230 (0.13%) 666 (0.15%) "Resources/default scenery/sim objects/ships/parts/OilTanker_183A_BaseModel.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 230 (0.13%) 666 (0.15%) "Resources/default scenery/sim objects/ships/parts/OilTanker_183B_BaseModel.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 308 (0.17%) 798 (0.18%) "Resources/default scenery/sim objects/ships/parts/OilTanker_190A_BaseModel.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 220 (0.11%) 708 (0.14%) "Resources/default scenery/sim objects/ships/parts/OilTanker_250A_BaseModel.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 208 (0.10%) 666 (0.13%) "Resources/default scenery/sim objects/ships/parts/OilTanker_250B_BaseModel.obj"
+0:01:16.095 D/OBJ: CPU Geometry: 190 (0.32%) 348 (0.17%) "Resources/default scenery/sim objects/ships/parts/Luxury_Yacht_6500_01_BaseModel.obj"
+0:01:16.095 I/REPLAY: Registered birth event for flt 0, entity id: 2
+0:01:16.095 I/REPLAY: Creating flt entity with entity id 2 and p_index 0
+0:01:16.095 I/SCN: Loading sim objects for airport XEDBP
+0:01:16.095 I/SCN: Loading sim objects for airport EDDL
+0:01:16.095 I/SCN: Preload time: 3396304
+2026-04-07 18:40:34 BetterPushback[bp.c:1204]: INFO: Initialising audio
+2026-04-07 18:40:34 BetterPushback[bp.c:525]: found : BetterPushback_doors.cfg in plugins folder
+2026-04-07 18:40:35 BetterPushback[xplane.c:534]: WARN: Command "BetterPushback/stop_planner" is currently disabled
+FlyWithLua: User switched to a new airport (or changed the plane). Script files have to be reloaded.
+FlyWithLua: Found fwl_prefs.ini in the FlyWithLua plugin path and it is
+./Resources/plugins/FlyWithLua/fwl_prefs.ini
+FlyWithLua Info:  deinitFmodSupport() FmodSounds.size =  0
+FlyWithLua Info: deinitFmodSupport()  Should be 0 now FmodSounds.size =  0
+FlyWithLua Info: Lua engine (re)started. LUA_RUN =1, SDK_VERSION = 430, XPLANE_VERSION = 12410, XPLANE_LANGUAGE = English and XPLANE_HOSTID = 1
+FlyWithLua Info: HID access initialized.
+FlyWithLua Info: FlyWithLua.ini full path 
+C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Resources/plugins/FlyWithLua/Internals/FlyWithLua.ini
+FlyWithLua Info: Discovered 15 HID devices.
+FlyWithLua Info: Initial assignments successfully saved.
+FlyWithLua Info: Load ini file.
+FlyWithLua Info: Searching for Lua script files
+FlyWithLua Info: Sorting Lua script files
+FlyWithLua Info: Start loading script file C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Resources/plugins/FlyWithLua/Scripts/SimReaperXP.lua
+0:01:16.095 W/ART: Art control 'new_clouds/kill_shadow_render' was modified by FlyWithLua NG+ 2.8.12 build Mar 31 2024 09:02:02.
+0:01:16.095 W/ART: Art control 'terrain/kill_water' was modified by FlyWithLua NG+ 2.8.12 build Mar 31 2024 09:02:02.
+0:01:16.095 W/REN: Setting reno/use_bump_maps from FlyWithLua NG+ 2.8.12 build Mar 31 2024 09:02:02 - This is slow and might not be supported in the future!
+FlyWithLua Info: Finished loading script file C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Resources/plugins/FlyWithLua/Scripts/SimReaperXP.lua
+FlyWithLua Info: Start loading script file C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Resources/plugins/FlyWithLua/Scripts/Simple_Ground_Equipment_and_Services.lua
+[Ground Equipment 79] Found asset : Resources/default scenery/sim objects/dynamic/Perry.obj
+[Ground Equipment 79] Found asset : ent_and_Services/juanik0_helodriver89_Tarawa/Nimitz.obj
+[Ground Equipment 79] Found asset : e_Ground_Equipment_and_Services/HMS Eagle/HMS Eagle.obj
+[Ground Equipment 79] Found asset : mple_Ground_Equipment_and_Services/HMS Eagle/SS-581.obj
+[Ground Equipment 79] Found asset : /HMS_Dragon/Variant 1 - Basic obj/Type 45 hard deck.obj
+[Ground Equipment 79] Ground Equipment script 79 will be loaded after a delay of 0 seconds.
+FlyWithLua Info: Finished loading script file C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Resources/plugins/FlyWithLua/Scripts/Simple_Ground_Equipment_and_Services.lua
+FlyWithLua Info: All script files loaded successfully.
+FlyWithLua Info: Loading time for all scripts is 0.479 sec.
+0:01:16.095 I/OVR: Reading VR conf file: Aircraft/Laminar Research/ToLissA320_V1p2p1/a320_StdDef_vrconfig.txt
+0:01:16.095 D/STM: Transitioning from state state_NormalLoading to state_Normal
+0:01:16.095 I/OVR: User is leaving the holodeck.
+0:03:56.220 I/WIN: Opened window menu bar
+FlyWithLua Info: Searching for Lua quarantined script files
+FlyWithLua Info: Sorting Lua quarantined script files
+[A319/A321 INFO]: Initializing modules...
+[A319/A321 INFO]: Modules initialization done
+[A319/A321 INFO]: [LUA]: "module"	Running on MS Windows
+[A319/A321 INFO]: [LUA]: "module"	this is not roman's computer
+[A319/A321 INFO]: [LUA]: "module"	a320_StdDef.acf
+[A319/A321 INFO]: [LUA]: "module"	I loaded the A320
+[A319/A321 DEBUG]: [LUA]: "AirbusFBW/CockpitWindowSwitchPosition": Casting float array element to int array element
+[A319/A321 DEBUG]: [LUA]: "AirbusFBW/CockpitWindowSwitchPosition": Casting float array element to int array element
+ToLiss Systems plugin: Loading livery configuration file: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Aircraft\Laminar Research\ToLissA320_V1p2p1\liveries\[LEA] Eurowings A20N D-AENA\livery.tlscfg
+[AirbusFBW - XP11]: Dataref 'sim/weather/cloud_type[0]' has been replaced. Please use the new name.
+[AirbusFBW - XP11]: Dataref 'sim/weather/cloud_type[1]' has been replaced. Please use the new name.
+[AirbusFBW - XP11]: Dataref 'sim/weather/cloud_type[2]' has been replaced. Please use the new name.
+[AirbusFBW - XP11]: Dataref 'sim/weather/cloud_base_msl_m[0]' has been replaced. Please use the new name.
+[AirbusFBW - XP11]: Dataref 'sim/weather/cloud_base_msl_m[1]' has been replaced. Please use the new name.
+[AirbusFBW - XP11]: Dataref 'sim/weather/cloud_base_msl_m[2]' has been replaced. Please use the new name.
+[AirbusFBW - XP11]: Dataref 'sim/weather/visibility_reported_m' has been replaced. Please use the new name.
+[AirbusFBW - XP11]: Dataref 'sim/cockpit2/controls/flap_ratio' has been replaced. Please use the new name.
+[AirbusFBW - XP11]: Dataref 'sim/aircraft/parts/acf_gear_tirrad' has been replaced. Please use the new name.
+[AirbusFBW - XP11]: Dataref 'sim/flightmodel2/controls/flap_handle_deploy_ratio' has been replaced. Please use the new name.
+[AirbusFBW - XP11]: Dataref 'sim/flightmodel/misc/cgz_ref_to_default' has been replaced. Please use the new name.
+[AirbusFBW - XP11]: Dataref 'sim/graphics/misc/light_attenuation' has been replaced. Please use the new name.
+0:00:   nan xPilot/XPMP2 INFO  XPMPMultiplayer.cpp:540/XPMPSetDefaultPlaneICAO: Default ICAO aircraft type now is A320
+0:00:   nan xPilot/XPMP2 INFO  Sound.cpp:122/XPSoundLoadFctPtr: X-Plane's FMOD system available
+0:03:56.220 xPilot/XPMP2 INFO  XPMPMultiplayer.cpp:186/XPMPMultiplayerInit: XPMP2 3.6.0 with FMOD sound support initializing under X-Plane version 12410/Vulkan and XPLM version 430
+0:03:56.220 xPilot/XPMP2 WARN  XPMPMultiplayer.cpp:101/XPMPValidateResourceFiles: Optional file relOp.txt not available in resource directory
+0:03:56.220 xPilot/XPMP2 WARN  CSLModels.cpp:406/AddMatchCriteria: Line 19: Different aircraft type (A320 instead of A321) for model 'BB_German_Air_Express_VA A321_Hannover' ignored, rest  processed
+0:03:56.220 xPilot/XPMP2 WARN  CSLModels.cpp:406/AddMatchCriteria: Line 25: Different aircraft type (A320 instead of A321) for model 'BB_German_Air_Express_VA A321_Karlsruhe' ignored, rest  processed
+0:03:56.220 xPilot/XPMP2 WARN  CSLModels.cpp:406/AddMatchCriteria: Line 37: Different aircraft type (B350 instead of BE20) for model 'BB_WAT_VA BE20_WAT' ignored, rest  processed
+0:03:56.220 xPilot/XPMP2 WARN  CSLModels.cpp:406/AddMatchCriteria: Line 68: Different aircraft type (B748 instead of B744) for model 'BB_WAT_VA B744_WAT' ignored, rest  processed
+0:03:56.220 xPilot/XPMP2 WARN  CSLModels.cpp:406/AddMatchCriteria: Line 79: Different aircraft type (B753 instead of B752) for model 'BB_WAT_VA B752_WAT' ignored, rest  processed
+0:03:56.220 xPilot/XPMP2 WARN  CSLModels.cpp:406/AddMatchCriteria: Line 85: Different aircraft type (B763 instead of B762) for model 'BB_WAT_VA B763_WAT' ignored, rest  processed
+0:03:56.220 xPilot/XPMP2 WARN  CSLModels.cpp:406/AddMatchCriteria: Line 141: Different aircraft type (E195 instead of E190) for model 'BB_WAT_VA E195_WAT' ignored, rest  processed
+0:03:56.220 xPilot/XPMP2 WARN  CSLModels.cpp:406/AddMatchCriteria: Line 157: Different aircraft type (MD88 instead of MD82) for model 'BB_WAT_VA MD83_WAT' ignored, rest  processed
+0:03:56.220 I/PLG: The plugin xPilot 3.0.2 is setting global TCAS override to 1.
+0:03:56.220 xPilot: Now listening on ipc:///tmp//xpilot.ipc
+====================================
+
+[Ground Equipment 79] To prevent activating me, you may write up to five aircraft codes in Simple_Ground_Equipment_and_Services_EXCLUSIONS_Aircraft_list.lua
+
+[Ground Equipment 79] sim/version/xplane_internal_version 124104.
+[Ground Equipment 79] X-Plane is X-Plane 12.
+[Ground Equipment 79] Utilizing 3D objects introduced in X-Plane 12.4.0
+[Ground Equipment 79] openSAM not installed or dataref 'opensam/jetway/status' not found.
+[Ground Equipment 79] Loading SGESTime() function in main
+[Ground Equipment 79] SGES thinks there are 7 fuel tanks to refuel from the air refueler.
+[Ground Equipment 79] Found asset : Resources/default scenery/sim objects/dynamic/Perry.obj
+[Ground Equipment 79] Found asset : ent_and_Services/juanik0_helodriver89_Tarawa/Nimitz.obj
+[Ground Equipment 79] Found asset : e_Ground_Equipment_and_Services/HMS Eagle/HMS Eagle.obj
+[Ground Equipment 79] Found asset : mple_Ground_Equipment_and_Services/HMS Eagle/SS-581.obj
+[Ground Equipment 79] AircraftParameters() says aircraft type is A20N, provided by a320_StdDef.acf.
+[Ground Equipment 79] Ground Equipment script 79 is loading datarefs. ==0==.
+[Ground Equipment 79] sim/aircraft2/metadata/is_helicopter = 0.
+[Ground Equipment 79] SGES chooses sim/weather/aircraft/temperature_ambient_deg_c (X-Plane 12 updated dataref).
+[FlyWithLua NG+ 2.8.12 build Mar 31 2024 09:02:02]: Dataref 'sim/cockpit2/controls/parking_brake_ratio' has been replaced. Please use the new name.
+[Ground Equipment 79] Ground Equipment script 79 has loaded datarefs. ==0==
+[Ground Equipment 79] The sub-script Pushback.lua will now load the required datarefs.
+[Ground Equipment 79] The sub-script Pushback.lua uses sim/joystick/yoke_roll_ratio and sim/joystick/yoke_pitch_ratio (perfectly normal)
+[Ground Equipment 79] The sub-script Pushback.lua is ready for action, good !
+ == A20N by Gliding Kiwi ==
+
+Rotate at 171 KIAS,
+initial climb around 200 KIAS
+then climb at 240 KIAS. 
+
+Base leg at 200 KIAS, 
+final descent at 180 KIAS,
+touchdown toward 143 KIAS,
+(when reference is Vs0).
+
+Suggestion for flight simulation only. MTOW, SL assumed with margins. Always consult the POH, the checklist for guidelines.
+[Ground Equipment 79] A module with ships-related functions has been loaded.
+[Ground Equipment 79] Loading a function to scan for third-party assets in the X-Plane folders.
+[Ground Equipment 79] A module with ships, dynamic and secondary functions has been loaded.
+[Ground Equipment 79] Applied specific programmation for the aircraft type (if any).
+[Ground Equipment 79] Gear 2 lateral position must be obtained from acf for this model. -3.7947599887848
+[Ground Equipment 79] Gear 2 longitudinal position must be obtained from acf for this model.
+[Ground Equipment 79] Gear 1 position must be obtained from acf.
+[Ground Equipment 79] The ground Equipment main Lua script has been read entirely by now.
+[Ground Equipment 79] Loading at 16h40 Z   18h40 Loc.    18h40 at real computer time
+[Ground Equipment 79] Applying startup options from FlyWithLua/Scripts/Simple_Ground_Equipment_and_Services/Simple_Ground_Equipment_and_Services_CONFIG_options.lua without delay.
+[Ground Equipment 79] Analyzing the current airport - is it a Capital City airport ?
+[Ground Equipment 79]                                                                No       EDDL
+[Ground Equipment 79] Reading user settings inside aircraft_optional_profiles/SGES_USER_CONFIG.lua
+[Ground Equipment 79] Good to go, we should have loaded everything by now.
+
+====================================
+0:03:56.220 I/GFX: Rebuilding offscreens for window resize: x=1920 y=1080 hdrx=1920 hdry=1080
+0:03:56.220 I/TEX: Pre-warming paging cache
+0:03:56.220 I/TEX: Target scale moved to 1.000000. Texture usage is 19.73 mb out of 1.10 gb available. Memory headroom is 1.11 gb
+0:03:56.220 D/KTX2: [Resources/bitmaps/world/moon_NML.ktx2] 1024x1024x0 0 layers 11 levels 1 faces none
+0:03:56.220 I/TEX: Finished pre-warming paging cache. Time taken: 36.762s
+0:03:56.220 W/RLP: Runloop is backed up. Current task count: 765, estimated runtime: 122495.258s
+0:03:56.220 W/RLP: Runloop is backed up. Current task count: 1479, estimated runtime: 236824.172s
+GMT: 16:41:58: ToLiss Systems plugin: Updating internal fuel amount to changed settings.Last known fuel amount: 300.0, New total fuel: 7000.0
+[AirbusFBW - XP11]: Dataref 'sim/cockpit/pressure/cabin_altitude_actual_m_msl' has been replaced. Please use the new name.
+[AirbusFBW - XP11]: Dataref 'sim/cockpit/pressure/cabin_vvi_actual_m_msec' has been replaced. Please use the new name.
+ToLiss aircraft systems plugin: Looking for .qps files in directory: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Resources\plugins\ToLissData\Situations
+Found at least 4 files in the situations directory.
+GMT: 16:42:12: ToLiss aircraft systems plugin: Looking for .qps files in directory: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Resources\plugins\ToLissData\Situations
+Found at least 4 files in the situations directory.
+GMT: 16:42:18: ToLiss Systems plugin: Updating internal fuel amount to changed settings.Last known fuel amount: 1636.0, New total fuel: 7000.0
+0:05:51.413 I/OVR: User is entering the holodeck.
+0:05:51.413 I/WIN: Opened window Settings
+0:05:53.400 I/OVR: User is leaving the holodeck.
+0:06:07.358 I/OVR: User is entering the holodeck.
+0:06:07.358 I/WIN: Opened window Settings
+0:06:09.712 I/OVR: User is leaving the holodeck.
+GMT: 16:43:04: ToLiss aircraft systems plugin: Looking for .qps files in directory: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Resources\plugins\ToLissData\Situations
+Found at least 4 files in the situations directory.
+0:06:40.870 I/TEX: Target scale moved to 0.250000. Texture usage is 503.86 mb out of 491.26 mb available. Memory headroom is 0.00 b
+0:06:46.318 I/OVR: User is entering the holodeck.
+0:06:46.318 I/WIN: Opened window Settings
+0:06:47.555 I/OVR: User is leaving the holodeck.
+0:07:14.443 I/TEX: Target scale moved to 0.500000. Texture usage is 457.83 mb out of 541.60 mb available. Memory headroom is 97.66 mb
+0:07:15.016 I/TEX: Target scale moved to 0.250000. Texture usage is 491.90 mb out of 483.00 mb available. Memory headroom is 3.49 mb
+0:07:25.128 I/TEX: Target scale moved to 0.500000. Texture usage is 457.83 mb out of 786.54 mb available. Memory headroom is 348.88 mb
+0:07:32.112 I/TEX: Target scale moved to 0.250000. Texture usage is 491.90 mb out of 479.60 mb available. Memory headroom is 0.00 b
+0:07:39.206 I/OVR: User is entering the holodeck.
+0:07:39.206 I/WIN: Opened window Settings
+0:07:40.451 I/OVR: User is leaving the holodeck.
+0:07:42.281 I/TEX: Target scale moved to 0.500000. Texture usage is 457.82 mb out of 559.84 mb available. Memory headroom is 116.37 mb
+0:07:49.030 I/TEX: Target scale moved to 0.250000. Texture usage is 491.90 mb out of 490.23 mb available. Memory headroom is 10.90 mb
+0:07:59.128 I/TEX: Target scale moved to 0.500000. Texture usage is 457.82 mb out of 553.23 mb available. Memory headroom is 109.60 mb
+0:08:03.963 I/TEX: Target scale moved to 0.250000. Texture usage is 491.90 mb out of 479.60 mb available. Memory headroom is 0.00 b
+0:08:04.125 I/TEX: Target scale moved to 0.125000. Texture usage is 457.82 mb out of 446.37 mb available. Memory headroom is 0.00 b
+0:08:04.273 I/TEX: Target scale moved to 0.062500. Texture usage is 120.75 mb out of 117.73 mb available. Memory headroom is 0.00 b
+0:08:07.097 I/OVR: User is entering the holodeck.
+0:08:07.097 I/WIN: Opened window Settings
+0:08:08.605 I/OVR: User is leaving the holodeck.
+0:08:16.161 I/TEX: Target scale moved to 0.125000. Texture usage is 37.91 mb out of 804.82 mb available. Memory headroom is 787.55 mb
+GMT: 16:45:17: ToLiss aircraft systems plugin: Import procedures for airport EDDL
+ToLiss aircraft systems plugin: Import procedures for airport LSZH
+ToLiss aircraft systems plugin: Starting company route caching.
+ToLiss aircraft systems plugin: Looking for .fms files in directory: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Output\FMS plans\
+ToLiss aircraft systems plugin: Looking for .qpc files in directory: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Resources\plugins\ToLissFlightPlans\
+ToLiss aircraft systems plugin: Finished company route caching.
+Updating shadows
+539.182
+Shadow update complete
+542.17
+0:09:21.426 D/KTX2: [Resources/bitmaps/world/moon_NML.ktx2] 1024x1024x0 0 layers 11 levels 1 faces none
+0:09:35.775 I/TEX: Target scale moved to 0.250000. Texture usage is 120.75 mb out of 764.29 mb available. Memory headroom is 663.13 mb
+0:10:06.033 I/WIN: Showing subscreen Freeflight
+0:10:06.033 I/OVR: User is entering the holodeck.
+0:10:06.033 I/WIN: Opened window Primary V11 UI
+0:10:10.096 I/OVR: User is leaving the holodeck.
+GMT: 16:47:33: ToLiss Systems plugin: Updating internal fuel amount to changed settings.Last known fuel amount: 7000.0, New total fuel: 5000.0
+0:10:58.795 D/KTX2: [Resources/bitmaps/world/moon_NML.ktx2] 1024x1024x0 0 layers 11 levels 1 faces none
+0:11:23.226 I/TEX: Target scale moved to 0.500000. Texture usage is 457.78 mb out of 562.22 mb available. Memory headroom is 118.86 mb
+0:11:30.792 I/TEX: Target scale moved to 0.250000. Texture usage is 491.90 mb out of 489.75 mb available. Memory headroom is 10.41 mb
+0:11:40.862 I/TEX: Target scale moved to 0.500000. Texture usage is 457.78 mb out of 573.19 mb available. Memory headroom is 130.10 mb
+0:12:03.567 I/TEX: Target scale moved to 1.000000. Texture usage is 491.90 mb out of 716.98 mb available. Memory headroom is 243.47 mb
+0:12:13.290 I/TEX: Target scale moved to 2.000000. Texture usage is 503.86 mb out of 587.22 mb available. Memory headroom is 98.42 mb
+0:12:13.433 I/TEX: Target scale moved to 1.000000. Texture usage is 536.94 mb out of 523.52 mb available. Memory headroom is 0.00 b
+0:12:23.472 I/TEX: Target scale moved to 2.000000. Texture usage is 503.86 mb out of 589.66 mb available. Memory headroom is 100.92 mb
+0:12:23.614 I/TEX: Target scale moved to 1.000000. Texture usage is 536.94 mb out of 523.52 mb available. Memory headroom is 0.00 b
+0:12:33.656 I/TEX: Target scale moved to 2.000000. Texture usage is 503.86 mb out of 597.67 mb available. Memory headroom is 109.14 mb
+0:12:33.799 I/TEX: Target scale moved to 1.000000. Texture usage is 536.94 mb out of 523.52 mb available. Memory headroom is 0.00 b
+0:12:43.802 I/TEX: Target scale moved to 2.000000. Texture usage is 503.86 mb out of 597.07 mb available. Memory headroom is 108.52 mb
+0:12:43.944 I/TEX: Target scale moved to 1.000000. Texture usage is 536.94 mb out of 523.52 mb available. Memory headroom is 0.00 b
+0:12:53.961 I/TEX: Target scale moved to 2.000000. Texture usage is 503.86 mb out of 597.85 mb available. Memory headroom is 109.32 mb
+0:12:54.106 I/TEX: Target scale moved to 1.000000. Texture usage is 536.94 mb out of 523.52 mb available. Memory headroom is 0.00 b
+0:13:04.131 I/TEX: Target scale moved to 2.000000. Texture usage is 503.86 mb out of 597.85 mb available. Memory headroom is 109.32 mb
+0:13:04.279 I/TEX: Target scale moved to 1.000000. Texture usage is 536.94 mb out of 523.52 mb available. Memory headroom is 0.00 b
+0:13:10.533 I/TEX: Target scale moved to 0.500000. Texture usage is 503.86 mb out of 497.90 mb available. Memory headroom is 6.81 mb
+0:13:12.062 I/TEX: Target scale moved to 0.250000. Texture usage is 491.90 mb out of 479.60 mb available. Memory headroom is 0.00 b
+0:13:14.093 I/OVR: User is entering the holodeck.
+0:13:14.093 I/WIN: Opened window Settings
+0:13:15.333 I/OVR: User is leaving the holodeck.
+0:13:18.326 I/TEX: Target scale moved to 0.125000. Texture usage is 457.78 mb out of 446.33 mb available. Memory headroom is 0.00 b
+0:13:18.465 I/TEX: Target scale moved to 0.062500. Texture usage is 120.74 mb out of 117.72 mb available. Memory headroom is 0.00 b
+0:13:20.429 I/OVR: User is entering the holodeck.
+0:13:20.429 I/WIN: Opened window Settings
+0:13:21.743 I/OVR: User is leaving the holodeck.
+0:13:29.088 I/WIN: Showing subscreen Freeflight
+0:13:29.088 I/OVR: User is entering the holodeck.
+0:13:29.088 I/WIN: Opened window Primary V11 UI
+0:13:29.486 I/TEX: Target scale moved to 0.125000. Texture usage is 37.91 mb out of 628.01 mb available. Memory headroom is 606.20 mb
+0:13:35.881 I/FCG: Applying changes from Flight Configuration screen
+0:13:35.919 I/OVR: User is leaving the holodeck.
+0:13:36.192 I/SCN: Preload time: 103073
+0:13:36.192 I/GFX: Rebuilding offscreens for window resize: x=1920 y=1080 hdrx=1920 hdry=1080
+GMT: 16:50:16: ToLiss Systems plugin: Loading livery configuration file: C:\Program Files (x86)\Steam\steamapps\common\X-Plane 12\Aircraft\Laminar Research\ToLissA320_V1p2p1\liveries\Eurowings (LEAP - D-AENH) 4K\livery.tlscfg
+0:13:45.505 I/OVR: User is entering the holodeck.
+0:13:45.505 I/WIN: Opened window Settings
+0:13:47.175 I/OVR: User is leaving the holodeck.
+0:13:52.994 I/WXR: Will fetch 'https://weatherservice.x-plane.com/api/v1/manifest/debug/2026-04-07T16:50:33Z' for epoch '1775580633
+0:13:54.275 I/WXR: Parsing weather manifest ID '82732'
+Updating shadows
+842.181
+Shadow update complete
+845.201
+0:14:32.409 D/KTX2: [Resources/bitmaps/world/moon_NML.ktx2] 1024x1024x0 0 layers 11 levels 1 faces none
+0:14:46.477 I/TEX: Target scale moved to 0.250000. Texture usage is 117.75 mb out of 628.11 mb available. Memory headroom is 526.47 mb
+0:16:05.095 D/KTX2: [Resources/bitmaps/world/moon_NML.ktx2] 1024x1024x0 0 layers 11 levels 1 faces none
+0:16:28.342 I/TEX: Target scale moved to 0.500000. Texture usage is 445.82 mb out of 711.38 mb available. Memory headroom is 283.79 mb
+0:16:44.671 I/TEX: Target scale moved to 1.000000. Texture usage is 480.73 mb out of 697.71 mb available. Memory headroom is 234.87 mb
+0:16:54.063 I/TEX: Target scale moved to 2.000000. Texture usage is 492.69 mb out of 577.74 mb available. Memory headroom is 99.87 mb
+0:17:02.026 I/TEX: Target scale moved to 1.000000. Texture usage is 525.77 mb out of 512.63 mb available. Memory headroom is 0.00 b
+0:17:02.177 I/TEX: Target scale moved to 0.250000. Texture usage is 492.69 mb out of 480.37 mb available. Memory headroom is 0.00 b
+2026-04-07 18:53:51 BetterPushback[bp.c:1204]: INFO: Initialising audio
+2026-04-07 18:53:51 BetterPushback[bp.c:525]: found : BetterPushback_doors.cfg in plugins folder
+2026-04-07 18:53:51 BetterPushback[bp_cam.c:1273]: INFO: At new airport EDDL, re-initialising messages languages
+2026-04-07 18:53:51 BetterPushback[bp.c:1204]: INFO: Initialising audio
+2026-04-07 18:53:52 BetterPushback[bp_cam.c:1562]: XPLMDisablePlugin not done, no plugin to exclude selected
+2026-04-07 18:53:52 BetterPushback[cfg.cpp:1264]: monit id 0 found in the prf file
+2026-04-07 18:53:52 BetterPushback[cfg.cpp:1424]: Automatic UI monitor search: id 0 found as UI monitor
+2026-04-07 18:53:52 BetterPushback[cfg.cpp:1437]: 0 monitor(s) found. id 0 requested / id 0 found
+2026-04-07 18:53:52 BetterPushback[cfg.cpp:1441]: 1 monitor(s) found. id 0 requested / id 0 found
+2026-04-07 18:53:52 BetterPushback[cfg.cpp:1444]: id 0 found with  x 0 y 0 h 1080 w 1920
+0:17:11.845 E/PLG: Plugin BetterPushback-v1.11 (C:\Program Files (x86)/Steam/steamapps/common/X-Plane 12/Resources/plugins/BetterPushback/objects/night_lamp.obj) encountered error: Instance data set during draw callback, this is not allowed!
+0:17:12.795 I/TEX: Target scale moved to 0.500000. Texture usage is 446.62 mb out of 633.01 mb available. Memory headroom is 202.62 mb
+0:17:18.859 I/TEX: Target scale moved to 0.250000. Texture usage is 480.73 mb out of 468.71 mb available. Memory headroom is 0.00 b
+0:17:30.223 I/TEX: Target scale moved to 0.500000. Texture usage is 446.62 mb out of 527.92 mb available. Memory headroom is 94.83 mb
+0:17:31.264 I/TEX: Target scale moved to 0.250000. Texture usage is 480.73 mb out of 468.71 mb available. Memory headroom is 0.00 b
+0:17:45.167 I/TEX: Target scale moved to 0.500000. Texture usage is 446.62 mb out of 736.51 mb available. Memory headroom is 308.77 mb
+0:18:07.603 I/TEX: Target scale moved to 1.000000. Texture usage is 480.73 mb out of 693.35 mb available. Memory headroom is 230.40 mb
+0:18:16.903 I/TEX: Target scale moved to 2.000000. Texture usage is 492.69 mb out of 578.86 mb available. Memory headroom is 101.02 mb
+0:18:17.046 I/TEX: Target scale moved to 1.000000. Texture usage is 525.77 mb out of 512.63 mb available. Memory headroom is 0.00 b
+0:18:29.002 I/TEX: Target scale moved to 2.000000. Texture usage is 492.69 mb out of 574.62 mb available. Memory headroom is 96.67 mb
+0:18:29.139 I/TEX: Target scale moved to 1.000000. Texture usage is 525.77 mb out of 512.63 mb available. Memory headroom is 0.00 b
+ToLiss aircraft systems plugin: Ground Vehicle object and probe unloaded/destroyed.
+0:18:39.266 I/TEX: Target scale moved to 2.000000. Texture usage is 492.69 mb out of 571.91 mb available. Memory headroom is 93.89 mb
+0:18:39.409 I/TEX: Target scale moved to 1.000000. Texture usage is 525.77 mb out of 512.63 mb available. Memory headroom is 0.00 b
+0:18:49.427 I/TEX: Target scale moved to 2.000000. Texture usage is 492.69 mb out of 574.01 mb available. Memory headroom is 96.04 mb
+0:18:49.569 I/TEX: Target scale moved to 1.000000. Texture usage is 525.77 mb out of 512.63 mb available. Memory headroom is 0.00 b
+0:18:52.761 I/TEX: Target scale moved to 0.500000. Texture usage is 492.69 mb out of 487.83 mb available. Memory headroom is 7.65 mb
+Updating shadows
+1145.21
+0:19:02.824 I/TEX: Target scale moved to 1.000000. Texture usage is 480.73 mb out of 573.54 mb available. Memory headroom is 107.51 mb
+0:19:03.268 I/TEX: Target scale moved to 0.500000. Texture usage is 492.69 mb out of 483.47 mb available. Memory headroom is 3.18 mb
+Shadow update complete
+1148.229
+0:19:13.327 I/TEX: Target scale moved to 1.000000. Texture usage is 480.73 mb out of 676.24 mb available. Memory headroom is 212.86 mb
+0:19:23.004 I/TEX: Target scale moved to 2.000000. Texture usage is 492.69 mb out of 537.10 mb available. Memory headroom is 58.19 mb
+0:19:23.144 I/TEX: Target scale moved to 1.000000. Texture usage is 525.77 mb out of 512.63 mb available. Memory headroom is 0.00 b
+0:19:24.403 I/TEX: Target scale moved to 0.250000. Texture usage is 492.69 mb out of 480.37 mb available. Memory headroom is 0.00 b
+0:19:34.417 I/TEX: Target scale moved to 0.500000. Texture usage is 446.61 mb out of 675.82 mb available. Memory headroom is 246.53 mb
+ToLiss aircraft systems plugin: Ground Vehicle object and probe unloaded/destroyed.
+0:19:49.943 I/TEX: Target scale moved to 1.000000. Texture usage is 476.54 mb out of 599.05 mb available. Memory headroom is 137.87 mb
+0:19:50.972 I/TEX: Target scale moved to 0.500000. Texture usage is 488.50 mb out of 481.55 mb available. Memory headroom is 5.40 mb
+0:20:01.027 I/TEX: Target scale moved to 1.000000. Texture usage is 476.54 mb out of 613.23 mb available. Memory headroom is 152.42 mb
+2026-04-07 18:56:41 BetterPushback[xplane.c:534]: WARN: Command "BetterPushback/stop_planner" is currently disabled
+0:20:03.435 I/TEX: Target scale moved to 0.250000. Texture usage is 488.50 mb out of 476.28 mb available. Memory headroom is 0.00 b
+0:20:13.486 I/TEX: Target scale moved to 0.500000. Texture usage is 445.95 mb out of 508.89 mb available. Memory headroom is 75.98 mb
+0:20:13.625 I/TEX: Target scale moved to 0.250000. Texture usage is 480.03 mb out of 478.45 mb available. Memory headroom is 10.69 mb
+0:20:15.784 I/OVR: User is entering the holodeck.
+0:20:15.784 I/WIN: Opened window Settings
+0:20:23.697 I/TEX: Target scale moved to 0.500000. Texture usage is 445.95 mb out of 563.96 mb available. Memory headroom is 132.47 mb
+0:20:28.002 I/TEX: Target scale moved to 0.250000. Texture usage is 480.03 mb out of 477.43 mb available. Memory headroom is 9.64 mb
+0:20:38.010 I/TEX: Target scale moved to 0.500000. Texture usage is 445.95 mb out of 564.60 mb available. Memory headroom is 133.12 mb
+0:20:39.464 I/TEX: Target scale moved to 0.250000. Texture usage is 480.03 mb out of 474.07 mb available. Memory headroom is 6.20 mb
+0:20:44.525 I/OVR: User is leaving the holodeck.
+0:20:49.591 I/TEX: Target scale moved to 0.500000. Texture usage is 445.95 mb out of 559.59 mb available. Memory headroom is 127.99 mb
+0:20:50.611 I/TEX: Target scale moved to 0.250000. Texture usage is 480.03 mb out of 469.97 mb available. Memory headroom is 1.99 mb
+0:21:03.108 I/TEX: Target scale moved to 0.500000. Texture usage is 445.95 mb out of 549.75 mb available. Memory headroom is 117.90 mb
+0:21:04.388 I/TEX: Target scale moved to 0.250000. Texture usage is 480.03 mb out of 468.03 mb available. Memory headroom is 0.00 b
+0:21:04.538 I/TEX: Target scale moved to 0.125000. Texture usage is 445.95 mb out of 434.80 mb available. Memory headroom is 0.00 b
+0:21:04.691 I/TEX: Target scale moved to 0.062500. Texture usage is 117.78 mb out of 114.84 mb available. Memory headroom is 0.00 b
+0:21:21.388 I/TEX: Target scale moved to 0.125000. Texture usage is 37.17 mb out of 542.11 mb available. Memory headroom is 518.85 mb
+0:22:32.107 D/KTX2: [Resources/bitmaps/world/moon_NML.ktx2] 1024x1024x0 0 layers 11 levels 1 faces none
+0:22:45.040 I/TEX: Target scale moved to 0.250000. Texture usage is 117.70 mb out of 539.04 mb available. Memory headroom is 435.15 mb
+2026-04-07 18:59:30 BetterPushback[bp.c:3682]: Acf XPLMDisablePlugin not done, no Acf plugin to exclude selected
+0:23:55.547 D/KTX2: [Resources/bitmaps/world/moon_NML.ktx2] 1024x1024x0 0 layers 11 levels 1 faces none
+0:23:59.941 I/TEX: Target scale moved to 0.125000. Texture usage is 439.95 mb out of 428.96 mb available. Memory headroom is 0.00 b
+0:24:00.083 I/TEX: Target scale moved to 0.062500. Texture usage is 116.28 mb out of 113.37 mb available. Memory headroom is 0.00 b
+Updating shadows
+1448.234
+Shadow update complete
+1451.266
+0:24:10.465 I/TEX: Target scale moved to 0.125000. Texture usage is 36.97 mb out of 529.14 mb available. Memory headroom is 505.74 mb
+0:25:11.146 D/KTX2: [Resources/bitmaps/world/moon_NML.ktx2] 1024x1024x0 0 layers 11 levels 1 faces none
+0:25:32.080 I/TEX: Target scale moved to 0.250000. Texture usage is 116.76 mb out of 634.78 mb available. Memory headroom is 534.29 mb
+2026-04-07 19:02:15 BetterPushback[cfg.cpp:1264]: monit id 0 found in the prf file
+2026-04-07 19:02:15 BetterPushback[cfg.cpp:1424]: Automatic UI monitor search: id 0 found as UI monitor
+2026-04-07 19:02:15 BetterPushback[cfg.cpp:1437]: 0 monitor(s) found. id 0 requested / id 0 found
+2026-04-07 19:02:15 BetterPushback[cfg.cpp:1441]: 1 monitor(s) found. id 0 requested / id 0 found
+2026-04-07 19:02:15 BetterPushback[cfg.cpp:1444]: id 0 found with  x 0 y 0 h 1080 w 1920
+GMT: 17:02:42: Saving situation file: AUTOSAVED_SITUATION
+GMT: 17:02:43: Finished buffered situation file save.
+GMT: 17:02:44: Renamed temporary situation save files.
+0:26:43.512 D/KTX2: [Resources/bitmaps/world/moon_NML.ktx2] 1024x1024x0 0 layers 11 levels 1 faces none
+0:26:58.046 I/OVR: User is entering the holodeck.
+0:26:58.046 I/WIN: Opened window Settings
+0:27:00.153 I/OVR: User is leaving the holodeck.
+0:27:04.291 I/TEX: Target scale moved to 0.125000. Texture usage is 439.11 mb out of 432.42 mb available. Memory headroom is 4.40 mb
+0:27:04.419 I/TEX: Target scale moved to 0.062500. Texture usage is 116.12 mb out of 113.22 mb available. Memory headroom is 0.00 b
+0:27:14.881 I/TEX: Target scale moved to 0.125000. Texture usage is 36.75 mb out of 529.56 mb available. Memory headroom is 506.38 mb
+[A319/A321 INFO]: [LUA]: "wheel_new"	310: dn
+[A319/A321 INFO]: [LUA]: "wheel_new"	310: up
+0:28:14.051 D/KTX2: [Resources/bitmaps/world/moon_NML.ktx2] 1024x1024x0 0 layers 11 levels 1 faces none
+0:28:24.872 I/TEX: Target scale moved to 0.250000. Texture usage is 114.92 mb out of 592.84 mb available. Memory headroom is 493.12 mb
+0:28:31.149 I/WXR: Will fetch 'https://weatherservice.x-plane.com/api/v1/manifest/debug/2026-04-07T17:05:11Z' for epoch '1775581511
+0:28:31.573 I/WXR: Parsing weather manifest ID '82733'
+Updating shadows
+1751.281
+Shadow update complete
+1754.298
+0:29:24.091 I/TEX: Target scale moved to 0.125000. Texture usage is 433.97 mb out of 423.12 mb available. Memory headroom is 0.00 b
+0:29:53.070 I/TEX: Target scale moved to 0.250000. Texture usage is 112.98 mb out of 601.41 mb available. Memory headroom is 503.85 mb
+0:29:54.274 I/OVR: User is entering the holodeck.
+0:29:54.274 I/WIN: Opened window Settings
+0:29:55.536 I/OVR: User is leaving the holodeck.
+0:29:58.979 I/OVR: User is entering the holodeck.
+0:29:58.979 I/WIN: Opened window Settings
+0:30:00.133 I/OVR: User is leaving the holodeck.
+[AirbusFBW - XP11]: Dataref 'sim/weather/wind_now_y_msc' has been replaced. Please use the new name.
+0:30:52.864 I/TEX: Target scale moved to 0.125000. Texture usage is 428.48 mb out of 428.27 mb available. Memory headroom is 10.77 mb
+0:31:04.670 I/TEX: Target scale moved to 0.250000. Texture usage is 110.80 mb out of 635.47 mb available. Memory headroom is 540.96 mb
+0:31:16.913 I/SCN: Loading sim objects for airport XED004D
+GMT: 17:08:03: Saving situation file: AUTOSAVED_SITUATION
+GMT: 17:08:04: Finished buffered situation file save.
+GMT: 17:08:05: Renamed temporary situation save files.
+0:32:11.539 I/SCN: Loading sim objects for airport XEDD9
+0:32:13.424 D/KTX2: [Resources/bitmaps/world/moon_NML.ktx2] 1024x1024x0 0 layers 11 levels 1 faces none
+0:32:16.985 I/TEX: Target scale moved to 0.500000. Texture usage is 376.70 mb out of 622.25 mb available. Memory headroom is 261.50 mb
+0:32:19.942 I/TEX: Target scale moved to 0.250000. Texture usage is 391.70 mb out of 390.05 mb available. Memory headroom is 8.35 mb
+0:32:23.700 I/OVR: User is entering the holodeck.
+0:32:23.700 I/WIN: Opened window Settings
+0:32:25.057 I/OVR: User is leaving the holodeck.
+0:32:30.029 I/TEX: Target scale moved to 0.500000. Texture usage is 372.25 mb out of 519.29 mb available. Memory headroom is 160.35 mb
+0:32:37.939 I/TEX: Target scale moved to 1.000000. Texture usage is 387.33 mb out of 524.11 mb available. Memory headroom is 150.21 mb
+0:32:43.341 I/TEX: Target scale moved to 0.500000. Texture usage is 399.46 mb out of 389.47 mb available. Memory headroom is 0.00 b
+0:32:48.430 I/SCN: Loading sim objects for airport EDLE
+0:32:53.410 I/TEX: Target scale moved to 1.000000. Texture usage is 385.68 mb out of 486.08 mb available. Memory headroom is 112.86 mb
+0:32:53.552 I/TEX: Target scale moved to 0.250000. Texture usage is 394.76 mb out of 384.89 mb available. Memory headroom is 0.00 b
+0:33:03.583 I/TEX: Target scale moved to 0.500000. Texture usage is 375.37 mb out of 654.43 mb available. Memory headroom is 295.84 mb
+0:33:05.277 I/OVR: User is entering the holodeck.
+0:33:05.277 I/WIN: Opened window Settings
+0:33:06.346 I/OVR: User is leaving the holodeck.
+0:33:15.597 I/TEX: Target scale moved to 1.000000. Texture usage is 385.27 mb out of 567.93 mb available. Memory headroom is 197.22 mb
+0:33:16.087 I/TEX: Target scale moved to 0.500000. Texture usage is 398.94 mb out of 388.97 mb available. Memory headroom is 0.00 b
+0:33:26.161 I/TEX: Target scale moved to 1.000000. Texture usage is 386.47 mb out of 454.26 mb available. Memory headroom is 79.43 mb
+0:33:26.306 I/TEX: Target scale moved to 0.500000. Texture usage is 405.70 mb out of 400.01 mb available. Memory headroom is 4.56 mb
+0:33:36.313 I/TEX: Target scale moved to 1.000000. Texture usage is 386.99 mb out of 531.60 mb available. Memory headroom is 158.23 mb
+0:33:36.583 I/TEX: Target scale moved to 0.500000. Texture usage is 404.56 mb out of 401.29 mb available. Memory headroom is 7.02 mb
+0:33:43.284 I/TEX: Target scale moved to 0.250000. Texture usage is 387.26 mb out of 377.57 mb available. Memory headroom is 0.00 b
+0:33:53.360 I/TEX: Target scale moved to 0.500000. Texture usage is 371.98 mb out of 613.50 mb available. Memory headroom is 257.24 mb
+Updating shadows
+2054.307
+Shadow update complete
+2057.328
+0:34:13.726 I/TEX: Target scale moved to 1.000000. Texture usage is 382.47 mb out of 642.69 mb available. Memory headroom is 276.70 mb
+0:34:14.874 I/TEX: Target scale moved to 0.500000. Texture usage is 401.83 mb out of 391.79 mb available. Memory headroom is 0.00 b
+0:34:24.552 I/TEX: Target scale moved to 0.250000. Texture usage is 383.78 mb out of 381.00 mb available. Memory headroom is 6.99 mb
+0:34:27.843 I/TEX: Target scale moved to 0.125000. Texture usage is 370.21 mb out of 361.07 mb available. Memory headroom is 129.09 kb
+0:34:28.067 I/TEX: Target scale moved to 0.062500. Texture usage is 101.46 mb out of 99.78 mb available. Memory headroom is 902.35 kb
+0:34:32.247 I/OVR: User is entering the holodeck.
+0:34:32.247 I/WIN: Opened window Settings
+0:34:33.693 I/OVR: User is leaving the holodeck.
+0:34:38.376 I/TEX: Target scale moved to 0.125000. Texture usage is 34.81 mb out of 655.04 mb available. Memory headroom is 637.02 mb
+0:35:36.252 D/KTX2: [Resources/bitmaps/world/moon_NML.ktx2] 1024x1024x0 0 layers 11 levels 1 faces none
+0:35:36.704 I/TEX: Target scale moved to 0.250000. Texture usage is 99.60 mb out of 674.39 mb available. Memory headroom is 592.08 mb
+0:36:30.569 I/SCN: Loading sim objects for airport XEDE3
+0:36:39.212 I/OVR: User is entering the holodeck.
+0:36:39.212 I/WIN: Opened window Settings
+0:36:40.395 I/OVR: User is leaving the holodeck.
+0:36:40.909 D/KTX2: [Resources/bitmaps/world/moon_NML.ktx2] 1024x1024x0 0 layers 11 levels 1 faces none
+0:36:44.059 I/TEX: Target scale moved to 0.500000. Texture usage is 356.80 mb out of 700.83 mb available. Memory headroom is 361.99 mb
+GMT: 17:13:25: Saving situation file: AUTOSAVED_SITUATION
+GMT: 17:13:26: Finished buffered situation file save.
+GMT: 17:13:27: Renamed temporary situation save files.
+0:36:54.636 I/TEX: Target scale moved to 1.000000. Texture usage is 367.96 mb out of 653.31 mb available. Memory headroom is 302.10 mb
+0:37:15.768 I/SCN: Loading sim objects for airport EDKN
+0:37:31.074 I/TEX: Target scale moved to 2.000000. Texture usage is 385.40 mb out of 545.37 mb available. Memory headroom is 173.96 mb
+0:37:31.316 I/TEX: Target scale moved to 1.000000. Texture usage is 463.80 mb out of 452.20 mb available. Memory headroom is 0.00 b
+0:37:41.394 I/TEX: Target scale moved to 2.000000. Texture usage is 379.90 mb out of 556.45 mb available. Memory headroom is 190.83 mb
+0:37:41.533 I/TEX: Target scale moved to 1.000000. Texture usage is 440.92 mb out of 429.89 mb available. Memory headroom is 0.00 b
+0:37:51.544 I/TEX: Target scale moved to 2.000000. Texture usage is 376.15 mb out of 564.63 mb available. Memory headroom is 202.95 mb
+0:37:51.687 I/TEX: Target scale moved to 1.000000. Texture usage is 437.27 mb out of 426.34 mb available. Memory headroom is 0.00 b
+0:38:02.471 I/TEX: Target scale moved to 2.000000. Texture usage is 378.77 mb out of 563.26 mb available. Memory headroom is 198.93 mb
+0:38:02.612 I/TEX: Target scale moved to 1.000000. Texture usage is 437.54 mb out of 426.60 mb available. Memory headroom is 0.00 b
+0:38:13.083 I/SCN: Loading sim objects for airport EDKZ
+0:38:13.627 I/TEX: Target scale moved to 2.000000. Texture usage is 376.83 mb out of 570.35 mb available. Memory headroom is 208.15 mb
+0:38:13.774 I/TEX: Target scale moved to 1.000000. Texture usage is 436.69 mb out of 425.77 mb available. Memory headroom is 0.00 b
+0:38:24.021 I/TEX: Target scale moved to 2.000000. Texture usage is 375.94 mb out of 572.97 mb available. Memory headroom is 211.72 mb
+0:38:24.162 I/TEX: Target scale moved to 1.000000. Texture usage is 438.38 mb out of 427.42 mb available. Memory headroom is 0.00 b
+0:38:34.279 I/TEX: Target scale moved to 2.000000. Texture usage is 375.23 mb out of 628.96 mb available. Memory headroom is 269.85 mb
+0:38:34.711 I/TEX: Target scale moved to 1.000000. Texture usage is 443.65 mb out of 438.62 mb available. Memory headroom is 6.22 mb
+0:38:42.324 I/OVR: User is entering the holodeck.
+0:38:42.324 I/WIN: Opened window Settings
+0:38:43.418 I/OVR: User is leaving the holodeck.
+0:38:44.775 I/TEX: Target scale moved to 2.000000. Texture usage is 379.24 mb out of 593.14 mb available. Memory headroom is 229.10 mb
+0:38:44.918 I/TEX: Target scale moved to 1.000000. Texture usage is 460.21 mb out of 448.71 mb available. Memory headroom is 0.00 b
+0:38:54.968 I/TEX: Target scale moved to 2.000000. Texture usage is 382.42 mb out of 588.83 mb available. Memory headroom is 221.51 mb
+0:38:55.112 I/TEX: Target scale moved to 1.000000. Texture usage is 459.95 mb out of 448.45 mb available. Memory headroom is 0.00 b
+0:38:56.549 I/SCN: Loading sim objects for airport EDKF
+0:39:05.308 I/TEX: Target scale moved to 2.000000. Texture usage is 376.68 mb out of 588.25 mb available. Memory headroom is 226.66 mb
+0:39:05.456 I/TEX: Target scale moved to 1.000000. Texture usage is 444.18 mb out of 433.08 mb available. Memory headroom is 0.00 b
+0:39:05.738 I/OVR: User is entering the holodeck.
+0:39:05.738 I/WIN: Opened window Settings
+0:39:07.243 I/OVR: User is leaving the holodeck.
+Updating shadows
+2357.358
+0:39:15.710 I/TEX: Target scale moved to 2.000000. Texture usage is 376.10 mb out of 598.08 mb available. Memory headroom is 237.31 mb
+0:39:15.890 I/TEX: Target scale moved to 1.000000. Texture usage is 442.45 mb out of 431.39 mb available. Memory headroom is 0.00 b
+Shadow update complete
+2360.344
+0:39:25.950 I/TEX: Target scale moved to 2.000000. Texture usage is 375.95 mb out of 594.53 mb available. Memory headroom is 233.83 mb
+0:39:26.094 I/TEX: Target scale moved to 1.000000. Texture usage is 441.56 mb out of 430.52 mb available. Memory headroom is 0.00 b
+0:39:32.329 I/SCN: DSF load time: 168074 for file Global Scenery/Global Airports/Earth nav data/+50+000/+50+009.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:39:34.674 I/SCN: DSF load time: 1188007 for file Global Scenery/Global Airports/Earth nav data/+50+000/+52+009.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:39:36.358 I/TEX: Target scale moved to 2.000000. Texture usage is 375.72 mb out of 591.35 mb available. Memory headroom is 230.80 mb
+0:39:36.503 I/TEX: Target scale moved to 1.000000. Texture usage is 441.49 mb out of 430.45 mb available. Memory headroom is 0.00 b
+0:39:38.740 I/SCN: DSF load time: 4078374 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+52+009.dsf (316389 tris, 26 skipped for -3036.3 m^2)
+0:39:40.942 I/SCN: DSF load time: 8612634 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+50+009.dsf (230108 tris, 4 skipped for -4.9 m^2)
+0:39:44.567 I/SCN: DSF load time: 179633 for file Global Scenery/Global Airports/Earth nav data/+50+000/+51+009.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:39:46.542 I/TEX: Target scale moved to 2.000000. Texture usage is 371.85 mb out of 626.99 mb available. Memory headroom is 271.22 mb
+0:39:48.389 I/SCN: DSF load time: 3809791 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+50+000/+51+009.dsf (283865 tris, 37 skipped for -12769.5 m^2)
+0:39:48.389 I/TEX: Target scale moved to 1.000000. Texture usage is 435.43 mb out of 435.05 mb available. Memory headroom is 10.78 mb
+0:39:48.938 D/OBJ: CPU Geometry: 28 (36.84%) 42 (36.84%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0130A0500A018A.obj"
+0:39:48.974 D/OBJ: CPU Geometry: 6 (11.11%) 12 (14.29%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0130A0500A022B.obj"
+0:39:49.121 D/OBJ: CPU Geometry: 24 (14.63%) 54 (19.57%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0298A0170R040C.obj"
+0:39:49.192 D/OBJ: CPU Geometry: 40 (33.90%) 72 (37.50%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0600A0358A038A.obj"
+0:39:49.336 D/OBJ: CPU Geometry: 6 (12.00%) 12 (15.38%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0130A0500A036A.obj"
+0:39:49.336 D/OBJ: CPU Geometry: 6 (12.00%) 12 (15.38%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0130A0500A036B.obj"
+0:39:49.408 D/OBJ: CPU Geometry: 103 (65.61%) 165 (66.27%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0482C1147T045A.obj"
+0:39:49.446 D/OBJ: CPU Geometry: 4 (2.22%) 6 (2.17%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0225A0365A047A.obj"
+0:39:49.446 D/OBJ: CPU Geometry: 10 (11.36%) 24 (16.67%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0600A0358A042A.obj"
+0:39:49.482 D/OBJ: CPU Geometry: 8 (2.94%) 12 (2.94%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0600A0225A052A.obj"
+0:39:49.482 D/OBJ: CPU Geometry: 26 (9.70%) 42 (10.29%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0174A0129A079A.obj"
+0:39:49.517 D/OBJ: CPU Geometry: 24 (14.63%) 54 (19.57%) "Resources/default scenery/1000 autogen/US/urban_high/objects/sub_80m/0298A0170A080A.obj"
+0:39:49.595 D/OBJ: CPU Geometry: 24 (11.11%) 54 (15.00%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0298A0170A120B.obj"
+0:39:49.628 D/OBJ: CPU Geometry: 8 (11.76%) 12 (10.53%) "Resources/default scenery/1000 autogen/US/urban_high/objects/over_80m/0300A0150A087A.obj"
+0:39:58.508 I/TEX: Target scale moved to 2.000000. Texture usage is 370.55 mb out of 627.40 mb available. Memory headroom is 272.93 mb
+0:39:59.519 I/TEX: Target scale moved to 1.000000. Texture usage is 436.13 mb out of 435.47 mb available. Memory headroom is 10.51 mb
+0:40:09.565 I/TEX: Target scale moved to 2.000000. Texture usage is 369.83 mb out of 628.36 mb available. Memory headroom is 274.64 mb
+0:40:15.980 I/TEX: Target scale moved to 1.000000. Texture usage is 436.29 mb out of 425.38 mb available. Memory headroom is 0.00 b
+0:40:26.074 I/TEX: Target scale moved to 2.000000. Texture usage is 369.55 mb out of 594.16 mb available. Memory headroom is 239.85 mb
+0:40:26.212 I/TEX: Target scale moved to 1.000000. Texture usage is 434.19 mb out of 423.34 mb available. Memory headroom is 0.00 b
+0:40:28.162 I/SCN: Loading sim objects for airport EDKH
+0:40:36.420 I/TEX: Target scale moved to 2.000000. Texture usage is 368.16 mb out of 593.97 mb available. Memory headroom is 241.04 mb
+0:40:36.559 I/TEX: Target scale moved to 1.000000. Texture usage is 432.05 mb out of 421.24 mb available. Memory headroom is 0.00 b
+0:40:46.675 I/TEX: Target scale moved to 2.000000. Texture usage is 367.55 mb out of 583.70 mb available. Memory headroom is 231.12 mb
+0:40:46.821 I/TEX: Target scale moved to 1.000000. Texture usage is 431.44 mb out of 420.65 mb available. Memory headroom is 0.00 b
+0:40:48.937 I/SCN: Loading sim objects for airport EDKI
+0:40:49.372 I/SCN: DSF load time: 624957 for file Global Scenery/Global Airports/Earth nav data/+40+000/+49+006.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:40:49.699 I/SCN: DSF load time: 274047 for file Global Scenery/Global Airports/Earth nav data/+40+000/+49+008.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:40:54.459 I/SCN: DSF load time: 5081097 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+40+000/+49+006.dsf (301919 tris, 9 skipped for -43.3 m^2)
+0:40:55.771 I/SCN: DSF load time: 6092240 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+40+000/+49+008.dsf (330584 tris, 6 skipped for -17607.3 m^2)
+0:41:01.944 D/OBJ: CPU Geometry: 4 (0.10%) 6 (0.07%) "Resources/default scenery/airport scenery/Ramp_Equipment/heli_dolly_1_yellow.obj"
+0:41:11.063 I/OVR: User is entering the holodeck.
+0:41:11.063 I/WIN: Opened window Settings
+0:41:12.016 I/OVR: User is leaving the holodeck.
+0:41:21.135 I/SCN: DSF load time: 228983 for file Global Scenery/Global Airports/Earth nav data/+40+000/+49+007.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:41:21.135 I/SCN: DSF load time: 238161 for file Global Scenery/Global Airports/Earth nav data/+40+000/+49+009.dsf (0 tris, 0 skipped for 0.0 m^2)
+0:41:26.025 I/SCN: DSF load time: 4874189 for file Global Scenery/X-Plane 12 Demo Areas/Earth nav data/+40+000/+49+009.dsf (272863 tris, 10 skipped for -2445.9 m^2)
+0:41:26.062 I/SCN: DSF load time: 4938159 for file Global Scenery/X-Plane 12 Global Scenery/Earth nav data/+40+000/+49+007.dsf (239820 tris, 3 skipped for -1724.1 m^2)
+0:41:34.220 I/TEX: Target scale moved to 2.000000. Texture usage is 368.07 mb out of 620.91 mb available. Memory headroom is 268.76 mb
+0:41:35.104 I/TEX: Target scale moved to 1.000000. Texture usage is 441.09 mb out of 440.55 mb available. Memory headroom is 10.76 mb
+0:41:38.173 I/SCN: Loading sim objects for airport XEDFJ
+0:41:45.293 I/TEX: Target scale moved to 2.000000. Texture usage is 369.03 mb out of 624.42 mb available. Memory headroom is 271.41 mb
+0:41:46.287 I/TEX: Target scale moved to 1.000000. Texture usage is 441.11 mb out of 438.11 mb available. Memory headroom is 8.24 mb
+GMT: 17:18:28: Saving situation file: AUTOSAVED_SITUATION
+GMT: 17:18:30: Finished buffered situation file save.
+Renamed temporary situation save files.
+0:41:56.399 I/TEX: Target scale moved to 2.000000. Texture usage is 367.58 mb out of 627.04 mb available. Memory headroom is 275.54 mb
+0:41:58.248 I/TEX: Target scale moved to 1.000000. Texture usage is 435.59 mb out of 433.67 mb available. Memory headroom is 9.20 mb
+0:42:08.306 I/TEX: Target scale moved to 2.000000. Texture usage is 364.23 mb out of 632.45 mb available. Memory headroom is 284.44 mb
+0:42:17.658 I/SCN: Loading sim objects for airport EDGS
+0:42:20.407 I/SCN: Loading sim objects for airport XEDAP
+0:42:25.914 I/TEX: Target scale moved to 1.000000. Texture usage is 428.32 mb out of 417.61 mb available. Memory headroom is 0.00 b
+0:42:35.945 I/TEX: Target scale moved to 2.000000. Texture usage is 363.81 mb out of 632.22 mb available. Memory headroom is 284.62 mb
+0:42:38.172 I/TEX: Target scale moved to 1.000000. Texture usage is 425.55 mb out of 414.91 mb available. Memory headroom is 0.00 b
+0:42:48.248 I/TEX: Target scale moved to 2.000000. Texture usage is 363.39 mb out of 563.41 mb available. Memory headroom is 214.47 mb
+0:42:48.356 I/OVR: User is entering the holodeck.
+0:42:48.356 I/WIN: Opened window Settings
+0:42:48.392 I/TEX: Target scale moved to 1.000000. Texture usage is 424.99 mb out of 414.36 mb available. Memory headroom is 0.00 b
+0:42:49.775 I/OVR: User is leaving the holodeck.
+0:42:57.995 I/OVR: User is entering the holodeck.
+0:42:57.995 I/WIN: Opened window Settings
+0:42:58.436 I/TEX: Target scale moved to 2.000000. Texture usage is 363.54 mb out of 575.82 mb available. Memory headroom is 227.04 mb
+0:42:58.531 I/TEX: Target scale moved to 1.000000. Texture usage is 423.88 mb out of 413.28 mb available. Memory headroom is 0.00 b
+0:42:59.085 I/OVR: User is leaving the holodeck.
+0:43:01.701 I/OVR: User is entering the holodeck.
+0:43:01.701 I/WIN: Opened window Settings
+0:43:02.713 I/OVR: User is leaving the holodeck.
+0:43:05.706 I/SCN: Loading sim objects for airport EDGB
+0:43:08.573 I/TEX: Target scale moved to 2.000000. Texture usage is 364.30 mb out of 606.38 mb available. Memory headroom is 257.62 mb
+0:43:19.892 I/TEX: Target scale moved to 1.000000. Texture usage is 425.76 mb out of 415.11 mb available. Memory headroom is 0.00 b
+0:43:20.010 I/TEX: Target scale moved to 0.125000. Texture usage is 362.08 mb out of 353.03 mb available. Memory headroom is 0.00 b
+0:43:20.766 I/OVR: User is entering the holodeck.
+0:43:20.766 I/WIN: Opened window Settings
+0:43:22.319 I/OVR: User is leaving the holodeck.
+0:43:30.122 I/TEX: Target scale moved to 0.250000. Texture usage is 99.31 mb out of 724.89 mb available. Memory headroom is 644.17 mb
+0:44:13.581 I/WXR: Will fetch 'https://weatherservice.x-plane.com/api/v1/manifest/debug/2026-04-07T17:20:54Z' for epoch '1775582454
+0:44:16.156 I/WXR: Parsing weather manifest ID '82734'
+Updating shadows
+2660.352
+Shadow update complete
+2663.35
+0:44:23.406 E/GFX/VK: Encountered Vulkan error VK_ERROR_OUT_OF_DEVICE_MEMORY. Expression: vkQueueSubmit(m_queue, 1, &info, data.fence->get_fence()). C:/Users/Administrator/builds/eiafPmXpN/1/x-plane/design/source_code/core/gfx/Vulkan/gfx_vk_queue.cpp:630
+0:44:23.406 I/GFX/VK: ------------------------------------------
+0:44:23.406 I/GFX/VK: Information for generic allocations:
+0:44:23.406 I/GFX/VK: Info for heap: 0
+0:44:23.406 I/GFX/VK: 	Block count: 83, allocation count: 4655, block size: 2.13 gb
+0:44:23.406 I/GFX/VK: 	Used: 1.49 gb, unused: 652.08 mb
+0:44:23.406 I/GFX/VK: Info for heap: 1
+0:44:23.406 I/GFX/VK: 	Block count: 17, allocation count: 12932, block size: 2.75 gb
+0:44:23.406 I/GFX/VK: 	Used: 1.91 gb, unused: 858.43 mb
+0:44:23.406 I/GFX/VK: Info for heap: 2
+0:44:23.406 I/GFX/VK: 	Block count: 2, allocation count: 5, block size: 12.00 mb
+0:44:23.406 I/GFX/VK: 	Used: 5.00 mb, unused: 7.00 mb
+0:44:23.406 I/GFX/VK: ------------------------------------------
+0:44:23.406 I/GFX/VK: Information for plugin allocations:
+0:44:23.406 I/GFX/VK: Heap 0: allocation count: 74, allocated: 163.43 mb
+0:44:23.406 I/GFX/VK: Heap 1: allocation count: 7, allocated: 6.50 mb
+0:44:23.406 I/GFX/VK: Heap 2: allocation count: 0, allocated: 0.00 b
+0:44:23.406 I/GFX/VK: ------------------------------------------
+0:44:23.406 I/GFX/VK: Budget information:
+0:44:23.406 I/GFX/VK: Heap 0: budget: 3.12 gb (3352942848 bytes), usage: 3.07 gb (3291148544 bytes)
+0:44:23.406 I/GFX/VK: Heap 1: budget: 3.57 gb (3831953818 bytes), usage: 2.89 gb (3103178752 bytes)
+0:44:23.406 I/GFX/VK: Heap 2: budget: 213.17 mb (223529520 bytes), usage: 13.73 mb (14397241 bytes)
+0:44:23.406 I/GFX: Saved a memory report in Output/diagnostic reports//Report - 2026-04-07 19.21.04.zip
+0:44:23.406 E/SYS: MACIBM_alert: Encountered critical Vulkan error!
+0:44:23.406 E/SYS: MACIBM_alert: VK_ERROR_OUT_OF_DEVICE_MEMORY
+0:44:23.406 E/SYS: MACIBM_alert: vkQueueSubmit(m_queue, 1, &info, data.fence->get_fence())
+0:44:23.406 E/SYS: MACIBM_alert: Please submit the auto crash report form.
+0:44:23.406 E/SYS: MACIBM_alert: C:/Users/Administrator/builds/eiafPmXpN/1/x-plane/design/source_code/core/gfx/Vulkan/gfx_vk_queue.cpp:630

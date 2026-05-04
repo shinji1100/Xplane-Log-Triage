@@ -1,0 +1,6 @@
+类型：missing_scenery_asset, missing_scenery_library
+严重程度：严重
+置信度：高
+解释：风景包引用了未安装或不完整的库，缺失路径提示 PP146-lib。
+建议：安装对应 library，并确认它位于 Custom Scenery 下。
+

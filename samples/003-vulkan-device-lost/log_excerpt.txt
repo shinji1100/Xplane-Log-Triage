@@ -1,0 +1,4 @@
+Encountered Vulkan device loss error!
+X-Plane cannot continue running and will now quit.
+vkQueueSubmit(m_queue, 1, &info, fence)
+
