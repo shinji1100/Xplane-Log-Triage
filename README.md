@@ -19,13 +19,20 @@ The preview zip contains:
 
 ```text
 xplane-doctor.exe
+xplane-doctor-gui.exe
 README.md
 CHANGELOG.md
 ```
 
 The executable is still named `xplane-doctor.exe` in the preview build for compatibility, but the product name is X-Plane Log Triage Tool.
 
-Use it from PowerShell or Command Prompt:
+Use the GUI:
+
+```text
+xplane-doctor-gui.exe
+```
+
+Or use it from PowerShell or Command Prompt:
 
 ```powershell
 xplane-doctor.exe analyze-log "D:\X-Plane 12\Log.txt" --output ".\doctor-report"
