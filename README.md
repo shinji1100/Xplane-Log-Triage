@@ -18,46 +18,44 @@ No files are uploaded. The tool writes reports on your own machine.
 The preview zip contains:
 
 ```text
-xplane-doctor.exe
-xplane-doctor-gui.exe
+xplane-log-triage.exe
+xplane-log-triage-gui.exe
 README.md
 CHANGELOG.md
 ```
 
-The executable is still named `xplane-doctor.exe` in the preview build for compatibility, but the product name is X-Plane Log Triage Tool.
-
 Use the GUI:
 
 ```text
-xplane-doctor-gui.exe
+xplane-log-triage-gui.exe
 ```
 
 Or use it from PowerShell or Command Prompt:
 
 ```powershell
-xplane-doctor.exe analyze-log "D:\X-Plane 12\Log.txt" --output ".\doctor-report"
+xplane-log-triage.exe analyze-log "D:\X-Plane 12\Log.txt" --output ".\triage-report"
 ```
 
-Then open `doctor-report\report.html`.
+Then open `triage-report\report.html`.
 
 ## Command Line
 
 Create a diagnostic bundle:
 
 ```powershell
-xplane-doctor.exe collect "D:\X-Plane 12" --output ".\doctor-bundle"
+xplane-log-triage.exe collect "D:\X-Plane 12" --output ".\triage-bundle"
 ```
 
 Analyze a diagnostic bundle:
 
 ```powershell
-xplane-doctor.exe analyze-bundle ".\doctor-bundle" --output ".\doctor-report"
+xplane-log-triage.exe analyze-bundle ".\triage-bundle" --output ".\triage-report"
 ```
 
 Analyze only one `Log.txt`:
 
 ```powershell
-xplane-doctor.exe analyze-log "D:\X-Plane 12\Log.txt" --output ".\doctor-report-log"
+xplane-log-triage.exe analyze-log "D:\X-Plane 12\Log.txt" --output ".\triage-report-log"
 ```
 
 ## Diagnostic Bundle Contents
@@ -158,7 +156,8 @@ This keeps the report from making harmless log noise look like a serious crash c
 ```powershell
 cargo check
 cargo test
-cargo build --release --bin xplane-doctor
+cargo build --release --bin xplane-log-triage
+cargo build --release --bin xplane-log-triage-gui --features gui
 ```
 
 The main CLI source is in:

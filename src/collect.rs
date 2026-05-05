@@ -43,7 +43,7 @@ pub(crate) fn collect_diagnostic_bundle(
     Ok(DiagnosticBundle {
         manifest: BundleManifest {
             schema_version: 3,
-            doctor_version: env!("CARGO_PKG_VERSION").to_string(),
+            tool_version: env!("CARGO_PKG_VERSION").to_string(),
             generated_at_unix_seconds: unix_now(),
             xplane_path: "<xplane>".to_string(),
             collection_scope: vec![

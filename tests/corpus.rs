@@ -66,7 +66,7 @@ fn run_case(case_dir: &Path) {
     let expected: ExpectedCase = serde_json::from_str(&expected_text)
         .unwrap_or_else(|err| panic!("case {case_id}: invalid expected.json: {err}"));
 
-    let findings = xplane_doctor::analyze_log(&log);
+    let findings = xplane_log_triage::analyze_log(&log);
 
     for required in &expected.must_detect {
         let finding = findings
@@ -103,7 +103,7 @@ fn run_case(case_dir: &Path) {
     }
 }
 
-fn detected_kinds(findings: &[xplane_doctor::Finding]) -> String {
+fn detected_kinds(findings: &[xplane_log_triage::Finding]) -> String {
     if findings.is_empty() {
         return "<none>".to_string();
     }

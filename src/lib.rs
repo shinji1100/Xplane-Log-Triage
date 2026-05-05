@@ -369,7 +369,7 @@ mod tests {
 
     #[test]
     fn reads_non_utf8_text_lossily() {
-        let path = std::env::temp_dir().join("xplane-doctor-non-utf8-log.txt");
+        let path = std::env::temp_dir().join("xplane-log-triage-non-utf8-log.txt");
         std::fs::write(&path, [b'L', b'o', b'g', 0xff, b'\n']).expect("write temp log");
         let text = read_text_lossy(&path).expect("read lossy text");
         let _ = std::fs::remove_file(&path);
@@ -394,7 +394,7 @@ mod tests {
     #[test]
     fn matches_current_log_uuid_to_dump_file_name() {
         let root =
-            std::env::temp_dir().join(format!("xplane-doctor-crash-uuid-test-{}", unix_now()));
+            std::env::temp_dir().join(format!("xplane-log-triage-crash-uuid-test-{}", unix_now()));
         let reports = root.join("Output").join("crash_reports").join("reports");
         std::fs::create_dir_all(&reports).expect("create reports dir");
         let uuid = "a04016bb-2a68-4a72-9663-caf6930f0163";
@@ -419,7 +419,7 @@ mod tests {
     #[test]
     fn matches_archive_log_uuid_without_marking_dump_as_current_log() {
         let root = std::env::temp_dir().join(format!(
-            "xplane-doctor-archive-crash-uuid-test-{}",
+            "xplane-log-triage-archive-crash-uuid-test-{}",
             unix_now()
         ));
         let reports = root.join("Output").join("crash_reports").join("reports");

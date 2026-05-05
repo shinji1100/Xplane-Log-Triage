@@ -10,7 +10,7 @@ The diagnostic bundle is not meant to replace `Log.txt`. It adds context around 
 ## Bundle Command
 
 ```powershell
-xplane-doctor.exe collect "D:\X-Plane 12" --output ".\doctor-bundle"
+xplane-log-triage.exe collect "D:\X-Plane 12" --output ".\triage-bundle"
 ```
 
 The output folder contains:

@@ -26,7 +26,7 @@ if ($choice -eq [System.Windows.Forms.DialogResult]::Yes) {
     }
 
     Push-Location $projectRoot
-    & $cargo run --bin xplane-doctor -- analyze-log $dialog.FileName
+    & $cargo run --bin xplane-log-triage -- analyze-log $dialog.FileName
     Pop-Location
 } else {
     $dialog = New-Object System.Windows.Forms.FolderBrowserDialog
@@ -36,7 +36,7 @@ if ($choice -eq [System.Windows.Forms.DialogResult]::Yes) {
     }
 
     Push-Location $projectRoot
-    & $cargo run --bin xplane-doctor -- scan $dialog.SelectedPath
+    & $cargo run --bin xplane-log-triage -- scan $dialog.SelectedPath
     Pop-Location
 }
 

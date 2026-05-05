@@ -141,7 +141,8 @@ pub struct DiagnosticBundle {
 #[derive(Debug, Deserialize, Serialize)]
 pub struct BundleManifest {
     pub schema_version: u32,
-    pub doctor_version: String,
+    #[serde(alias = "doctor_version")]
+    pub tool_version: String,
     pub generated_at_unix_seconds: u64,
     pub xplane_path: String,
     pub collection_scope: Vec<String>,

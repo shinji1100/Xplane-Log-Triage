@@ -12,6 +12,7 @@
 - Tuned common startup/background noise such as `E/IDENT`, `E/NVAPI`, `E/SOUN`, and short early-loading logs.
 - Added generic finding suppression so specific rules take priority over broad `E/...` and `W/...` subsystem scans.
 - Updated README to describe current rule coverage and limits instead of implying open-ended diagnosis.
+- Renamed release executables to `xplane-log-triage.exe` and `xplane-log-triage-gui.exe`.
 
 ## 0.1.0 Preview
 

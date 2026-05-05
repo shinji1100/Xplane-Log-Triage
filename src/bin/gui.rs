@@ -1,8 +1,8 @@
-use doctor::{get_locale, set_locale, tr, tr_fmt, Locale};
 use eframe::egui;
 use std::path::{Path, PathBuf};
 use std::process::Command;
-use xplane_doctor as doctor;
+use triage::{get_locale, set_locale, tr, tr_fmt, Locale};
+use xplane_log_triage as triage;
 
 fn main() -> eframe::Result {
     let options = eframe::NativeOptions {
@@ -17,7 +17,7 @@ fn main() -> eframe::Result {
         options,
         Box::new(|cc| {
             configure_fonts(&cc.egui_ctx);
-            Ok(Box::<DoctorApp>::default())
+            Ok(Box::<TriageApp>::default())
         }),
     )
 }
@@ -75,14 +75,14 @@ enum ScanMode {
     LogFile,
 }
 
-struct DoctorApp {
+struct TriageApp {
     mode: ScanMode,
     xplane_path: String,
     log_path: String,
     output_dir: PathBuf,
     status: String,
-    findings: Vec<doctor::Finding>,
-    summary: doctor::SystemSummary,
+    findings: Vec<triage::Finding>,
+    summary: triage::SystemSummary,
     plugin_count: usize,
     scenery_count: usize,
     detected_paths: Vec<PathBuf>,
@@ -90,9 +90,9 @@ struct DoctorApp {
     locale: Locale,
 }
 
-impl Default for DoctorApp {
+impl Default for TriageApp {
     fn default() -> Self {
-        let detected_paths = doctor::detect_xplane_installs();
+        let detected_paths = triage::detect_xplane_installs();
         let xplane_path = detected_paths
             .first()
             .map(|path| path.display().to_string())
@@ -113,10 +113,10 @@ impl Default for DoctorApp {
             mode: ScanMode::Folder,
             xplane_path,
             log_path: String::new(),
-            output_dir: doctor::default_report_dir(),
+            output_dir: triage::default_report_dir(),
             status,
             findings: Vec::new(),
-            summary: doctor::SystemSummary::default(),
+            summary: triage::SystemSummary::default(),
             plugin_count: 0,
             scenery_count: 0,
             detected_paths,
@@ -126,7 +126,7 @@ impl Default for DoctorApp {
     }
 }
 
-impl eframe::App for DoctorApp {
+impl eframe::App for TriageApp {
     fn update(&mut self, ctx: &egui::Context, _: &mut eframe::Frame) {
         egui::CentralPanel::default().show(ctx, |ui| {
             // Language toggle + heading
@@ -206,7 +206,7 @@ impl eframe::App for DoctorApp {
             }
 
             egui::ScrollArea::vertical().show(ui, |ui| {
-                let mut findings: Vec<&doctor::Finding> = self.findings.iter().collect();
+                let mut findings: Vec<&triage::Finding> = self.findings.iter().collect();
                 findings.sort_by_key(|finding| finding.severity);
 
                 for finding in findings {
@@ -218,7 +218,7 @@ impl eframe::App for DoctorApp {
     }
 }
 
-impl DoctorApp {
+impl TriageApp {
     fn render_folder_picker(&mut self, ui: &mut egui::Ui) {
         ui.horizontal(|ui| {
             ui.label(tr!("X-Plane 12 目录", "X-Plane 12 Directory"));
@@ -231,7 +231,7 @@ impl DoctorApp {
             }
 
             if ui.button(tr!("自动查找", "Auto-detect")).clicked() {
-                self.detected_paths = doctor::detect_xplane_installs();
+                self.detected_paths = triage::detect_xplane_installs();
                 if let Some(path) = self.detected_paths.first() {
                     self.xplane_path = path.display().to_string();
                     self.status = tr_fmt!(
@@ -339,7 +339,7 @@ impl DoctorApp {
                     .to_string();
                     return;
                 }
-                doctor::scan_and_write_reports_to(&path, &self.output_dir)
+                triage::scan_and_write_reports_to(&path, &self.output_dir)
             }
             ScanMode::LogFile => {
                 let path = PathBuf::from(self.log_path.trim());
@@ -356,7 +356,7 @@ impl DoctorApp {
                     .to_string();
                     return;
                 }
-                doctor::analyze_log_file_and_write_reports_to(&path, &self.output_dir)
+                triage::analyze_log_file_and_write_reports_to(&path, &self.output_dir)
             }
         };
 
@@ -371,7 +371,7 @@ impl DoctorApp {
         }
     }
 
-    fn apply_report(&mut self, report: doctor::ScanReport) {
+    fn apply_report(&mut self, report: triage::ScanReport) {
         let count = report.findings.len();
         self.plugin_count = report.plugins.len();
         self.scenery_count = report.scenery_entries.len();
@@ -392,7 +392,7 @@ fn render_optional_summary(ui: &mut egui::Ui, label: &str, value: &Option<String
     }
 }
 
-fn render_finding(ui: &mut egui::Ui, finding: &doctor::Finding) {
+fn render_finding(ui: &mut egui::Ui, finding: &triage::Finding) {
     ui.group(|ui| {
         ui.horizontal_wrapped(|ui| {
             ui.colored_label(
@@ -425,7 +425,7 @@ fn render_finding(ui: &mut egui::Ui, finding: &doctor::Finding) {
     });
 }
 
-fn finding_title_with_count(finding: &doctor::Finding) -> String {
+fn finding_title_with_count(finding: &triage::Finding) -> String {
     if finding.occurrences > 1 {
         tr_fmt!("{} × {} 次", "{} x {}", finding.title, finding.occurrences)
     } else {
@@ -433,12 +433,12 @@ fn finding_title_with_count(finding: &doctor::Finding) -> String {
     }
 }
 
-fn severity_color(severity: doctor::Severity) -> egui::Color32 {
+fn severity_color(severity: triage::Severity) -> egui::Color32 {
     match severity {
-        doctor::Severity::High => egui::Color32::from_rgb(190, 18, 60),
-        doctor::Severity::Medium => egui::Color32::from_rgb(180, 83, 9),
-        doctor::Severity::Low => egui::Color32::from_rgb(37, 99, 235),
-        doctor::Severity::Info => egui::Color32::from_rgb(71, 85, 105),
+        triage::Severity::High => egui::Color32::from_rgb(190, 18, 60),
+        triage::Severity::Medium => egui::Color32::from_rgb(180, 83, 9),
+        triage::Severity::Low => egui::Color32::from_rgb(37, 99, 235),
+        triage::Severity::Info => egui::Color32::from_rgb(71, 85, 105),
     }
 }
 

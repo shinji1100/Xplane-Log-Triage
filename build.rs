@@ -8,7 +8,7 @@ fn main() {
 
     for path in ["C:/msys64/mingw64/lib", "C:/msys64/ucrt64/lib"] {
         if Path::new(path).join("libshlwapi.a").exists() {
-            println!("cargo:rustc-link-arg-bin=xplane-doctor-gui=-L{path}");
+            println!("cargo:rustc-link-arg-bin=xplane-log-triage-gui=-L{path}");
             break;
         }
     }

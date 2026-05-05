@@ -2,7 +2,7 @@ use std::env;
 use std::io;
 use std::path::PathBuf;
 
-use xplane_doctor::{
+use xplane_log_triage::{
     analyze_bundle_dir_and_write_reports_to, analyze_log_file_and_write_reports_to,
     choose_detected_install, collect_diagnostic_bundle_to, default_report_dir,
     detect_xplane_installs, i18n::detect_locale, i18n::set_locale, i18n::Locale,
@@ -235,7 +235,10 @@ fn print_report_result(finding_count: usize, output_dir: &std::path::Path) {
     );
 }
 
-fn print_collect_result(bundle: &xplane_doctor::DiagnosticBundle, output_dir: &std::path::Path) {
+fn print_collect_result(
+    bundle: &xplane_log_triage::DiagnosticBundle,
+    output_dir: &std::path::Path,
+) {
     println!("{}", tr!("诊断包已生成：", "Diagnostic bundle created:"));
     println!("{} {}", tr!("目录：", "Directory:"), output_dir.display());
     println!("  {}", output_dir.join("diagnostic-bundle.json").display());
@@ -268,7 +271,10 @@ fn print_collect_result(bundle: &xplane_doctor::DiagnosticBundle, output_dir: &s
 }
 
 fn print_usage(args: &[String]) {
-    let exe = args.first().map(String::as_str).unwrap_or("xplane-doctor");
+    let exe = args
+        .first()
+        .map(String::as_str)
+        .unwrap_or("xplane-log-triage");
     println!("{}", tr!("用法：", "Usage:"));
     println!("  {exe} detect");
     println!("  {exe} collect \"D:\\X-Plane 12\"");
