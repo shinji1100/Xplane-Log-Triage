@@ -5,7 +5,7 @@ use crate::tr_fmt;
 use crate::{Confidence, Finding, Severity};
 
 const EARLY_CRASH_SIM_SECONDS: f64 = 5.0;
-const ABRUPT_TERMINATION_MIN_SIM_SECONDS: f64 = 60.0;
+const ABRUPT_TERMINATION_MIN_SIM_SECONDS: f64 = 300.0;
 const MAX_EXTRA_EVIDENCE: usize = 4;
 
 // ── per-line rule checks ────────────────────────────────────────────
@@ -96,6 +96,21 @@ fn check_texture_vram_pressure(idx: usize, line: &str, lower: &str) -> Option<Fi
         )
     };
 
+    let target_scale = parse_target_scale(line);
+    let scale_extreme = target_scale.map_or(false, |s| s <= 0.3);
+    let (severity, title) = if scale_extreme && severity == Severity::Medium {
+        let s = target_scale.unwrap_or(0.0);
+        (
+            Severity::High,
+            tr_fmt!(
+                "显存严重不足，纹理大幅降级至 {s:.2}x——{usage_str}使用中，可用{_avail_str}",
+                "VRAM critically low, extreme texture downscale to {s:.2}x -- usage {usage_str}, available {_avail_str}"
+            ),
+        )
+    } else {
+        (severity, title)
+    };
+
     Some(Finding::new(
         severity,
         Confidence::High,
@@ -121,6 +136,12 @@ fn parse_after_key<'a>(haystack: &'a str, key: &str) -> Option<(f64, String)> {
         value
     };
     Some((mb, format!("{value:.2}{unit}")))
+}
+
+fn parse_target_scale(line: &str) -> Option<f64> {
+    let rest = line.split("Target scale moved to ").nth(1)?;
+    let num_str = rest.trim().split_whitespace().next()?;
+    num_str.trim_end_matches('.').parse().ok()
 }
 
 fn check_memory_vram(idx: usize, line: &str, lower: &str) -> Option<Finding> {
@@ -162,14 +183,23 @@ fn check_missing_scenery_asset(idx: usize, line: &str, lower: &str) -> Option<Fi
 }
 
 fn check_missing_scenery_object(idx: usize, line: &str, lower: &str) -> Option<Finding> {
-    if !lower.contains("unable to locate object") {
+    if !lower.contains("unable to locate object")
+        && !(lower.contains("missing object") && lower.contains("from package"))
+    {
         return None;
     }
-    let asset = line
-        .split("Unable to locate object:")
-        .nth(1)
-        .map(str::trim)
-        .unwrap_or("");
+    let asset = if lower.contains("unable to locate object") {
+        line.split("Unable to locate object:")
+            .nth(1)
+            .map(str::trim)
+            .unwrap_or("")
+    } else {
+        line.split("Missing object ")
+            .nth(1)
+            .and_then(|rest| rest.split(" from package").next())
+            .map(str::trim)
+            .unwrap_or("")
+    };
     let library_hint = asset
         .split('/')
         .next()
@@ -237,6 +267,10 @@ fn check_vulkan_device_lost(idx: usize, line: &str, lower: &str) -> Option<Findi
     }
 }
 
+fn sanitize_xplm_bypass_plugin_name(name: &str) -> &str {
+    name.split(" (").next().unwrap_or(name).trim()
+}
+
 fn check_xplm_bypass(idx: usize, line: &str, lower: &str) -> Option<Finding> {
     if !lower.contains("bypassed xplm") && !lower.contains("bypassed sdk when calling") {
         return None;
@@ -244,7 +278,7 @@ fn check_xplm_bypass(idx: usize, line: &str, lower: &str) -> Option<Finding> {
     let plugin_name = line
         .split(" has bypassed")
         .next()
-        .map(str::trim)
+        .map(sanitize_xplm_bypass_plugin_name)
         .unwrap_or("");
     let title = if plugin_name.is_empty() {
         tr!("插件绕过 XPLM SDK 调用", "Plugin bypassed XPLM SDK call").to_string()
@@ -328,6 +362,121 @@ fn check_flywithlua_error(idx: usize, line: &str, lower: &str) -> Option<Finding
     }
 }
 
+fn check_third_party_plugin_error(idx: usize, line: &str, lower: &str) -> Option<Finding> {
+    if !is_third_party_plugin_error_line(line, lower) {
+        return None;
+    }
+
+    let plugin_name = extract_plugin_log_name(line).unwrap_or("third-party plugin");
+    Some(Finding::new(
+        Severity::Low,
+        Confidence::Medium,
+        "third_party_plugin_error",
+        tr_fmt!(
+            "第三方插件报告错误：{plugin_name}",
+            "Third-party plugin reported an error: {plugin_name}"
+        ),
+        evidence_line(idx, line),
+        tr!(
+            "第三方插件在 X-Plane 标准的 E/... 通道之外写入了自己的 ERROR 消息。这通常指向插件功能问题，而不是模拟器崩溃的直接原因。",
+            "A third-party plugin wrote its own ERROR message outside X-Plane's normal E/... channels. This usually points to a plugin feature problem rather than proving the whole simulator crash cause."
+        ),
+        tr_fmt!(
+            "更新或临时禁用 {plugin_name}，如果用户症状与该插件功能匹配则复测。将其视为辅助证据，除非紧邻崩溃前出现。",
+            "Update or temporarily disable {plugin_name} and retest if the user's symptom matches this plugin's feature. Treat it as supporting evidence unless it appears immediately before the crash."
+        ),
+    ))
+}
+
+fn is_third_party_plugin_error_line(line: &str, lower: &str) -> bool {
+    if lower.contains("flywithlua") {
+        return false;
+    }
+    if parse_xplane_error_channel(line).is_some() {
+        return false;
+    }
+
+    let has_plugin_tag = extract_plugin_log_name(line).is_some();
+    let has_error_word =
+        line.contains(" ERROR") || line.contains("[ERROR]") || line.contains("|ERROR|");
+
+    has_plugin_tag && has_error_word || is_plugin_timeout_line(line)
+}
+
+fn extract_plugin_log_name(line: &str) -> Option<&str> {
+    let trimmed = line.trim_start();
+    if let Some(name) = extract_bracketed_plugin_name(trimmed) {
+        return Some(name);
+    }
+
+    extract_timed_plugin_prefix(trimmed)
+}
+
+fn extract_bracketed_plugin_name(line: &str) -> Option<&str> {
+    let mut rest = line;
+    while let Some(start) = rest.find('[') {
+        rest = &rest[start + 1..];
+        let end = rest.find(']')?;
+        let name = rest[..end].trim();
+        if is_plausible_plugin_log_name(name) {
+            return Some(name);
+        }
+        rest = &rest[end + 1..];
+    }
+
+    None
+}
+
+fn extract_timed_plugin_prefix(line: &str) -> Option<&str> {
+    let mut parts = line.split_whitespace();
+    let name = parts.next()?;
+    let time = parts.next()?;
+    if is_plausible_plugin_log_name(name) && looks_like_clock_time(time) {
+        Some(name)
+    } else {
+        None
+    }
+}
+
+fn is_plugin_timeout_line(line: &str) -> bool {
+    let trimmed = line.trim_start();
+    extract_timed_plugin_prefix(trimmed).is_some() && trimmed.contains("Request timed out")
+}
+
+fn is_plausible_plugin_log_name(name: &str) -> bool {
+    if name.is_empty()
+        || matches!(
+            name.to_ascii_lowercase().as_str(),
+            "error" | "warn" | "warning" | "info" | "debug" | "trace"
+        )
+    {
+        return false;
+    }
+
+    name.chars()
+        .all(|ch| ch.is_ascii_alphanumeric() || matches!(ch, '_' | '-' | '.' | ' '))
+}
+
+fn looks_like_clock_time(value: &str) -> bool {
+    let mut parts = value.split(':');
+    let Some(hours) = parts.next() else {
+        return false;
+    };
+    let Some(minutes) = parts.next() else {
+        return false;
+    };
+    let Some(seconds) = parts.next() else {
+        return false;
+    };
+    parts.next().is_none()
+        && !hours.is_empty()
+        && !minutes.is_empty()
+        && !seconds.is_empty()
+        && hours.chars().all(|ch| ch.is_ascii_digit())
+        && minutes.chars().all(|ch| ch.is_ascii_digit())
+        && seconds.chars().all(|ch| ch.is_ascii_digit())
+}
+
 fn check_macos_security_block(idx: usize, line: &str, lower: &str) -> Option<Finding> {
     let is_flywithlua_quarantine =
         lower.contains("flywithlua") && lower.contains("scripts quarantine dir");
@@ -389,6 +538,93 @@ fn check_application_crash(idx: usize, line: &str) -> Option<Finding> {
         evidence_line(idx, line),
         explanation,
         suggestion,
+    ))
+}
+
+fn check_plugin_encountered_error(idx: usize, line: &str, lower: &str) -> Option<Finding> {
+    let channel = parse_xplane_error_channel(line)?;
+    if channel != "E/PLG" || !lower.contains("encountered error") {
+        return None;
+    }
+    let plugin_name = line
+        .split("Plugin ")
+        .nth(1)
+        .and_then(|rest| rest.split(" encountered error").next())
+        .and_then(|name| name.split(" (").next())
+        .map(str::trim)
+        .unwrap_or("unknown plugin");
+    Some(Finding::new(
+        Severity::Medium,
+        Confidence::High,
+        "plugin_encountered_error",
+        tr_fmt!(
+            "插件 {plugin_name} 在运行时遇到错误",
+            "Plugin {plugin_name} encountered a runtime error"
+        ),
+        evidence_line(idx, line),
+        tr_fmt!(
+            "X-Plane 在运行时通过 E/PLG 通道报告了插件 {plugin_name} 的错误。这是 X-Plane 自身识别到的运行时故障，不只是初始化噪声。",
+            "X-Plane reported a runtime error for plugin {plugin_name} via the E/PLG channel. This is a runtime fault identified by X-Plane itself, not just initialization noise."
+        ),
+        tr_fmt!(
+            "更新 {plugin_name} 到最新版本，若问题依旧则临时禁用该插件复测。",
+            "Update {plugin_name} to the latest version; if the problem persists, temporarily disable the plugin and retest."
+        ),
+    ))
+}
+
+fn extract_nearby_aircraft_path(lines: &[&str], idx: usize) -> Option<String> {
+    lines
+        .iter()
+        .skip(idx)
+        .take(8)
+        .filter_map(|line| {
+            let start = line.find("Aircraft/")?;
+            let rest = &line[start..];
+            let end = rest
+                .find(".acf")
+                .map(|pos| pos + ".acf".len())
+                .unwrap_or(rest.len());
+            Some(rest[..end].trim().to_string())
+        })
+        .find(|path| !path.is_empty())
+}
+
+fn check_aircraft_open_failure(
+    idx: usize,
+    line: &str,
+    lower: &str,
+    lines: &[&str],
+) -> Option<Finding> {
+    if !lower.contains("failed to open the following aircraft")
+        && !lower.contains("unknown aircraft")
+    {
+        return None;
+    }
+    let aircraft = extract_nearby_aircraft_path(lines, idx)
+        .or_else(|| {
+            line.find("Aircraft/")
+                .map(|start| line[start..].trim().to_string())
+        })
+        .unwrap_or_else(|| tr!("未知飞机", "unknown aircraft").to_string());
+
+    Some(Finding::new(
+        Severity::High,
+        Confidence::High,
+        "aircraft_open_failure",
+        tr_fmt!(
+            "X-Plane 无法打开飞机文件：{aircraft}",
+            "X-Plane could not open aircraft file: {aircraft}"
+        ),
+        evidence_line(idx, line),
+        tr_fmt!(
+            "X-Plane 明确提示飞机文件缺失、损坏，或不是当前版本可读取的飞机文件。目标飞机是：{aircraft}。",
+            "X-Plane explicitly reported that the aircraft file is missing, corrupt, or not a readable aircraft file for this version. Target aircraft: {aircraft}."
+        ),
+        tr!(
+            "先不要按插件或显卡方向排查；改用默认飞机复测。若默认飞机正常，重新安装或更新证据中的飞机包，确认 .acf 文件存在且支持当前 X-Plane 版本。",
+            "Do not start with plugin or GPU troubleshooting; retest with a default aircraft first. If the default aircraft works, reinstall or update the aircraft package named in the evidence, and verify the .acf file exists and supports this X-Plane version."
+        ),
     ))
 }
 
@@ -559,6 +795,9 @@ pub fn analyze_log(log_text: &str) -> Vec<Finding> {
         findings.extend(check_threading_violation(idx, line, &lower, &lines));
         findings.extend(check_xplm_bypass(idx, line, &lower));
         findings.extend(check_flywithlua_error(idx, line, &lower));
+        findings.extend(check_third_party_plugin_error(idx, line, &lower));
+        findings.extend(check_plugin_encountered_error(idx, line, &lower));
+        findings.extend(check_aircraft_open_failure(idx, line, &lower, &lines));
         if is_macos_log {
             findings.extend(check_macos_security_block(idx, line, &lower));
         }
@@ -566,7 +805,7 @@ pub fn analyze_log(log_text: &str) -> Vec<Finding> {
         findings.extend(check_duplicate_scenery(idx, line, &lower));
     }
 
-    if log_indicates_crash(&lines) {
+    if log_indicates_crash(&lines) || log_has_gpu_crash_signal(&lines) {
         findings.extend(scenery_load_crash_context_finding(&lines));
         findings.extend(last_loaded_context_finding(&lines));
         findings.extend(pre_crash_context_finding(&lines));
@@ -575,20 +814,30 @@ pub fn analyze_log(log_text: &str) -> Vec<Finding> {
         findings.extend(abrupt_termination_finding(&lines));
     }
 
-    dedupe_findings(findings)
+    let mut findings = dedupe_findings(findings);
+    suppress_generic_findings(&mut findings);
+    findings
 }
 
 fn is_crash_marker_line(line: &str) -> bool {
     let lower = line.to_ascii_lowercase();
     lower.contains("this application has crashed")
         || lower.contains("--=={uuid:")
+        || lower.contains("--=={file:")
         || lower.contains("forwarding exception")
         || lower.contains("x-plane cannot continue running")
+        || lower.contains("无法继续运行")
         || lower.contains("thread fatal assert")
 }
 
 fn log_indicates_crash(lines: &[&str]) -> bool {
     lines.iter().any(|line| is_crash_marker_line(line))
+}
+
+fn log_has_gpu_crash_signal(lines: &[&str]) -> bool {
+    lines
+        .iter()
+        .any(|line| line.to_ascii_lowercase().contains("vk_error_device_lost"))
 }
 
 fn detect_xplane_subsystem_errors(lines: &[&str]) -> Vec<Finding> {
@@ -680,9 +929,15 @@ fn xplane_channel_severity(channel: &str) -> Severity {
         || channel.starts_with("W/PLG")
         || channel.starts_with("E/NET")
         || channel.starts_with("W/NET")
+        || channel.starts_with("E/IDENT")
+        || channel.starts_with("W/IDENT")
+        || channel.starts_with("E/NVAPI")
+        || channel.starts_with("W/NVAPI")
         || channel.starts_with("W/TEX")
     {
         Severity::Info
+    } else if channel.starts_with("E/SOUN") || channel.starts_with("W/SOUN") {
+        Severity::Low
     } else if channel.starts_with("E/JOY") || channel.starts_with("W/JOY") {
         Severity::Low
     } else if channel.starts_with("E/SYS") || channel.starts_with("W/SYS") {
@@ -713,6 +968,12 @@ fn xplane_channel_suggestion(channel: &str) -> &'static str {
         tr!("这是 X-Plane 面向用户的告警。阅读证据行内容，但将其视为检查项，除非明确提到 X-Plane 无法继续运行或当前会话崩溃。", "This is a user-facing X-Plane alert. Read the evidence line, but treat it as a check item unless it explicitly says X-Plane cannot continue or the current session crashed.")
     } else if channel.starts_with("E/NET") || channel.starts_with("W/NET") {
         tr!("通常影响局域网发现、联机广播或网络功能。除非用户的问题正是联网/多人联机，否则不要把它当作崩溃主因。", "Usually affects LAN discovery, multiplayer broadcast, or network features. Unless the user's symptom is networking or multiplayer related, do not treat it as the main crash cause.")
+    } else if channel.starts_with("E/IDENT") || channel.starts_with("W/IDENT") {
+        tr!("Usually product identity, license receipt, or online identity background. Treat as background unless the user's symptom is activation or sign-in failure.", "Usually product identity, license receipt, or online identity background. Treat as background unless the user's symptom is activation or sign-in failure.")
+    } else if channel.starts_with("E/NVAPI") || channel.starts_with("W/NVAPI") {
+        tr!("Usually NVIDIA driver capability or permission probing noise during startup. Treat as background unless graphics features are missing or the log later shows a GPU crash.", "Usually NVIDIA driver capability or permission probing noise during startup. Treat as background unless graphics features are missing or the log later shows a GPU crash.")
+    } else if channel.starts_with("E/SOUN") || channel.starts_with("W/SOUN") {
+        tr!("Usually an aircraft/plugin sound-bank or audio-device check item. Investigate if the user's symptom is missing sound, but do not treat it as the main crash cause by itself.", "Usually an aircraft/plugin sound-bank or audio-device check item. Investigate if the user's symptom is missing sound, but do not treat it as the main crash cause by itself.")
     } else if channel.starts_with("W/TEX") {
         tr!("通常是纹理封装警告。将其视为背景信息，除非相关飞机或 scenery 有明显纹理问题。", "Usually a texture packaging warning. Treat it as background unless the affected aircraft or scenery has visible texture problems.")
     } else if channel.starts_with("W/ART") {
@@ -849,8 +1110,18 @@ fn dedupe_findings(findings: Vec<Finding>) -> Vec<Finding> {
         let dedupe_key = finding_dedupe_key(&finding);
         if let Some(existing_idx) = by_kind.get(&dedupe_key).copied() {
             let existing = &mut out[existing_idx];
+            if finding.severity < existing.severity {
+                let previous_evidence = std::mem::replace(&mut existing.evidence, finding.evidence);
+                existing.severity = finding.severity;
+                existing.confidence = finding.confidence;
+                existing.title = finding.title;
+                existing.explanation = finding.explanation;
+                existing.suggestion = finding.suggestion;
+                push_extra_evidence(existing, previous_evidence);
+            } else {
+                push_extra_evidence(existing, finding.evidence);
+            }
             existing.occurrences += finding.occurrences;
-            push_extra_evidence(existing, finding.evidence);
             for evidence in finding.extra_evidence.drain(..) {
                 push_extra_evidence(existing, evidence);
             }
@@ -862,8 +1133,62 @@ fn dedupe_findings(findings: Vec<Finding>) -> Vec<Finding> {
     out
 }
 
+fn suppress_generic_findings(findings: &mut Vec<Finding>) {
+    let has_specific = |kind: &str| findings.iter().any(|f| f.kind == kind);
+
+    let has_aircraft_failure = has_specific("aircraft_open_failure");
+    let has_scenery_missing = has_specific("missing_scenery_object")
+        || has_specific("missing_scenery_asset")
+        || has_specific("missing_scenery_library");
+    let has_gpu_error = has_specific("vulkan_device_lost")
+        || has_specific("vulkan_result_error")
+        || has_specific("graphics_vulkan_error");
+    let has_plugin_issue =
+        has_specific("plugin_load_failed") || has_specific("plugin_encountered_error");
+
+    for finding in findings.iter_mut() {
+        if finding.kind != "xplane_subsystem_errors" {
+            continue;
+        }
+        let channel = extract_channel_from_subsystem_title(&finding.title);
+        let should_suppress = match channel.as_deref() {
+            Some("E/SYS") | Some("W/SYS") => {
+                has_aircraft_failure && evidence_mentions_aircraft(finding)
+            }
+            Some("E/ACF") | Some("W/ACF") => {
+                has_aircraft_failure && evidence_mentions_aircraft(finding)
+            }
+            Some("E/SCN") | Some("W/SCN") | Some("E/OBJ") => has_scenery_missing,
+            Some(ch) if ch.starts_with("E/GFX") => has_gpu_error,
+            Some("E/PLG") | Some("W/PLG") => has_plugin_issue,
+            _ => false,
+        };
+        if should_suppress {
+            finding.severity = Severity::Info;
+            finding.confidence = Confidence::Low;
+        }
+    }
+}
+
+fn extract_channel_from_subsystem_title(title: &str) -> Option<String> {
+    let start = title.find("subsystem ")? + "subsystem ".len();
+    let end = title[start..].find(" messages")?;
+    Some(title[start..start + end].to_string())
+}
+
+fn evidence_mentions_aircraft(finding: &Finding) -> bool {
+    let check = |s: &str| {
+        let lower = s.to_ascii_lowercase();
+        lower.contains("failed to open")
+            || lower.contains(".acf")
+            || lower.contains("aircraft/")
+            || lower.contains("unknown aircraft")
+    };
+    check(&finding.evidence) || finding.extra_evidence.iter().any(|e| check(e))
+}
+
 fn finding_dedupe_key(finding: &Finding) -> String {
-    if finding.kind == "xplane_subsystem_errors" {
+    if finding.kind == "xplane_subsystem_errors" || finding.kind == "third_party_plugin_error" {
         format!("{}:{}", finding.kind, finding.title)
     } else {
         finding.kind.clone()
@@ -1166,6 +1491,74 @@ mod tests {
     }
 
     #[test]
+    fn treats_ident_and_nvapi_as_background() {
+        let findings = analyze_log(
+            "0:00:00.000 E/IDENT: Refresh Error Code is: 0\n\
+0:00:00.000 E/NVAPI: NvAPI access denied while probing startup capabilities\n",
+        );
+
+        let ident = findings
+            .iter()
+            .find(|finding| {
+                finding.kind == "xplane_subsystem_errors" && finding.title.contains("E/IDENT")
+            })
+            .expect("E/IDENT subsystem finding");
+        assert_eq!(ident.severity, Severity::Info);
+
+        let nvapi = findings
+            .iter()
+            .find(|finding| {
+                finding.kind == "xplane_subsystem_errors" && finding.title.contains("E/NVAPI")
+            })
+            .expect("E/NVAPI subsystem finding");
+        assert_eq!(nvapi.severity, Severity::Info);
+    }
+
+    #[test]
+    fn treats_sound_errors_as_audio_check_items() {
+        let findings =
+            analyze_log("0:00:00.000 E/SOUN: Could not find default sound output device\n");
+        let sound = findings
+            .iter()
+            .find(|finding| {
+                finding.kind == "xplane_subsystem_errors" && finding.title.contains("E/SOUN")
+            })
+            .expect("E/SOUN subsystem finding");
+        assert_eq!(sound.severity, Severity::Low);
+    }
+
+    #[test]
+    fn detects_third_party_plugin_error_formats() {
+        let findings = analyze_log(
+            "[FoXeTekPlugin] ERROR|11:14:08.967|UDPSocket::read: no pending data\n\
+[SharedFlight][SFImageService.cpp:180]: [ERROR] Found non png file\n\
+2026-04-09 11:14:35 [SharedFlight][SFUIGraphic.cpp:42]: [ERROR] CAIRO_STATUS_FILE_NOT_FOUND\n\
+WeatherBridge 11:14:45 Request timed out\n",
+        );
+
+        let foxetek = findings
+            .iter()
+            .find(|finding| {
+                finding.kind == "third_party_plugin_error"
+                    && finding.title.contains("FoXeTekPlugin")
+            })
+            .expect("FoXeTek plugin error finding");
+        assert_eq!(foxetek.severity, Severity::Low);
+
+        let shared_flight = findings
+            .iter()
+            .find(|finding| {
+                finding.kind == "third_party_plugin_error" && finding.title.contains("SharedFlight")
+            })
+            .expect("SharedFlight plugin error finding");
+        assert_eq!(shared_flight.occurrences, 2);
+
+        assert!(findings.iter().any(|finding| {
+            finding.kind == "third_party_plugin_error" && finding.title.contains("WeatherBridge")
+        }));
+    }
+
+    #[test]
     fn detects_scenery_load_crash_context() {
         let log = "\
 0:00:15.000 I/FLT: Init dat_p0 type:loc_general_area lat:47.788984 lon:13.004313 psi:149.105074 apt:LOWS rwy:15
@@ -1306,6 +1699,19 @@ mod tests {
     }
 
     #[test]
+    fn skips_abrupt_termination_during_early_loading() {
+        let log = "\
+0:00:00.000 I/INIT: start
+0:01:14.000 I/SCN: still loading startup resources\n";
+        let findings = analyze_log(log);
+        let hint = findings.iter().find(|f| f.kind == "abrupt_termination");
+        assert!(
+            hint.is_none(),
+            "should not flag abrupt termination during short startup/loading logs"
+        );
+    }
+
+    #[test]
     fn skips_abrupt_termination_when_clean_shutdown_present() {
         let log = "\
 0:00:00.000 I/INIT: start
@@ -1390,6 +1796,21 @@ mod tests {
     }
 
     #[test]
+    fn xplm_bypass_title_excludes_plugin_id_and_path() {
+        let log = "XTLua 2.2.1 id12 (com.x-plane.xtlua.G:\\SteamLibrary/steamapps/common/X-Plane 12/Aircraft/777-300ER-master/plugins/xtlua/.2.0.5) has bypassed XPLM when calling SDK functions. This is a plugin bug.\n";
+        let findings = analyze_log(log);
+        let f = findings
+            .iter()
+            .find(|f| f.kind == "xplm_bypass")
+            .expect("should detect XPLM bypass");
+        assert!(f.title.contains("XTLua 2.2.1 id12"));
+        assert!(
+            !f.title.contains("SteamLibrary"),
+            "title should not include the plugin id/path"
+        );
+    }
+
+    #[test]
     fn detects_texture_vram_mild_over_commit() {
         let log = "0:53:01.007 I/TEX: Target scale moved to 2.000000. Texture usage is 3.62 gb out of 3.58 gb available. Memory headroom is 57.82 mb\n";
         let findings = analyze_log(log);
@@ -1424,5 +1845,356 @@ mod tests {
         let log = "0:04:05.537 I/TEX: Target scale moved to 1.000000. Texture usage is 375.79 mb out of 7.05 gb available. Memory headroom is 6.86 gb\n";
         let findings = analyze_log(log);
         assert!(findings.iter().all(|f| f.kind != "texture_vram_pressure"));
+    }
+
+    #[test]
+    fn detects_aftermath_file_crash_marker() {
+        let log = "\
+0:00:00.000 I/INIT: start
+0:01:00.000 I/SCN: flying
+--=={FILE: C:\\Users\\test\\AppData\\Local\\Temp\\xplane_crash_reports\\aftermath\\gpu_crash.txt}==--\n";
+        let findings = analyze_log(log);
+        assert!(
+            findings.iter().any(|f| f.kind == "application_crash"),
+            "should detect --=={{FILE: ...}}==-- as crash marker"
+        );
+    }
+
+    #[test]
+    fn detects_chinese_crash_text() {
+        let log = "\
+0:00:00.000 I/INIT: start
+0:01:00.000 I/SCN: flying
+0:01:30.000 E/SYS: X-Plane 无法继续运行\n";
+        let findings = analyze_log(log);
+        assert!(
+            findings.iter().any(|f| f.kind == "application_crash"),
+            "should detect Chinese '无法继续运行' as crash marker"
+        );
+    }
+
+    #[test]
+    fn vk_device_lost_without_crash_marker_enters_crash_branch() {
+        let log = "\
+0:00:00.000 I/INIT: start
+0:01:00.000 I/SCN: flying
+0:01:30.000 E/GFX: vkQueueSubmit returned VK_ERROR_DEVICE_LOST\n";
+        let findings = analyze_log(log);
+        assert!(
+            !findings.iter().any(|f| f.kind == "abrupt_termination"),
+            "VK_ERROR_DEVICE_LOST should prevent abrupt_termination even without crash marker"
+        );
+    }
+
+    #[test]
+    fn detects_plugin_encountered_error() {
+        let log = "\
+0:00:00.000 I/INIT: start
+0:27:02.000 E/PLG: Plugin BetterPushback-v1.6.1 encountered error: Instance data set during draw callback\n";
+        let findings = analyze_log(log);
+        let f = findings
+            .iter()
+            .find(|f| f.kind == "plugin_encountered_error");
+        assert!(f.is_some(), "should detect E/PLG encountered error");
+        assert!(
+            f.unwrap().title.contains("BetterPushback-v1.6.1"),
+            "should extract plugin name"
+        );
+        assert_eq!(f.unwrap().severity, Severity::Medium);
+    }
+
+    #[test]
+    fn detects_aircraft_open_failure_with_following_acf_path() {
+        let log = "\
+0:00:07.780 E/SYS: MACIBM_alert: Failed to open the following aircraft:
+0:00:07.780 E/SYS: MACIBM_alert: Aircraft/Misc. Aircraft/PAE-A36-REP/PAE-A36/PAE_REP_A36_Analog.acf
+0:00:07.780 E/SYS: MACIBM_alert: This could be because the aircraft file is missing or corrupt, or because it is not really an aircraft file at all.
+--=={This application has crashed!}==--
+";
+        let findings = analyze_log(log);
+        let f = findings
+            .iter()
+            .find(|f| f.kind == "aircraft_open_failure")
+            .expect("should detect aircraft open failure");
+        assert_eq!(f.severity, Severity::High);
+        assert!(f.title.contains("PAE_REP_A36_Analog.acf"));
+    }
+
+    #[test]
+    fn detects_unknown_aircraft_path_on_same_line() {
+        let log = "0:00:07.780 E/SYS: MACIBM_alert: Unknown aircraft Aircraft/Foo/Bar.acf (perhaps it was deleted from disk?)\n";
+        let findings = analyze_log(log);
+        let f = findings
+            .iter()
+            .find(|f| f.kind == "aircraft_open_failure")
+            .expect("should detect unknown aircraft");
+        assert!(f.title.contains("Aircraft/Foo/Bar.acf"));
+    }
+
+    #[test]
+    fn detects_missing_object_from_package_w_scn() {
+        let log = "0:00:00.000 W/SCN: Missing object test_building.obj from package Custom Scenery/Test_Airport/; replacing with blank\n";
+        let findings = analyze_log(log);
+        let f = findings.iter().find(|f| {
+            f.kind == "missing_scenery_object" && f.evidence.contains("test_building.obj")
+        });
+        assert!(
+            f.is_some(),
+            "should detect W/SCN Missing object from package"
+        );
+    }
+
+    #[test]
+    fn upgrades_vram_severity_for_extreme_scale() {
+        let log = "0:10:08.288 I/TEX: Target scale moved to 0.250000. Texture usage is 5.14 gb out of 5.13 gb available. Memory headroom is 85.00 mb\n";
+        let findings = analyze_log(log);
+        let f = findings
+            .iter()
+            .find(|f| f.kind == "texture_vram_pressure")
+            .expect("should find VRAM pressure");
+        assert_eq!(
+            f.severity,
+            Severity::High,
+            "scale 0.25 should upgrade Medium to High"
+        );
+    }
+
+    #[test]
+    fn does_not_upgrade_vram_for_mild_scale() {
+        let log = "0:53:01.007 I/TEX: Target scale moved to 0.500000. Texture usage is 5.14 gb out of 5.13 gb available. Memory headroom is 85.00 mb\n";
+        let findings = analyze_log(log);
+        let f = findings
+            .iter()
+            .find(|f| f.kind == "texture_vram_pressure")
+            .expect("should find VRAM pressure");
+        assert_eq!(
+            f.severity,
+            Severity::Medium,
+            "scale 0.5 should keep Medium severity"
+        );
+    }
+
+    #[test]
+    fn aggregated_vram_uses_highest_severity_evidence() {
+        let log = "\
+0:10:00.000 I/TEX: Target scale moved to 0.500000. Texture usage is 5.14 gb out of 5.13 gb available. Memory headroom is 85.00 mb
+0:10:01.000 I/TEX: Target scale moved to 0.250000. Texture usage is 5.14 gb out of 5.13 gb available. Memory headroom is 85.00 mb\n";
+        let findings = analyze_log(log);
+        let f = findings
+            .iter()
+            .find(|f| f.kind == "texture_vram_pressure")
+            .expect("should find VRAM pressure");
+        assert_eq!(
+            f.severity,
+            Severity::High,
+            "aggregated findings should keep the highest severity"
+        );
+        assert!(
+            f.evidence.contains("0.250000"),
+            "primary evidence should point to the high-severity line"
+        );
+    }
+
+    #[test]
+    fn third_party_plugin_error_excludes_flywithlua() {
+        let findings = analyze_log(
+            "[FlyWithLua] ERROR: bad argument #1 to 'draw_string' (number expected, got nil)\n",
+        );
+        assert!(
+            !findings
+                .iter()
+                .any(|f| f.kind == "third_party_plugin_error"),
+            "FlyWithLua errors should not trigger third_party_plugin_error"
+        );
+        assert!(
+            findings.iter().any(|f| f.kind == "flywithlua_error"),
+            "FlyWithLua errors should still be caught by flywithlua_error"
+        );
+    }
+
+    #[test]
+    fn third_party_plugin_error_excludes_xplane_channel() {
+        let findings = analyze_log("0:00:00.000 E/PLG: [TestPlugin] ERROR: something failed\n");
+        assert!(
+            !findings
+                .iter()
+                .any(|f| f.kind == "third_party_plugin_error"),
+            "X-Plane channel lines should not trigger third_party_plugin_error"
+        );
+    }
+
+    #[test]
+    fn third_party_plugin_error_requires_uppercase_error_marker() {
+        let findings = analyze_log("[AircraftPlugin]: Parsing error in navaids.txt\n");
+        assert!(
+            !findings
+                .iter()
+                .any(|f| f.kind == "third_party_plugin_error"),
+            "ordinary lowercase error text should not be treated as a plugin ERROR marker"
+        );
+    }
+
+    #[test]
+    fn plugin_encountered_error_title_excludes_object_path() {
+        let log = "0:27:02.000 E/PLG: Plugin BetterPushback-v1.6.1 (H:\\X-Plane 12\\Resources\\plugins\\BetterPushback\\objects\\night_lamp.obj) encountered error: Instance data set during draw callback\n";
+        let findings = analyze_log(log);
+        let f = findings
+            .iter()
+            .find(|f| f.kind == "plugin_encountered_error")
+            .expect("plugin encountered error finding");
+        assert!(f.title.contains("BetterPushback-v1.6.1"));
+        assert!(
+            !f.title.contains("night_lamp.obj"),
+            "title should contain the plugin name, not the object path"
+        );
+    }
+
+    #[test]
+    fn skips_abrupt_termination_for_short_logs_below_threshold() {
+        let log = "\
+0:00:00.000 I/INIT: start
+0:01:20.000 I/SCN: still loading scenery\n";
+        let findings = analyze_log(log);
+        assert!(
+            !findings.iter().any(|f| f.kind == "abrupt_termination"),
+            "80s sim time should be below the 120s minimum threshold"
+        );
+    }
+
+    // ── suppression tests ──
+
+    #[test]
+    fn suppresses_esys_when_aircraft_open_failure_exists() {
+        let log = "\
+0:00:00.000 E/SYS: MACIBM_alert: Failed to open the following aircraft:
+0:00:00.000 E/SYS: MACIBM_alert: Aircraft/Test/A320.acf
+0:00:00.000 E/SYS: MACIBM_alert: This could be because the aircraft file is missing or corrupt.\n";
+        let findings = analyze_log(log);
+        let esys = findings
+            .iter()
+            .find(|f| f.kind == "xplane_subsystem_errors" && f.title.contains("E/SYS"));
+        assert!(esys.is_some(), "E/SYS should still exist");
+        assert_eq!(
+            esys.unwrap().severity,
+            Severity::Info,
+            "E/SYS should be downgraded to Info when aircraft_open_failure covers it"
+        );
+        assert!(
+            findings.iter().any(|f| f.kind == "aircraft_open_failure"),
+            "aircraft_open_failure should be the primary finding"
+        );
+    }
+
+    #[test]
+    fn suppresses_acf_when_aircraft_open_failure_exists() {
+        let log = "\
+0:00:00.000 W/ACF: Scanning of aircraft files is complete. Some of your aircraft files will not be available to fly in X-Plane, probably because they were created by a version of X-Plane that is too old. Aircraft that will be ignored:
+0:00:00.000 W/ACF:     Aircraft/Test/A320.acf
+0:00:01.000 E/SYS: MACIBM_alert: Failed to open the following aircraft:
+0:00:01.000 E/SYS: MACIBM_alert: Aircraft/Test/A320.acf\n";
+        let findings = analyze_log(log);
+        let acf = findings
+            .iter()
+            .find(|f| f.kind == "xplane_subsystem_errors" && f.title.contains("W/ACF"))
+            .expect("W/ACF subsystem finding");
+        assert_eq!(
+            acf.severity,
+            Severity::Info,
+            "W/ACF should be downgraded when aircraft_open_failure covers it"
+        );
+    }
+
+    #[test]
+    fn preserves_non_aircraft_esys_when_aircraft_failure_exists() {
+        let log = "\
+0:00:00.000 E/SYS: MACIBM_alert: Failed to open the following aircraft:
+0:00:00.000 E/SYS: MACIBM_alert: Aircraft/Test/C172.acf
+0:00:30.000 E/SYS: MACIBM_alert: Some other system alert not about aircraft\n";
+        let findings = analyze_log(log);
+        let esys_findings: Vec<_> = findings
+            .iter()
+            .filter(|f| f.kind == "xplane_subsystem_errors" && f.title.contains("E/SYS"))
+            .collect();
+        // E/SYS should still exist (suppressed to Info, not deleted)
+        assert!(!esys_findings.is_empty());
+        // After suppression, severity should be Info
+        for f in &esys_findings {
+            assert_eq!(f.severity, Severity::Info);
+        }
+    }
+
+    #[test]
+    fn suppresses_scenery_subsystem_when_missing_object_exists() {
+        let log = "\
+0:00:00.000 W/SCN: Missing object test.obj from package Custom Scenery/Test/; replacing with blank
+0:00:00.000 E/SCN: Failed to find resource 'test.png' referenced from file 'Custom Scenery/Test/'.\n";
+        let findings = analyze_log(log);
+        let wscn = findings
+            .iter()
+            .find(|f| f.kind == "xplane_subsystem_errors" && f.title.contains("W/SCN"));
+        assert!(wscn.is_some());
+        assert_eq!(wscn.unwrap().severity, Severity::Info);
+        let escn = findings
+            .iter()
+            .find(|f| f.kind == "xplane_subsystem_errors" && f.title.contains("E/SCN"));
+        assert!(escn.is_some());
+        assert_eq!(escn.unwrap().severity, Severity::Info);
+        assert!(
+            findings.iter().any(|f| f.kind == "missing_scenery_object"),
+            "missing_scenery_object should be the primary finding"
+        );
+    }
+
+    #[test]
+    fn suppresses_gfx_when_vulkan_device_lost_exists() {
+        let log = "\
+0:00:00.000 E/GFX: Encountered Vulkan device loss error!
+0:00:00.000 E/GFX/VK: Encountered Vulkan error VK_ERROR_DEVICE_LOST.\n";
+        let findings = analyze_log(log);
+        let egfx = findings
+            .iter()
+            .find(|f| f.kind == "xplane_subsystem_errors" && f.title.contains("E/GFX"));
+        assert!(egfx.is_some());
+        assert_eq!(egfx.unwrap().severity, Severity::Info);
+        assert!(
+            findings.iter().any(|f| f.kind == "vulkan_device_lost"),
+            "vulkan_device_lost should be the primary finding"
+        );
+    }
+
+    #[test]
+    fn suppresses_eplg_when_plugin_encountered_error_exists() {
+        let log = "\
+0:00:00.000 E/PLG: Plugin TestPlugin encountered error: something went wrong\n";
+        let findings = analyze_log(log);
+        let eplg = findings
+            .iter()
+            .find(|f| f.kind == "xplane_subsystem_errors" && f.title.contains("E/PLG"));
+        assert!(eplg.is_some());
+        assert_eq!(eplg.unwrap().severity, Severity::Info);
+        assert!(
+            findings
+                .iter()
+                .any(|f| f.kind == "plugin_encountered_error"),
+            "plugin_encountered_error should be the primary finding"
+        );
+    }
+
+    #[test]
+    fn preserves_generic_finding_when_no_specific_rule_exists() {
+        let log = "\
+0:00:00.000 E/SYS: MACIBM_alert: Some system alert
+0:00:00.000 E/GFX: Some graphics message
+0:30:00.000 I/SCN: flying\n";
+        let findings = analyze_log(log);
+        let esys = findings
+            .iter()
+            .find(|f| f.kind == "xplane_subsystem_errors" && f.title.contains("E/SYS"));
+        assert!(esys.is_some());
+        assert_eq!(
+            esys.unwrap().severity,
+            Severity::Low,
+            "E/SYS should keep Low severity when no aircraft_open_failure exists"
+        );
     }
 }

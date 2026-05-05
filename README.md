@@ -1,6 +1,10 @@
 # X-Plane Log Triage Tool
 
-X-Plane Log Triage Tool is a local diagnostic helper for X-Plane 12.
+X-Plane Log Triage Tool is a local diagnostic helper for X-Plane 12 logs.
+
+It does not try to guess every possible root cause. It applies a set of
+explicit log rules, groups related evidence, and separates actionable findings
+from common background noise.
 
 The current preview has two modes:
 
@@ -9,32 +13,25 @@ The current preview has two modes:
 
 No files are uploaded. The tool writes reports on your own machine.
 
-## Easy Windows Preview
+## Windows Preview
 
-The easy zip contains:
+The preview zip contains:
 
 ```text
 xplane-doctor.exe
-1-collect.bat
-2-analyze.bat
-README.txt
+README.md
+CHANGELOG.md
 ```
 
 The executable is still named `xplane-doctor.exe` in the preview build for compatibility, but the product name is X-Plane Log Triage Tool.
 
-Use it like this:
+Use it from PowerShell or Command Prompt:
 
-1. Double-click `1-collect.bat`.
-2. Double-click `2-analyze.bat`.
-3. Open `doctor-report/report.html` if it does not open automatically.
-
-The current test package assumes this X-Plane path:
-
-```text
-E:\SteamLibrary\steamapps\common\X-Plane 12
+```powershell
+xplane-doctor.exe analyze-log "D:\X-Plane 12\Log.txt" --output ".\doctor-report"
 ```
 
-If your X-Plane is somewhere else, edit `1-collect.bat` and change the `XPLANE=` line.
+Then open `doctor-report\report.html`.
 
 ## Command Line
 
@@ -78,6 +75,56 @@ The bundle records metadata from standard X-Plane 12 folders:
 
 The bundle does not include raw `.dmp` files, full plugins, full scenery packages, preference file contents, or large binary files.
 
+## Current Rule Coverage
+
+The current rules can identify these log patterns:
+
+- Explicit X-Plane crash markers, including `This application has crashed`,
+  crash UUID markers, crash `FILE` markers, and "cannot continue running"
+  style messages.
+- Vulkan and graphics failures, including official `VK_ERROR_*` result codes,
+  `VK_ERROR_DEVICE_LOST`, generic graphics API error lines, and texture/VRAM
+  pressure such as severe texture downscaling or very low memory headroom.
+- Plugin load failures, including `dlerror`, `failed to load`, Windows error
+  code 126, and invalid Win32 application messages.
+- X-Plane SDK misuse by plugins, including threading violations and plugins
+  bypassing XPLM when calling SDK functions.
+- FlyWithLua script error lines.
+- Runtime plugin errors reported by X-Plane's `E/PLG` channel, such as
+  `Plugin <name> encountered error`.
+- Third-party plugin error lines that do not use X-Plane's normal `E/...`
+  channels, including bracketed plugin `ERROR` messages and timed plugin
+  request timeouts.
+- Aircraft file load failures, including `Failed to open the following
+  aircraft` and `Unknown aircraft ... .acf`.
+- Scenery problems, including missing art assets, missing object files,
+  missing scenery libraries, missing global scenery tiles, and duplicate
+  scenery/airport warnings.
+- Crash context hints, such as the last meaningful pre-crash line, recent
+  scenery-loading context, and early silent crashes.
+- Abnormally truncated long-running logs when there is no clean shutdown marker
+  and no explicit crash marker.
+
+These rules are evidence-based. A finding means the log contains a known
+pattern, not that the tool has proven the entire causal chain.
+
+## Current Limits
+
+- The primary target is Windows X-Plane 12 logs. Some macOS-specific security
+  lines are recognized only when the log itself looks like a macOS log, but
+  this is not full macOS support.
+- The tool does not read crash dump contents. It only records crash report and
+  Aftermath file metadata.
+- Generic subsystem channels such as `E/SYS`, `E/OBJ`, `E/GFX`, `W/SCN`,
+  `E/APT`, and `W/APT` can be useful, but they are not always root causes.
+  Specific rules should be trusted more than broad subsystem scans.
+- Background startup noise, such as many Global Airports messages, NVIDIA
+  permission probing, joystick calibration messages, or sound device lookup
+  messages, may be reported at low priority but should not be treated as the
+  main crash cause by itself.
+- A clean report does not prove the installation is healthy; it only means the
+  current rule set did not find known patterns in the supplied files.
+
 ## Current Report Philosophy
 
 The report is intentionally split into:
@@ -89,6 +136,9 @@ The report is intentionally split into:
 Examples of background-only data:
 
 - Global Airports `E/APT` or `W/APT` data quality messages.
+- NVIDIA `E/NVAPI` startup permission probing.
+- Sound device lookup messages such as `E/SOUN`.
+- Joystick calibration warnings such as `E/JOY`.
 - DSF road-network warnings from scenery packages.
 - Texture packaging warnings such as non-power-of-two textures.
 - Historical crash dumps that do not match the current `Log.txt`.
